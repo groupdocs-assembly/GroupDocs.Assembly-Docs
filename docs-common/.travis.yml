@@ -1,0 +1,17 @@
+before_install:
+- openssl aes-256-cbc -K $encrypted_dfdcfd5172af_key -iv $encrypted_dfdcfd5172af_iv
+  -in deploy_key.enc -out ./deploy_key -d
+- eval "$(ssh-agent -s)"
+- chmod 600 ./deploy_key
+- echo -e "Host $HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- ssh-add ./deploy_key
+
+install:
+- curl -LO https://github.com/gohugoio/hugo/releases/download/v0.67.1/hugo_extended_0.67.1_Linux-64bit.deb
+- sudo dpkg -i hugo_extended_0.67.1_Linux-64bit.deb
+
+script:
+- hugo --minify
+
+after_success:
+- scp -i ./deploy_key -r public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/

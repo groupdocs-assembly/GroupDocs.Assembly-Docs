@@ -1,0 +1,148 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-body {
+  flex: 1;
+}
+
+
+// All for mobile devices
+
+// Every regular content page
+@media (min-width: 768px) {
+  .docs-sidenav, .docs-toc{
+      height: calc(100vh - 4rem);
+      top:4rem;
+      position: sticky;
+  }
+  .docs-sidenav .navbar, .docs-toc .navbar{
+      padding-right: 0;
+  }
+  .docs-sidenav .navbar-collapse, .docs-sidenav .navbar-nav{
+      width: 100%;
+  }
+  .docs-sidenav .nav-link, .docs-toc li a{
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+  }
+  .docs-sidenav .nav-link > span.badge.badge-primary, .docs-toc li a > span.badge.badge-primary{
+      margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docs-toc.large{
+      height: calc(100vh - 4rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .docs-toc.large{
+      display:none;
+  }
+}
+
+// END OF - Every regular content page
+
+
+
+
+// Home page
+@media screen and (max-width: 1024px){
+  .productsHome{
+    padding: 0 4rem 0 8rem !important;  
+  }
+
+  .pfMain{
+    padding: 0 4rem !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .moreServicesHome {
+      flex: 0 0 0 !important;
+      display: none !important;
+  }
+
+  .sectionName {
+    display: none !important;
+  }
+
+  main{
+    display: block !important;
+  }
+
+  .pfMain{
+    padding: 0 1rem !important;
+  }
+
+  .pf-product-container {    
+    width: 75% !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px){
+  .productsHome{
+    padding: 0 8rem !important; 
+  } 
+}
+
+@media screen and (max-width: 576px) and (min-width: 481px) {
+  .productsHome{
+    padding: 0 4rem !important; 
+  }  
+}
+
+@media screen and (max-width: 480px) and (min-width: 351px){
+  .productsHome{
+    padding: 0 1rem !important; 
+  }
+
+  .productFamilyItem{
+    margin: 0 2rem !important; 
+  }
+
+  .pfMain{
+    padding: 0 !important;
+  }
+
+  .pf-product-container {    
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 321px){
+  .productsHome{
+    padding: 0 .5rem !important; 
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .productsHome{
+    padding: 0 .2rem !important; 
+  }
+  
+  .btn-net, .btn-java{
+    font-size: 11px !important; 
+  }
+}
+// END OF - Home page
+
+// Product Family landing 
+
+@media screen and (max-width: $mobile-breakpoint) 
+{
+    .pfMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spacer{    
+        display: none;
+    }
+}
+// END OF - Product Family landing 

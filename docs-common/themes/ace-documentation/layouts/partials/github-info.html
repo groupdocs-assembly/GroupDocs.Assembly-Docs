@@ -1,0 +1,19 @@
+{{ if and .GitInfo .Site.Params.GitHubRepo }}
+<div class="col-4 docs-article-date">
+  {{- $date := partial "date" (dict "Date" .GitInfo.AuthorDate.Local "Format" .Site.Params.GitHubDateFormat) -}}
+  <a class="flex align-center" href="{{ .Site.Params.GitHubRepo }}/commit/{{ .GitInfo.Hash }}" 
+  title='{{ i18n "Last modified by" }} {{ .GitInfo.AuthorName }} | {{ $date }}' target="_blank" rel="noopener">
+    <i class="far fa-calendar-alt"></i>
+    <span>{{ $date }}</span>
+  </a>
+</div>
+{{ end }}
+
+{{ if and .File .Site.Params.GitHubRepo .Site.Params.GitHubEditPath }}
+<div class="col-4 text-right docs-article-edit">
+  <a class="flex align-center" href="{{ .Site.Params.GitHubRepo }}/{{ .Site.Params.GitHubEditPath }}/{{ .Site.Params.contentDir }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
+    <i class="fas fa-pen"></i>
+    <span>{{ "Edit this page" }}</span>
+  </a>
+</div>
+{{ end }}

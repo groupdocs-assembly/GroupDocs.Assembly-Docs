@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    {{- partial "head.html" . -}}    
+    <body>  
+        
+        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "header-landing" . -}}
+
+        <main style="display: flex;">  
+            <div class="pfMain">
+                
+                {{ range where $.Site.Data.total.Items "Family" .Params.Id}}
+                    {{ partial "family-product-info"  (dict "product" . "ctx" $) }}                                  
+                {{ end }}
+
+            </div>
+        </main>
+        {{- partial "groupdocs-footer.html" . -}}
+        {{- partial "footer.html" . -}}
+    </body>   
+</html>
+

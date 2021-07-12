@@ -1,0 +1,39 @@
+<head>
+    <base href="{{ .Site.BaseURL }}">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="{{ default .Summary .Description }}">
+    <meta name="keywords" content={{ delimit .Keywords " " }} >
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>
+        {{ block "title" . }}
+        {{ .Title}} 
+        {{ if .Params.productName }} | {{ .Params.productName }} {{ end }}
+        {{ if ne .Title .Site.Title }} | {{ .Site.Title }} {{ end }}
+        {{ end }}
+    </title>
+
+    <!-- Load stylesheet -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fontawesome.min.css">
+
+    <!-- Venture CSS -->    
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" type="text/css" />
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/groupdocs.css" type="text/css" />
+    <link rel="shortcut icon" href="https://cms.admin.containerize.com/templates/groupdocs/favicon.ico" />
+    <!-- End of Venture CSS -->         
+
+    {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <!-- Custom Docs CSS -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/docs.css" type="text/css" />
+
+    <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
+    {{ if eq hugo.Environment "production" }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+</head>

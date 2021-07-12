@@ -1,0 +1,68 @@
+{
+	"Items": [
+        {
+            "Family": "total",
+            "Key": "total-net",
+            "Name": "GroupDocs.Total for .NET",
+            "Platform": "net",
+            "CodeExamples": [                
+                {
+                    "Name": "GroupDocs.Total for .NET MVC",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-total/GroupDocs.Total-for-NET-MVC"
+                },
+                {
+                    "Name": "GroupDocs.Total for .NET WebForms",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-total/GroupDocs.Total-for-NET-WebForms" 
+                }
+            ],
+            "LiveDemo": [
+                {                    
+                    "Name": "GroupDocs.Total at DockerHub",
+                    "Description": "Out-of-the-box docker container",
+                    "Url": "https://hub.docker.com/r/groupdocs/total",
+                    "Icon": "fab fa-docker"
+                },                    
+                {                    
+                    "Name": "GroupDocs.Total Free App",
+                    "Description": "Try our free online document annotator",
+                    "Url": "https://products.groupdocs.app",
+                    "Icon": "fab fa-internet-explorer"
+                }
+            ]
+        },
+		{
+            "Family": "total",
+            "Key": "total-java",
+            "Name": "GroupDocs.Total for Java",
+            "Platform": "java",
+            "CodeExamples": [
+                {
+                    "Name": "GroupDocs.Total for Java Spring",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-total/GroupDocs.Total-for-Java-Spring"
+                },
+                {
+                    "Name": "GroupDocs.Total for Java Dropwizard",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-total/GroupDocs.Total-for-Java-Dropwizard" 
+                }
+            ],
+            "LiveDemo": [
+                {                    
+                    "Name": "GroupDocs.Total at DockerHub",
+                    "Description": "Out-of-the-box docker container",
+                    "Url": "https://hub.docker.com/r/groupdocs/total",
+                    "Icon": "fab fa-docker"
+                },                    
+                {                    
+                    "Name": "GroupDocs.Total Free App",
+                    "Description": "Try our free online document annotator",
+                    "Url": "https://products.groupdocs.app",
+                    "Icon": "fab fa-internet-explorer"
+                }
+            ]
+        }
+	]
+}

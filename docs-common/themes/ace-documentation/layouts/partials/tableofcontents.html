@@ -1,0 +1,3 @@
+<div class="docs-toc">
+	{{ replace .TableOfContents `href="#` (printf `href="%s#` .Permalink) | safeHTML }}
+</div>

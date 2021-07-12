@@ -1,0 +1,18 @@
+<div class="productFamilyItem">
+    <div class="productFamily">
+        <a href="{{ .product.Key }}/{{ .ctx.Params.Platform }}">
+            {{ .product.Name }} for 
+            {{ if eq .ctx.Params.Platform "net"}} .NET {{end}}
+            {{ if eq .ctx.Params.Platform "java"}} Java {{end}}
+        </a> 
+    </div>
+    <div class="productDescription">{{ .product.Description }}</div>           
+    <div style="flex-direction: row;"> 
+        {{- if eq .ctx.Params.Platform "net" }}
+        <a class="btn-net" href="{{ .product.Key }}/net">.NET DOCUMENTATION</a>
+        {{- end }}
+        {{- if eq .ctx.Params.Platform "java" }}
+        <a class="btn-java" href="{{ .product.Key }}/java">JAVA DOCUMENTATION</a>
+        {{- end }}
+    </div>  
+</div>

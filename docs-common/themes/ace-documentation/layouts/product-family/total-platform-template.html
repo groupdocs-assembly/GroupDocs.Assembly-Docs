@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    {{- partial "head.html" . -}}
+    <body>  
+        
+        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "header-landing" . -}}
+
+        <main style="display: flex;">               
+            <div class="productsHome">                
+                <div class="sectionName">{{ .Title }}</div>              
+                              
+                {{- if eq .Params.Platform "net" }}
+                    {{ range sort (.Site.Params.ProductFamilies) "Name" }}   
+                        {{- partial "total-product" (dict "product" . "ctx" $) -}}
+                    {{- end -}}
+                {{- end -}}
+
+                {{- if eq .Params.Platform "java" }}
+                    {{ range sort (where .Site.Params.ProductFamilies "HideJava" "ne" true ) "Name" }}   
+                        {{- partial "total-product" (dict "product" . "ctx" $) -}}
+                    {{- end -}}
+                {{- end -}}
+                
+                <div style="margin-bottom: 100px;"></div>
+            </div>
+
+            <div class="moreServicesHome">
+                <div class="sectionName" style="display: flex;">MORE</div>
+                <div class="btn-container">        
+                    {{ range sort .Site.Params.MoreServices "Name" }}        
+                        {{ partial "more-services" . }}
+                    {{ end }}             
+                </div>
+            </div>            
+        </main>
+        {{- partial "groupdocs-footer.html" . -}}
+        {{- partial "footer.html" . -}}
+    </body>    
+</html>
+
+                
+

@@ -1,2 +1,1 @@
-# GroupDocs.Assembly-Documentation
-GroupDocs.Assembly Product Family Documentation
+## GroupDocs.Assembly for .NET Docs
