@@ -1,1 +1,1 @@
-## GroupDocs.Assembly for .NET Docs
+## Public documentation for GroupDocs.Assembly
