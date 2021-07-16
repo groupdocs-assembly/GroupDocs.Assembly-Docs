@@ -10,7 +10,7 @@ hideChildren: True
 ---
 #  Home 
 
-{{< alert style="info" >}}Welcome to the GroupDocs.Assembly for .NETGroupDocs.Assembly for .NET is a document automation and reports generation API designed to create custom documents from templates. This .NET reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format{{< /alert >}}
+{{< alert style="info" >}}Welcome to the GroupDocs.Assembly for .NETGroupDocs.Assembly for .NET is a document automation and reports generation API designed to create custom documents from templates. This .NET reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format.{{< /alert >}}
 
 ## GroupDocs.Assembly for .NET Resources
 
