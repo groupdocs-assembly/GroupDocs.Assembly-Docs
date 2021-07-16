@@ -13,7 +13,7 @@ env:
     - DEST_DIR=/var/www/docs.groupdocs.com/html
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_e33ba958eae1_key -iv $encrypted_e33ba958eae1_iv
+- openssl aes-256-cbc -K $encrypted_134a2bbdaca0_key -iv $encrypted_134a2bbdaca0_iv
   -in deploy_key.enc -out ./deploy_key -d
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
