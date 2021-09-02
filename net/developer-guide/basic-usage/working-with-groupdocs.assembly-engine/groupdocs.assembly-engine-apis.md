@@ -65,80 +65,27 @@ To overcome this limitation, you can pass an `XmlDataSource` instance to the eng
 
 **Note –** For recognition of data types to work, string representations of corresponding attributes and text values of XML elements must be formed using invariant culture settings.
 
-In template documents, if a top-level XML element contains only a sequence of elements of the same type, an `XmlDataSource` instance should be treated in the same way as if it was a `DataTable` instance (see “Working with `DataTable` and `DataView` Objects” for more information) as shown in the following example.
+While loading data to `XmlDataSource`, the engine performs actions typical for XML deserialization behind the scenes: It maps complex-type XML elements to internal objects and simple-type XML elements to fields of containing objects. So, in template documents, an `XmlDataSource` instance should be treated as an object having corresponding fields and nested objects as shown in the following example.
 
 XML
-```
-<Persons>
-   <Person>
-       <Name>John Doe</Name>
-       <Age>30</Age>
-       <Birth>1989-04-01 4:00:00 pm</Birth>
-   </Person>
-   <Person>
-       <Name>Jane Doe</Name>
-       <Age>27</Age>
-       <Birth>1992-01-31 07:00:00 am</Birth>
-   </Person>
-   <Person>
-       <Name>John Smith</Name>
-       <Age>51</Age>
-       <Birth>1968-03-08 1:00:00 pm</Birth>
-   </Person>
-</Persons>
-```
-
-Template document
-
-```
-<<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
-
-<</foreach>>
-
-Average age: <<[persons.Average(p => p.Age)]>>
-```
-
-Source code
-
-```
-Document doc = ...             // Loading a template document.
-XmlDataSource dataSource = ... // Loading XML (without schema).
-
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
-```
-
-Result document
-
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
-
-Average age: 36
-```
-
-**Note –** Using of the custom date-time format and the extension method involving arithmetic in the template document becomes possible, because text values of `Birth` and `Age` XML elements are automatically converted to `DateTime?` and `Int64?` respectively even in the absence of XML schema.
-
-If a top-level XML element contains attributes or nested elements of different types, an `XmlDataSource` instance should be treated in template documents in the same way as if it was a `DataRow` instance (see “Working with `DataRow` and `DataRowView` Objects” for more information) as shown in the following example.
-
-XML
-
 ```
 <Person>
-   <Name>John Doe</Name>
-   <Age>30</Age>
-   <Birth>1989-04-01 4:00:00 pm</Birth>
-   <Child>Ann Doe</Child>
-   <Child>Charles Doe</Child>
+	<Name>John Doe</Name>
+	<Age>30</Age>
+	<Birth>1989-04-01 4:00:00 pm</Birth>
+	<Child>Ann Doe</Child>
+	<Child>Charles Doe</Child>
 </Person>
 ```
 
 Template document
 
 ```
-Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
+Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth:
+<<[Birth]:"dd.MM.yyyy">>
+
 Children:
+
 <<foreach [in Child]>><<[Child_Text]>>
 <</foreach>>
 ```
@@ -157,12 +104,75 @@ Result document
 
 ```
 Name: John Doe, Age: 30, Date of Birth: 01.04.1989
+
 Children:
+
 Ann Doe
 Charles Doe
 ```
 
 **Note –** To reference a sequence of repeated simple-type XML elements with the same name, the elements’ name itself (for example, “Child”) should be used in a template document, whereas the same name with the “_Text” suffix (for example, “Child_Text”) should be used to reference the text value of one of these elements.
+
+By default, if a root XML element contains only a sequence of elements of one type, the engine does not generate an internal root object while loading XML data. So, in template documents, such an `XmlDataSource` instance should be treated as a sequence of corresponding nested objects as shown in the following example.
+
+XML
+
+```
+<Persons>
+	<Person>
+		<Name>John Doe</Name>
+		<Age>30</Age>
+		<Birth>1989-04-01 4:00:00 pm</Birth>
+	</Person>
+	<Person>
+		<Name>Jane Doe</Name>
+		<Age>27</Age>
+		<Birth>1992-01-31 07:00:00 am</Birth>
+	</Person>
+	<Person>
+		<Name>John Smith</Name>
+		<Age>51</Age>
+		<Birth>1968-03-08 1:00:00 pm</Birth>
+	</Person>
+</Persons>
+```
+
+Template document
+
+```
+<<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
+<</foreach>>
+
+Average age: <<[persons.Average(p => p.Age)]>>
+```
+
+Source code
+
+```
+Document doc = ...             // Loading a template document.
+XmlDataSource dataSource = ... // Loading XML.
+
+ReportingEngine engine = new ReportingEngine();
+engine.BuildReport(doc, dataSource, "persons");
+```
+
+Result document
+
+```
+Name: John Doe, Age: 30, Date of Birth: 01.04.1989
+Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
+Name: John Smith, Age: 51, Date of Birth: 08.03.1968
+
+Average age: 36
+```
+
+However, if your scenario requires an internal object for a root XML element to be always generated while loading data to `XmlDataSource`, you can force this as shown in the following code snippet.
+
+```
+XmlDataLoadOptions options = new XmlDataLoadOptions();
+options.AlwaysGenerateRootObject = true;
+XmlDataSource dataSource = new XmlDataSource(..., options);
+```
 
 The following example sums up typical scenarios involving nested complex-type XML elements.
 
@@ -292,7 +302,56 @@ Using of `JsonDataSource` enables you to work with typed values of JSON elements
 
 **Note –** Working with complex JSON types (objects and arrays) is also supported.
 
-In template documents, if a top-level JSON element is an array or an object having only one property of an array type, a `JsonDataSource` instance should be treated in the same way as if it was a `DataTable` instance (see “Working with `DataTable` and `DataView` Objects” for more information) as shown in the following example.
+While loading data to `JsonDataSource`, the engine performs JSON deserialization and generates corresponding internal objects. So, in template documents, a `JsonDataSource` instance should be treated according to what a root JSON element represents.
+
+If a root JSON element is an object, a `JsonDataSource` instance should be treated as an object as well as shown in the following example.
+
+JSON
+
+```
+{
+   Name: "John Doe",
+   Age: 30,
+   Birth: "1989-04-01 4:00:00 pm",
+   Child: [ "Ann Doe", "Charles Doe" ]
+}
+```
+
+Template document
+
+```
+Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
+
+Children:
+
+<<foreach [in Child]>><<[Child_Text]>>
+<</foreach>>
+```
+
+Source code
+
+```
+Document doc = ...              // Loading a template document.
+JsonDataSource dataSource = ... // Loading JSON.
+
+ReportingEngine engine = new ReportingEngine();
+engine.BuildReport(doc, dataSource);
+```
+
+Result document
+
+```
+Name: John Doe, Age: 30, Date of Birth: 01.04.1989
+
+Children:
+
+Ann Doe
+Charles Doe
+```
+
+**Note –** To reference a JSON object property that is an array of simple-type values, the name of the property (for example, “Child”) should be used in a template document, whereas the same name with the “_Text” suffix (for example, “Child_Text”) should be used to reference the value of an item of this array.
+
+If a root JSON element is an array, a `JsonDataSource` instance should be treated as a sequence of items of this array as shown in the following example.
 
 JSON
 
@@ -316,7 +375,52 @@ JSON
 ]
 ```
 
-Alternative JSON (produces the same result)
+Template document
+
+```
+<<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
+<</foreach>>
+
+Average age: <<[persons.Average(p => p.Age)]>>
+```
+
+Source code
+
+```
+Document doc = ...              // Loading a template document.
+JsonDataSource dataSource = ... // Loading JSON.
+
+ReportingEngine engine = new ReportingEngine();
+engine.BuildReport(doc, dataSource, "persons");
+```
+
+Result document
+
+```
+Name: John Doe, Age: 30, Date of Birth: 01.04.1989
+Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
+Name: John Smith, Age: 51, Date of Birth: 08.03.1968
+
+Average age: 36
+```
+
+By default, if a root JSON element is an object having only one property that is an object or array in turn, the engine does not generate an internal root object while loading JSON data. So, in template documents, such a `JsonDataSource` instance should be treated according to what this property represents instead. For instance, the following JSON snippets can be used to produce the same results in previous examples of this section respectively.
+
+JSON1
+
+```
+{
+   Person:
+   {
+       Name: "John Doe",
+       Age: 30,
+       Birth: "1989-04-01 4:00:00 pm",
+       Child: [ "Ann Doe", "Charles Doe" ]
+   }
+}
+```
+
+JSON 2
 
 ```
 {
@@ -341,92 +445,13 @@ Alternative JSON (produces the same result)
 }
 ```
 
-Template document
+However, if your scenario requires an internal object for a root JSON element to be always generated while loading data to `JsonDataSource`, you can force this as shown in the following code snippet.
 
 ```
-<<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
-<</foreach>>
-Average age: <<[persons.Average(p => p.Age)]>>
+JsonDataLoadOptions options = new JsonDataLoadOptions();
+options.AlwaysGenerateRootObject = true;
+JsonDataSource dataSource = new JsonDataSource(..., options);
 ```
-
-Source code
-
-```
-Document doc = ...              // Loading a template document.
-JsonDataSource dataSource = ... // Loading JSON.
-
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
-```
-
-Result document
-
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
-
-Average age: 36
-```
-
-**Note –** Using of the custom date-time format becomes possible, because text values of `Birth` properties are automatically converted to `DateTime?`.
-
-If a top-level JSON element represents an object, a `JsonDataSource` instance should be treated in template documents in the same way as if it was a `DataRow` instance (see “Working with `DataRow` and `DataRowView` Objects” for more information). If a top-level JSON object has a single property that is also an object, then this nested object is accessed by the engine instead. To see how it works, consider the following example.
-
-JSON
-
-```
-{
-   Name: "John Doe",
-   Age: 30,
-   Birth: "1989-04-01 4:00:00 pm",
-   Child: [ "Ann Doe", "Charles Doe" ]
-}
-```
-
-Alternative JSON (produces the same result)
-
-```
-{
-   Person:
-   {
-       Name: "John Doe",
-       Age: 30,
-       Birth: "1989-04-01 4:00:00 pm",
-       Child: [ "Ann Doe", "Charles Doe" ]
-   }
-}
-```
-
-Template document
-
-```
-Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
-Children:
-<<foreach [in Child]>><<[Child_Text]>>
-<</foreach>>
-```
-
-Source code
-
-```
-Document doc = ...              // Loading a template document.
-JsonDataSource dataSource = ... // Loading JSON.
-
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource);
-```
-
-Result document
-
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Children:
-Ann Doe
-Charles Doe
-```
-
-**Note –** To reference a JSON object property that is an array of simple-type values, the name of the property (for example, “Child”) should be used in a template document, whereas the same name with the “_Text” suffix (for example, “Child_Text”) should be used to reference the value of an item of this array.
 
 The following example sums up typical scenarios involving nested JSON objects and arrays.
 
@@ -611,7 +636,7 @@ Using of `CsvDataSource` enables you to work with typed values rather than just 
 
 **Note –** For recognition of data types to work, string representations of corresponding values must be formed using invariant culture settings.
 
-In template documents, a `CsvDataSource` instance should be treated in the same way as if it was a `DataTable` instance (see “Working with `DataTable` and `DataView` Objects” for more information) as shown in the following example.
+In template documents, a `CsvDataSource` instance should be treated as a sequence of objects having corresponding fields as shown in the following example.
 
 CSV
 
@@ -649,8 +674,6 @@ Name: John Smith, Age: 51, Date of Birth: 08.03.1968
 Average age: 36
 ```
 
-**Note –** Using of the custom date-time format and the extension method involving arithmetic in the template document becomes possible, because text values of `Column3` and `Column2` are automatically converted to `DateTime?` and `Int64?` respectively.
-
 By default, `CsvDataSource` uses column names such as “Column1”, “Column2”, and so on, as you can see from the previous example. However, `CsvDataSource` can be configured to read column names from the first line of CSV data as shown in the following example.
 
 CSV
@@ -673,7 +696,8 @@ Average age: <<[persons.Average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ... // Loading a template document.  CsvDataLoadOptions options = new CsvDataLoadOptions(true);
+Document doc = ... // Loading a template document.
+CsvDataLoadOptions options = new CsvDataLoadOptions(true);
 CsvDataSource dataSource = new CsvDataSource(..., options); // Loading CSV. 
 
 ReportingEngine engine = new ReportingEngine();
