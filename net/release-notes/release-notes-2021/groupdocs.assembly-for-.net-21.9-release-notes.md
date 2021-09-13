@@ -23,6 +23,6 @@ Provided an option to always generate an object for a JSON or XML root element.
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Assembly for .NET 21.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Assembly which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
-### Provided an Option to Always Denerate an Object for a JSON or XML Root Element
+### Provided an Option to Always Generate an Object for a JSON or XML Root Element
 
 A detailed description of this feature can be found in the [“Accessing XML Data”](https://docs.groupdocs.com/assembly/net/groupdocs-assembly-engine-apis/#accessing-xml-data), [“Accessing JSON Data”](https://docs.groupdocs.com/assembly/net/groupdocs-assembly-engine-apis/#accessing-json-data), and [“Accessing CSV Data”](https://docs.groupdocs.com/assembly/net/groupdocs-assembly-engine-apis/#accessing-csv-data) sections.
