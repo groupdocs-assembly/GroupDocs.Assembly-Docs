@@ -334,8 +334,8 @@ Source code
 Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource);
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(doc, dataSource);
 ```
 
 Result document
@@ -390,8 +390,8 @@ Source code
 Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(doc, dataSource, "persons");
 ```
 
 Result document
@@ -559,8 +559,8 @@ Source code
 Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "managers");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(doc, dataSource, "managers");
 ```
 
 Result document
@@ -609,19 +609,22 @@ Recognition of date-time values is a special case, because [JSON specification](
 4. All date-time formats supported for the English USA culture
 5. All date-time formats supported for the English New Zealand culture
 
-Although this approach is quite flexible, in some scenarios, you may need to restrict strings to be recognized as date-time values. You can achieve this by specifying an exact format in the context of the current culture to be used while parsing date-time values from strings as shown in the following example.
+Although this approach is quite flexible, in some scenarios, you may need to restrict strings to be recognized as date-time values. You can achieve this by specifying one or several exact formats in the context of the current culture to be used while parsing date-time values from strings as shown in the following example.
 
 ```
+List<String> formats = new List<String>();
+formats.Add("MM/dd/yyyy");
+
 JsonDataLoadOptions options = new JsonDataLoadOptions();
-options.ExactDateTimeParseFormat = "MM/dd/yyyy";
+options.ExactDateTimeParseFormats = formats;
 JsonDataSource dataSource = new JsonDataSource(..., options);
 ```
 
 In this example, strings conforming the format "MM/dd/yyyy" are going to be recognized as date-time values while loading JSON, whereas the others are not (but see the following note).
 
-In some scenarios, you may need to disable recognition of date-time values at all, for example, when you deal with strings containing already formatted date-time values, which you do not want to re-format using the engine. You can achieve this by setting the exact date-time parse format to an empty string (but see the following note).
+In some scenarios, you may need to disable recognition of date-time values at all, for example, when you deal with strings containing already formatted date-time values, which you do not want to re-format using the engine. You can achieve this by setting the exact date-time parse formats to an empty list (but see the following note).
 
-**Note –** Strings conforming the Microsoft® JSON date-time format (for example, "/Date(1224043200000)/") are always recognized as date-time values regardless of the exact date-time parse format.
+**Note –** Strings conforming the Microsoft® JSON date-time format (for example, "/Date(1224043200000)/") are always recognized as date-time values regardless of the exact date-time parse formats.
 
 ### Accessing CSV Data
 
