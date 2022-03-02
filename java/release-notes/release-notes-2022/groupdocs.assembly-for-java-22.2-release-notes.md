@@ -14,8 +14,10 @@ Improved error reporting and working with arrays, and supported several exact da
 
 ## Full List of Features Covering all Changes in this Release
 
-| ASSEMBLYNET-203 | Provide an option to always generate an object for an XML root element | Feature |
+
+| Key             | Summary                                                      | Category |
 | --------------- | ------------------------------------------------------------ | ------- |
+| ASSEMBLYNET-203 | Provide an option to always generate an object for an XML root element | Feature |
 | ASSEMBLYNET-204 | Provide an option to always generate an object for a JSON root element | Feature |
 | ASSEMBLYNET-205 | Add feature to support array type identifiers in template syntax | Feature |
 | ASSEMBLYNET-206 | Support several exact date-time parse formats while loading JSON | Feature |
