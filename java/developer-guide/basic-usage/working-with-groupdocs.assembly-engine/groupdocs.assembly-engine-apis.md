@@ -91,11 +91,10 @@ Children:
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
-XmlDataSource dataSource = ... // Loading XML. 
+XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.buildReport(doc, dataSource);
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.assembleDocument(..., new DataSourceInfo(dataSource));
 ```
 
 Result document
@@ -144,11 +143,10 @@ Average age: <<[persons.average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
 XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.buildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -254,11 +252,10 @@ Contracts:
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
-XmlDataSource dataSource = ... // Loading XML. 
+XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.buildReport(doc, dataSource, "managers");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "managers"));
 ```
 
 Result document
@@ -325,11 +322,10 @@ Children:
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.assembleDocument(doc, dataSource);
+assembler.assembleDocument(..., new DataSourceInfo(dataSource));
 ```
 
 Result document
@@ -378,11 +374,10 @@ Average age: <<[persons.average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.assembleDocument(doc, dataSource, "persons");
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -547,11 +542,10 @@ Contracts:
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.assembleDocument(doc, dataSource, "managers");
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "managers"));
 ```
 
 Result document
@@ -653,11 +647,10 @@ Average age: <<[persons.average(p => p.Column2)]>>
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
 CsvDataSource dataSource = ... // Loading CSV.
 
-ReportingEngine engine = new ReportingEngine();
-engine.buildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -692,11 +685,11 @@ Average age: <<[persons.average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ... // Loading a template document.  CsvDataLoadOptions options = new CsvDataLoadOptions(true);
+CsvDataLoadOptions options = new CsvDataLoadOptions(true);
 CsvDataSource dataSource = new CsvDataSource(..., options); // Loading CSV.
 
-ReportingEngine engine = new ReportingEngine();
-engine.buildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.assembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
