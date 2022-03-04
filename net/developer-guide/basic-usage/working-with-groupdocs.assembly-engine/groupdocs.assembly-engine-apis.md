@@ -93,11 +93,10 @@ Children:
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
 XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource);
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource));
 ```
 
 Result document
@@ -149,11 +148,10 @@ Average age: <<[persons.Average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
 XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -259,11 +257,10 @@ Contracts:
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
 XmlDataSource dataSource = ... // Loading XML.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "managers");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "managers"));
 ```
 
 Result document
@@ -331,11 +328,10 @@ Children:
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.AssembleDocument(doc, dataSource);
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource));
 ```
 
 Result document
@@ -387,11 +383,10 @@ Average age: <<[persons.Average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.AssembleDocument(doc, dataSource, "persons");
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -556,11 +551,10 @@ Contracts:
 Source code
 
 ```
-Document doc = ...              // Loading a template document.
 JsonDataSource dataSource = ... // Loading JSON.
 
 DocumentAssembler assembler = new DocumentAssembler();
-assembler.AssembleDocument(doc, dataSource, "managers");
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "managers"));
 ```
 
 Result document
@@ -660,11 +654,10 @@ Average age: <<[persons.Average(p => p.Column2)]>>
 Source code
 
 ```
-Document doc = ...             // Loading a template document.
-CsvDataSource dataSource = ... // Loading CSV. 
+CsvDataSource dataSource = ... // Loading CSV.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
@@ -699,12 +692,11 @@ Average age: <<[persons.Average(p => p.Age)]>>
 Source code
 
 ```
-Document doc = ... // Loading a template document.
 CsvDataLoadOptions options = new CsvDataLoadOptions(true);
-CsvDataSource dataSource = new CsvDataSource(..., options); // Loading CSV. 
+CsvDataSource dataSource = new CsvDataSource(..., options); // Loading CSV.
 
-ReportingEngine engine = new ReportingEngine();
-engine.BuildReport(doc, dataSource, "persons");
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
 ```
 
 Result document
