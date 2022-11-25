@@ -16,7 +16,7 @@ Classes of GroupDocs.Assembly are located within the GroupDocs.Assembly namespac
 
 ### Building Reports
 
-To build a report from a template, you can use one of the `ReportingEngine.BuildReport` overloads. The following table describes parameters of these overloads.
+To build a report from a template, you can use one of the `DocumentAssembler.AssembleDocument` overloads. The following table describes parameters of these overloads.
 
 | Parameter | Description |
 | --- | --- |
@@ -717,7 +717,7 @@ Also, you can use `CsvDataLoadOptions` to customize the following characters pla
 
 ### Setting up Known External Types
 
-GroupDocs.Assembly Engine must be aware of custom external types that you reference in your template before the engine processes the template. You can set up external types known by the engine through the ReportingEngine.KnownTypes property. The property represents an unordered set (that is, a collection of unique items) of [Type](http://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx) objects. Every type in the set must meet requirements declared at [Working with Types](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-types).
+GroupDocs.Assembly Engine must be aware of custom external types that you reference in your template before the engine processes the template. You can set up external types known by the engine through the DocumentAssembler.KnownTypes property. The property represents an unordered set (that is, a collection of unique items) of [Type](http://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx) objects. Every type in the set must meet requirements declared at [Working with Types](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-types).
 
 **Note:** Aliases of simple types like int, string, and others are known by the engine by default.
 
@@ -728,6 +728,28 @@ DocumentAssembler assembler = new DocumentAssembler;
 assembler.KnownTypes.Add(typeof(ImageUtil));
 assembler.AssembleDocument(...);
 ```
+
+### Accessing Missing Members of Data Objects
+
+By default, GroupDocs.Assembly forbids access to missing members of data objects used to build a report in template expressions, since such access is forbidden by C# Language Specification 5.0. On attempt to use a missing member of a data object, the assembler throws an exception then.
+
+But in some scenarios, members of data objects are not exactly known while designing a template. For example, if using a `DataSet` instance loaded from XML without its schema defined, some of expected data members can be missing.
+
+To support such scenarios, the assembler provides an option to treat missing members of data objects as null literals. You can enable the option as shown in the following example.
+
+```csharp
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.Options |= DocumentAssemblyOptions.AllowMissingMembers;
+assembler.AssembleDocument(...);
+```
+
+Consider the following example. Given that `r` is a `DataRow` instance that does not have a field `Missing`, by default, the following template expression causes the assembler to throw an exception while building a report.
+
+```csharp
+<<[r.Missing]>>
+```
+
+However, if `DocumentAssemblyOptions.AllowMissingMembers` is applied, the assembler treats access to such a field as a null literal, so no exception is thrown and simply no value is written to the report then.
 
 ### Optimizing Reflection Calls
 
