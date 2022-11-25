@@ -12,14 +12,14 @@ hideChildren: False
 
 ## Loading Multiple DocumentTable Objects
 
-GroupDocs.Assembly for .NET API provides the ability to load multiple DocumentTable objects from a single file as a single operation. Following classes and interfaces of the [GroupDocs.Assembly.Data](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace have been added:
+GroupDocs.Assembly for .NET API provides the ability to load multiple DocumentTable objects from a single file as a single operation. Following classes and interfaces of the [GroupDocs.Assembly.Data](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace have been added:
 
-*   [DocumentTableSet](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset)
-*   [DocumentTableCollection](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecollection)
-*   [IDocumentTableLoadHandler](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/idocumenttableloadhandler)
-*   [DocumentTableLoadArgs.](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableloadargs)
+*   [DocumentTableSet](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset)
+*   [DocumentTableCollection](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecollection)
+*   [IDocumentTableLoadHandler](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/idocumenttableloadhandler)
+*   [DocumentTableLoadArgs.](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableloadargs)
 
-Moreover, following properties of the [GroupDocs.Assembly.Data.DocumentTable](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable) class have been added:
+Moreover, following properties of the [GroupDocs.Assembly.Data.DocumentTable](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable) class have been added:
 
 *   Name
 *   IndexInDocument

@@ -15,7 +15,7 @@ hideChildren: False
 *   Set up the source document template path
 *   Set up destination report path
 *   Instantiate DocumentAssembler class
-*   Set options, **[DocumentAssemblyOptions.UpdateFieldsAndFormulas](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/documentassemblyoptions)**
+*   Set options, **[DocumentAssemblyOptions.UpdateFieldsAndFormulas](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassemblyoptions)**
 *   Generate report
 
 ### Download Template

@@ -61,7 +61,7 @@ Following is the detail given about how the features are offered with their usag
 
 ### Explicit Support for Multiple Data Sources
 
-A new overload [**DocumentAssembler.AssembleDocument**](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler/methods/assembledocument/index) is added in the new release. Using this overload user can reference multiple data source objects and their members in the template. Overload accepts an array of data source names and an array of data sources. Learn more about support of multiple data sources in [this](https://docs.groupdocs.com/assembly/net/working-with-multiple-data-sources/) article.
+A new overload [**DocumentAssembler.AssembleDocument**](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler/methods/assembledocument/index) is added in the new release. Using this overload user can reference multiple data source objects and their members in the template. Overload accepts an array of data source names and an array of data sources. Learn more about support of multiple data sources in [this](https://docs.groupdocs.com/assembly/net/working-with-multiple-data-sources/) article.
 
 ## Template Formats, Elements and Syntax
 

@@ -22,6 +22,6 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Assembly for Java Release Notes]({{< ref "assembly/java/release-notes/_index.md" >}})
 *   [GroupDocs.Assembly for Java Product Page](https://products.groupdocs.com/assembly/java)
 *   [Download GroupDocs.Assembly for Java ](https://artifact.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-assembly)
-*   [GroupDocs.Assembly for Java API Reference Guide](https://apireference.groupdocs.com/java/assembly)
+*   [GroupDocs.Assembly for Java API Reference Guide](https://reference.groupdocs.com/java/assembly)
 *   [GroupDocs.Assembly for Java Free Support Forum](https://forum.groupdocs.com/c/assembly)
 *   [GroupDocs.Assembly for Java Paid Support Helpdesk](https://helpdesk.groupdocs.com/)

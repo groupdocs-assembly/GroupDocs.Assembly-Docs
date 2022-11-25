@@ -10,9 +10,9 @@ hideChildren: False
 ---
 Following classes are added in **GroupDocs.Assembly.Data** namespace:
 
-*   [DataTable](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable "class in com.groupdocs.assembly.system.data")
-*   [DataColumn](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataColumn "class in com.groupdocs.assembly.system.data")
-*   [DataColumnCollection](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataColumnCollection "class in com.groupdocs.assembly.system.data")
+*   [DataTable](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable "class in com.groupdocs.assembly.system.data")
+*   [DataColumn](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataColumn "class in com.groupdocs.assembly.system.data")
+*   [DataColumnCollection](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataColumnCollection "class in com.groupdocs.assembly.system.data")
 
 ## The Recipe
 

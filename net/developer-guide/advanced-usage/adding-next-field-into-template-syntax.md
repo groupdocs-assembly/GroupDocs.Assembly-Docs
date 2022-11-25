@@ -24,7 +24,7 @@ We provide support for the following products:
 
 *   Set up the source document template path
 *   Set up destination report path
-*   Instantiate [DocumentAssembler](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler) class
+*   Instantiate [DocumentAssembler](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler) class
 *   Generate report
 
 ### Download Template

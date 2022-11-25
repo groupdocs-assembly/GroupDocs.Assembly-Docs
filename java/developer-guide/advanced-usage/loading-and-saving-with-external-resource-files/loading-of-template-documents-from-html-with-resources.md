@@ -12,7 +12,7 @@ hideChildren: False
 
 # Loading of template documents from HTML with resources
 
-[GroupDocs.Assembly](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-summary) provides a great feature which is loading of HTML template documents referencing external resource files to be assembled and saved to non-HTML formats. 
+[GroupDocs.Assembly](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-summary) provides a great feature which is loading of HTML template documents referencing external resource files to be assembled and saved to non-HTML formats. 
 
 Since version 19.5, when loading an HTML document from a file, its containing folder is used as a base URI to resolve external resource files' relative URIs to absolute ones by default as shown in the following example. The following code snippet shows the way of API usage:
 

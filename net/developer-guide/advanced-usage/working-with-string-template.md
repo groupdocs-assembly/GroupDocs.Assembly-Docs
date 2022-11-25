@@ -10,8 +10,8 @@ hideChildren: False
 ---
 GroupDocs.Assembly API allows you to use a string as input and output template, instead of document. This feature improves programmability while working with strings instead of documents, the resultant output string can be used as per the application needs. Follow these steps to using a string as input and output template:
 
-*   Initialize [DocumentAssembler](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler)
+*   Initialize [DocumentAssembler](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler)
 *   Define **sourceString @"<<\[yourValue\]>>"**
 *   Convert sourceString to **sourceBytes** using **Encoding.UTF8.GetBytes(sourceString)**
-*   Get**targetBytes** using [DocumentAssembler.AssembleDocument()](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler/methods/assembledocument/index)
+*   Get**targetBytes** using [DocumentAssembler.AssembleDocument()](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler/methods/assembledocument/index)
 *   Get **targetString** using **Encoding.UTF8.GetString(targetBytes)**

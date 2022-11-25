@@ -10,12 +10,12 @@ hideChildren: False
 ---
 ## Define Relations Between Document Table Instances
 
-API provides ability to define relations between [DocumentTable](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable) instances loaded from a single document. The following classes of the [GroupDocs.Assembly.Data](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace have been added:
+API provides ability to define relations between [DocumentTable](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable) instances loaded from a single document. The following classes of the [GroupDocs.Assembly.Data](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace have been added:
 
-*   [DocumentTableRelation](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablerelation)
-*   [DocumentTableRelationCollection](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablerelationcollection)
+*   [DocumentTableRelation](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablerelation)
+*   [DocumentTableRelationCollection](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablerelationcollection)
 
-Moreover, the **Relations** property of the [GroupDocs.Assembly.Data.DocumentTableSet](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset) class has been added.
+Moreover, the **Relations** property of the [GroupDocs.Assembly.Data.DocumentTableSet](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset) class has been added.
 
 ### Data Source Document
 
