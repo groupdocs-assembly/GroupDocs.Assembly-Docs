@@ -12,12 +12,12 @@ hideChildren: False
 
 ## Using Spreadsheets as Data Sources
 
-Following classes are added in [GroupDocs.Assembly.Data](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace:
+Following classes are added in [GroupDocs.Assembly.Data](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/) namespace:
 
-*   [DocumentTable](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable)
-*   [DocumentTableColumn](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumn)
-*   [DocumentTableColumnCollection](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumncollection)
-*   [DocumentTableOptions](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableoptions)
+*   [DocumentTable](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttable)
+*   [DocumentTableColumn](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumn)
+*   [DocumentTableColumnCollection](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumncollection)
+*   [DocumentTableOptions](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableoptions)
 
 ## The Recipe
 

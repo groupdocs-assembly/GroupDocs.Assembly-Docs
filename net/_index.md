@@ -22,6 +22,6 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Assembly for .NET Release Notes]({{< ref "assembly/net/release-notes/_index.md" >}})
 *   [GroupDocs.Assembly for .NET Product Page](https://products.groupdocs.com/assembly/net)
 *   [Install GroupDocs.Assembly for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Assembly/)
-*   [GroupDocs.Assembly for .NET API Reference Guide](https://apireference.groupdocs.com/net/assembly)
+*   [GroupDocs.Assembly for .NET API Reference Guide](https://reference.groupdocs.com/net/assembly)
 *   [GroupDocs.Assembly for .NET Free Support Forum](https://forum.groupdocs.com/c/assembly)
 *   [GroupDocs.Assembly for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)

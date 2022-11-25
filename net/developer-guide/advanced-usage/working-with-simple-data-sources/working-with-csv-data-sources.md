@@ -10,7 +10,7 @@ hideChildren: False
 ---
 {{< alert style="info" >}}This feature is only compatible with GroupDocs.Assembly for .NET 19.10 or later releases.{{< /alert >}}
 
-To access CSV data while building a report, you can pass a [CsvDataSource](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource) instance to the assembler as a data source. Using of *CsvDataSource* enables you to work with typed values rather than just strings in template documents. Although CSV as a format does not define a way to store values of types other than strings, *CsvDataSource* is capable to recognize values of the following types by their string representations:
+To access CSV data while building a report, you can pass a [CsvDataSource](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource) instance to the assembler as a data source. Using of *CsvDataSource* enables you to work with typed values rather than just strings in template documents. Although CSV as a format does not define a way to store values of types other than strings, *CsvDataSource* is capable to recognize values of the following types by their string representations:
 
 *   Int32?
 *   Int64?
@@ -22,7 +22,7 @@ To access CSV data while building a report, you can pass a [CsvDataSource](http
 
 ### Treating simple CSV data
 
-In template documents, a [CsvDataSource ](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource)instance should be treated in the same way as if it was a *DataTable* instance (see "[Working with *DataTable* and *DataView* Objects](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-data-sources)" for more information) as shown in the following example.
+In template documents, a [CsvDataSource ](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource)instance should be treated in the same way as if it was a *DataTable* instance (see "[Working with *DataTable* and *DataView* Objects](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-data-sources)" for more information) as shown in the following example.
 
 Suppose we have CSV data like:
 ```
@@ -51,7 +51,7 @@ Average age: 36
 
 ### Configure data source to read column names
 
-By default, [CsvDataSource ](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource)uses column names such as "*Column1*", "*Column2*", and so on, as you can see from the previous example. However, *CsvDataSource* can be configured to read column names from the first line of CSV data as shown in the following example.
+By default, [CsvDataSource ](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource)uses column names such as "*Column1*", "*Column2*", and so on, as you can see from the previous example. However, *CsvDataSource* can be configured to read column names from the first line of CSV data as shown in the following example.
 
 Suppose we have CSV data like:
 ```

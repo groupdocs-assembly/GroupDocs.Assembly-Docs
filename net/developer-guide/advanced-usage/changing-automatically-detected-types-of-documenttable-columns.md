@@ -8,9 +8,9 @@ keywords:
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 ---
-API provides the ability to change automatically detected types of DocumentTable columns. The **Type** property setter has been added to the [GroupDocs.Assembly.Data.DocumentTableColumn](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumn) class.
+API provides the ability to change automatically detected types of DocumentTable columns. The **Type** property setter has been added to the [GroupDocs.Assembly.Data.DocumentTableColumn](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttablecolumn) class.
 
-Moreover, The **Relations** property of the [GroupDocs.Assembly.Data.DocumentTableSet](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset) class has been added.
+Moreover, The **Relations** property of the [GroupDocs.Assembly.Data.DocumentTableSet](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/documenttableset) class has been added.
 
 ## Data Source Document
 

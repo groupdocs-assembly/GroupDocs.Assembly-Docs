@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## Download from GitHub
 
-The complete examples package of **[GroupDocs.Assembly](https://apireference.groupdocs.com/net/assembly)** is hosted on [Github](https://github.com/groupdocsassembly/GroupDocs_Assembly_NET). You can either download the ZIP file from [here](https://github.com/groupdocsassembly/GroupDocs_Assembly_NET/archive/master.zip) or clone the repository of Github using your favorite Github client.
+The complete examples package of **[GroupDocs.Assembly](https://reference.groupdocs.com/net/assembly)** is hosted on [Github](https://github.com/groupdocsassembly/GroupDocs_Assembly_NET). You can either download the ZIP file from [here](https://github.com/groupdocsassembly/GroupDocs_Assembly_NET/archive/master.zip) or clone the repository of Github using your favorite Github client.
 
 In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
 

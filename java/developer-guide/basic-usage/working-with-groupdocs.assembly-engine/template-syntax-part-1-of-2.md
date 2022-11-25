@@ -12,7 +12,7 @@ hideChildren: False
 
 ## Composing Template
 
-A typical template for [GroupDocs.Assembly](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-frame) Engine is composed of common document contents and tags that describe the template's structure and data bindings. You can form these tags using just running text that can occupy multiple paragraphs to be more descriptive.
+A typical template for [GroupDocs.Assembly](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-frame) Engine is composed of common document contents and tags that describe the template's structure and data bindings. You can form these tags using just running text that can occupy multiple paragraphs to be more descriptive.
 
 A tag body must meet the following requirements:
 
@@ -73,7 +73,7 @@ The feature of the omitting of an object identifier while accessing the object's
 
 ### Using Types
 
-[GroupDocs.Assembly](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-frame) Engine enables you to use external visible types in template expressions. A `visible type` is a public type with outer types (if any) are public as well. You can use a data source object of any visible type to pass it to the engine.
+[GroupDocs.Assembly](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly/package-frame) Engine enables you to use external visible types in template expressions. A `visible type` is a public type with outer types (if any) are public as well. You can use a data source object of any visible type to pass it to the engine.
 
 However, you can use the identifier of a visible type in template expressions only if the following additional requirements are met:
 
@@ -166,7 +166,7 @@ ds.Persons
 
 #### DataTable Objects
 
-GroupDocs.Assembly Engine enables you to treat [`DataTable`](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable) objects in template expressions as enumerations of their rows. That is, you can use template expressions evaluated to such objects in `foreach` tags (see [Outputting Sequential Data](https://docs.groupdocs.com/assembly/java/template-syntax-part-2-of-2/#outputting-sequential-data) for more information).
+GroupDocs.Assembly Engine enables you to treat [`DataTable`](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable) objects in template expressions as enumerations of their rows. That is, you can use template expressions evaluated to such objects in `foreach` tags (see [Outputting Sequential Data](https://docs.groupdocs.com/assembly/java/template-syntax-part-2-of-2/#outputting-sequential-data) for more information).
 
 Also, you can normally apply enumeration extension methods (see [Enumeration Extension Methods](https://docs.groupdocs.com/assembly/java/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information) to `DataTable` objects in template expressions. For example, given that persons is a `DataTable` instance, you can count its rows using the following syntax.
 
@@ -176,7 +176,7 @@ persons.count()
 
 #### DataTable Row Objects
 
-GroupDocs.Assembly Engine enables you to access a data associated with a particular [`DataTable`](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable) row instance in template expressions using the "." operator. The following table describes, which identifiers you can use to access different kinds of the data.
+GroupDocs.Assembly Engine enables you to access a data associated with a particular [`DataTable`](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataTable) row instance in template expressions using the "." operator. The following table describes, which identifiers you can use to access different kinds of the data.
 
 | Data Kind       | Identifier | Examples of Template Expressions                             |
 | --------------- | ---------- | ------------------------------------------------------------ |
@@ -187,7 +187,7 @@ GroupDocs.Assembly Engine enables you to access a data associated with a particu
 
 **Note:** Field and table names are case-insensitive.
 
-To determine parent-child relationships for a particular `DataTable` instance, the engine uses [DataRelation](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataRelation) objects contained within the corresponding [`DataSet`](https://apireference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataSet) instance. Thus, you can manage these relationships in a common way.
+To determine parent-child relationships for a particular `DataTable` instance, the engine uses [DataRelation](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataRelation) objects contained within the corresponding [`DataSet`](https://reference.groupdocs.com/java/assembly/com.groupdocs.assembly.system.data/DataSet) instance. Thus, you can manage these relationships in a common way.
 
 ### Using Images
 

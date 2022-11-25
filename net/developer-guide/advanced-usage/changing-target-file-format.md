@@ -10,7 +10,7 @@ hideChildren: False
 ---
 {{< alert style="info" >}}This feature is supported by version 18.9. or greater{{< /alert >}}{{< alert style="info" >}}The code uses some of the objects defined in [The Business Layer](https://docs.groupdocs.com/assembly/net/the-business-layer/).{{< /alert >}}
 
-GroupDocs.Assembly provides a powerful feature to change the target file format of an assembled document using file extension or explicit specification. [GroupDocs.Assembly](https://apireference.groupdocs.com/net/assembly/groupdocs.assembly/) API provides the ability to change target file format when assembling the following file formats:
+GroupDocs.Assembly provides a powerful feature to change the target file format of an assembled document using file extension or explicit specification. [GroupDocs.Assembly](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/) API provides the ability to change target file format when assembling the following file formats:
 
 *   Word Processing documents
 *   Spreadsheet documents 
