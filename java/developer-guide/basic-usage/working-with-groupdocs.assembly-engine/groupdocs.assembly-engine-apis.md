@@ -722,6 +722,28 @@ assembler.knownTypes.add(typeof(ImageUtil));
 assembler.assembleDocument(...);
 ```
 
+### Accessing Missing Members of Data Objects
+
+By default, GroupDocs.Assembly forbids access to missing members of data objects used to build a report in template expressions, since such access is forbidden by C# Language Specification 5.0. On attempt to use a missing member of a data object, the assembler throws an exception then.
+
+But in some scenarios, members of data objects are not exactly known while designing a template. For example, if using a `DataSet` instance loaded from XML without its schema defined, some of expected data members can be missing.
+
+To support such scenarios, the assembler provides an option to treat missing members of data objects as null literals. You can enable the option as shown in the following example.
+
+```java
+ReportingEngine engine = new ReportingEngine();
+engine.setOptions(ReportBuildOptions.ALLOW_MISSING_MEMBERS);
+engine.buildReport(...);
+```
+
+Consider the following example. Given that `r` is a `DataRow` instance that does not have a field `Missing`, by default, the following template expression causes the assembler to throw an exception while building a report.
+
+```java
+<<[r.Missing]>>
+```
+
+However, if `DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS` is applied, the assembler treats access to such a field as a null literal, so no exception is thrown and simply no value is written to the report then.
+
 ### Optimizing Reflection Calls
 
 GroupDocs.Assembly Engine uses reflection calls while accessing members of custom external types. However, reflection calls are much slower than direct calls, which creates a performance overhead.
