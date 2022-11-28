@@ -731,9 +731,9 @@ But in some scenarios, members of data objects are not exactly known while desig
 To support such scenarios, the assembler provides an option to treat missing members of data objects as null literals. You can enable the option as shown in the following example.
 
 ```java
-ReportingEngine engine = new ReportingEngine();
-engine.setOptions(ReportBuildOptions.ALLOW_MISSING_MEMBERS);
-engine.buildReport(...);
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.setOptions(DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS);
+assembler.assembleDocument(...);
 ```
 
 Consider the following example. Given that `r` is a `DataRow` instance that does not have a field `Missing`, by default, the following template expression causes the assembler to throw an exception while building a report.
