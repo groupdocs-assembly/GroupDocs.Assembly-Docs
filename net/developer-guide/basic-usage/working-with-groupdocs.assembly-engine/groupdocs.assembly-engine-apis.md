@@ -761,6 +761,36 @@ Although this strategy can significantly minimize the reflection usage in a long
 
 You can control the enabling of the strategy through the `DocumentAssembler.UseReflectionOptimization` static property. By default, the strategy is enabled.
 
+### Integrating with Native Spreadsheet Data Types
+
+By default, GroupDocs.Assembly outputs expression results as string values regardless of expression types. In most scenarios, this is the best option, since expression results can be formatted through template syntax depending on expression types. However, for Spreadsheet documents, this may interfere calculation of formulas expecting values of types other than string. To overcome this, GroupDocs.Assembly provides integration with native Spreadsheet data types, which can be enabled as shown in the following code snippet.
+
+```csharp
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.Options |= DocumentAssemblyOptions.UseSpreadsheetDataTypes;
+
+assembler.AssembleDocument(...);
+```
+
+Let us show how it works by using an example. Let number be a numeric value. Then, consider the following template for a Spreadsheet cell.
+
+```csharp
+<<[number]>>
+```
+
+By default, while assembling a document, GroupDocs.Assembly converts `number` into a string using built-in .NET routines. However, when integration with native Spreadsheet data types is enabled, the cell’s value is written as a number, thus enabling to use it in Spreadsheet formulas expecting numbers.
+
+Integration with native Spreadsheet data types also affects formatting of the cell’s value: If a numeric format is defined for the cell (for example, using “Format Cells” context menu in Microsoft Excel), then the format is applied; otherwise, a default numeric format for cells is applied.
+
+**Note –** The same applies to other native Spreadsheet data types such as date-time and Boolean.
+The following table describes, in which cases integration with native Spreadsheet data types has no effect even when enabled.
+
+| Cell Template Syntax Example    | Explanation                                              |
+| ----------------------------------- | ------------------------------------------------------------ |
+| `<<[number]:ordinal>>`            | If an expression result is formatted using template syntax, it is written as a string. |
+| `Some text <<[number]>>`          | Presence of text other than template syntax makes a result cell value to become a string. |
+| `<<[number]>><<[anotherNumber]>>` | Results of multiple expressions in a single cell are converted to strings and concatenated. |
+
 ## Technical Considerations
 
 Here, we will reveal some technical aspects and implementation details related to the GroupDocs.Assembly Engine which can be useful for you while making design decisions for your applications.
