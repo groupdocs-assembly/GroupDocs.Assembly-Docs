@@ -18,8 +18,6 @@ Provided integration with native Spreadsheet data types.
 | :-------------- | :----------------------------------------------------- | :------- |
 | ASSEMBLYNET-222 | Support new type licenses                              | Feature  |
 | ASSEMBLYNET-224 | Provide integration with native Spreadsheet data types | Feature  |
-| ASSEMBLYNET-218 | TypeInitializationException is thrown in .NET 6        | Bug      |
-| ASSEMBLYNET-227 | GroupDocs.Assembly .NET 6 issue                        | Bug      |
 
 ## Public API and Backward Incompatible Changes
 

@@ -772,7 +772,7 @@ assembler.Options |= DocumentAssemblyOptions.UseSpreadsheetDataTypes;
 assembler.AssembleDocument(...);
 ```
 
-Let us show how it works by using an example. Let number be a numeric value. Then, consider the following template for a Spreadsheet cell.
+Let us show how it works by using an example. Let `number` be a numeric value. Then, consider the following template for a Spreadsheet cell.
 
 ```csharp
 <<[number]>>
@@ -783,6 +783,7 @@ By default, while assembling a document, GroupDocs.Assembly converts `number` in
 Integration with native Spreadsheet data types also affects formatting of the cell’s value: If a numeric format is defined for the cell (for example, using “Format Cells” context menu in Microsoft Excel), then the format is applied; otherwise, a default numeric format for cells is applied.
 
 **Note –** The same applies to other native Spreadsheet data types such as date-time and Boolean.
+
 The following table describes, in which cases integration with native Spreadsheet data types has no effect even when enabled.
 
 | Cell Template Syntax Example    | Explanation                                              |
