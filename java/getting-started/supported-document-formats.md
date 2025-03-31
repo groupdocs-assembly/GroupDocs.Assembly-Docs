@@ -62,6 +62,14 @@ The following table indicates the input and output file formats supported by Gro
 | [POT](https://wiki.fileformat.com/presentation/pot/) | PowerPoint template files created by PowerPoint 97-2003 versions | ![(tick)](/assembly/java/images/check.png) | ![(tick)](/assembly/java/images/check.png) | ![(tick)](/assembly/java/images/check.png) |   |
 | [OTP](https://wiki.fileformat.com/presentation/otp/) | OpenDocument Presentation Template | ![(tick)](/assembly/java/images/check.png) | ![(tick)](/assembly/java/images/check.png) | ![(tick)](/assembly/java/images/check.png) |   |
 
+
+{{< alert style="tip" >}}
+
+**Can’t find your file format?**
+We’re here to help! Please post a request on our [Free Support Forum](https://forum.groupdocs.com/c/assembly/15), and our team will assist you.
+
+{{< /alert >}}
+
 ### Supported Features Detail for Email File Formats
 
 The following table provides information on those GroupDocs.Assembly features that are partially supported or not supported at all for email file formats.  
