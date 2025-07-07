@@ -26,10 +26,6 @@ hideChildren: False
 
 ## Business Objects
 
-### Class Diagram
-
-![](https://raw.githubusercontent.com/groupdocsassembly/GroupDocs_Assembly_NET/master/Examples/Data/Data%20Sources/Database%20Backup/class.PNG)
-
 ### Custom Objects
 
 Here are our customer objects:
