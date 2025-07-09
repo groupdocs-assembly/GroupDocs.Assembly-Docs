@@ -10,7 +10,7 @@ productName: GroupDocs.Assembly for Python via .NET
 hideChildren: True
 fullWidth: True
 ---
-<img src="/assembly/python/images/home.png" alt="groupdocs-assembly-python-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/assembly/python-net/images/home.png" alt="groupdocs-assembly-python-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <img src="https://img.shields.io/pypi/v/groupdocs-assembly-net?label=GroupDocs.Assembly%20for%20Python%20PyPI
 " alt="PyPI package">
