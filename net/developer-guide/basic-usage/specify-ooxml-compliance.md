@@ -2,7 +2,7 @@
 id: assembly-basic-usage-ooxml-compliance
 url: assembly/net/basic-usage-ooxml-compliance
 title: Specify OOXML Compliance Level for Word Documents in C#
-weight: 18
+weight: 19
 description: "Control the OOXML compliance level (Ecma, Transitional, or Strict) when saving Word documents to OOXML formats using GroupDocs.Assembly for .NET."
 keywords: OOXML compliance, OoxmlCompliance, Ecma, Transitional, Strict, DOCX compliance, Word document compliance, ISO/IEC 29500
 productName: GroupDocs.Assembly for .NET
