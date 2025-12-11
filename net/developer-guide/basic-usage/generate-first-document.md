@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-first-document
 url: assembly/net/basic-usage-first-document
-title: Generate Your First Document from .NET Object in C#
+linktitle: Generate Your First Document
+title: Generate Your First Document from .NET Object
 weight: 2
 description: "Create your first document by generating a simple report from an in-memory .NET object using GroupDocs.Assembly for .NET."
 keywords: generate document, create report, first example, .NET object, C#, assemble, compose, build document

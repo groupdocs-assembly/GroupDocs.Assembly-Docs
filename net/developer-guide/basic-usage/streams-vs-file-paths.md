@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-streams-vs-files
 url: assembly/net/basic-usage-streams-vs-files
-title: Work with Streams vs File Paths in C#
+linktitle: Work with Streams vs File Paths
+title: Work with Streams vs File Paths
 weight: 14
 description: "Learn when and how to use streams versus file paths for template loading and document saving in .NET."
 keywords: streams, file paths, memory streams, file streams, stream handling, efficient processing, memory efficient

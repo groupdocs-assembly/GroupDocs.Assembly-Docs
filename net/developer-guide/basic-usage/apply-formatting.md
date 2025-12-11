@@ -1,6 +1,7 @@
 ---
 id: assembly-basic-usage-formatting
 url: assembly/net/basic-usage-formatting
+linktitle: Apply Formatting for various types
 title: Apply Formatting to Numbers, Dates, and Text in C#
 weight: 22
 description: "Format numeric values, date-time values, and text strings in templates using format strings and functions."

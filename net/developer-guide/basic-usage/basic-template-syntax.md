@@ -1,6 +1,7 @@
 ---
 id: assembly-basic-usage-template-syntax-basics
 url: assembly/net/basic-usage-template-syntax-basics
+linktitle: Basic Template Syntax
 title: Basic Template Syntax - Expression Tags and Fields
 weight: 5
 description: "Introduction to basic template syntax including expression tags and simple field access in templates."

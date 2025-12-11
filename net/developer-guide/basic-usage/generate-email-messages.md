@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-generate-emails
 url: assembly/net/basic-usage-generate-emails
-title: Generate Email Messages from Data in C#
+linktitle: Generate Email Messages
+title: Generate Email Messages from Data
 weight: 29
 description: "Create email messages with dynamic subject, body, and recipients from data sources using templates."
 keywords: generate emails, email messages, email subject, email body, email recipients, MSG, EML, compose emails

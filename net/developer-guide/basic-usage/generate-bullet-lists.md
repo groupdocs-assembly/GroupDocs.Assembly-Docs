@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-generate-bullet-lists
 url: assembly/net/basic-usage-generate-bullet-lists
-title: Generate Bullet Lists from Data Source in C#
+linktitle: Generate Bullet Lists
+title: Generate Bullet Lists from Data Source
 weight: 16
 description: "Create bulleted lists in documents by iterating over data collections and displaying items as bullets."
 keywords: bullet lists, bulleted lists, foreach data band, list items, collection iteration, generate bullets

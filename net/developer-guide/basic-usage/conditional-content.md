@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-conditional-content
 url: assembly/net/basic-usage-conditional-content
-title: Add Conditional Content with If/Else in C#
+linktitle: Add Conditional Content
+title: Add Conditional Content with If/Else
 weight: 23
 description: "Display content conditionally in templates using if/elseif/else blocks based on data values."
 keywords: conditional content, if else, conditional blocks, conditional display, conditional formatting, if elseif

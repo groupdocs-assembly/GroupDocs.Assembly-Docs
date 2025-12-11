@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-load-template
 url: assembly/net/basic-usage-load-template
-title: Load Template Documents from File or Stream in C#
+linktitle: Load Template Documents
+title: Load Template Documents from File or Stream
 weight: 3
 description: "Learn how to load template documents from file paths and streams for document assembly in .NET applications."
 keywords: load template, file path, stream, template document, DOCX, XLSX, PPTX, load from file, load from stream

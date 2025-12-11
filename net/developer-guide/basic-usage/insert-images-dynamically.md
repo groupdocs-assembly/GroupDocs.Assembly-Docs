@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-generate-images
 url: assembly/net/basic-usage-generate-images
-title: Insert Images Dynamically in C#
+linktitle: Insert Images Dynamically
+title: Insert Images Dynamically
 weight: 20
 description: "Insert images into documents from file paths, URLs, or binary data sources during document assembly."
 keywords: insert images, dynamic images, image from file, image from URL, image from stream, generate images

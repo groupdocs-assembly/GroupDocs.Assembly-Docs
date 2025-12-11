@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-different-format-output
 url: assembly/net/basic-usage-different-format-output
-title: Generate Output in Different Format in C#
+linktitle: Generate Output in Different Format
+title: Generate Output in Different Format
 weight: 13
 description: "Convert assembled documents to different formats (e.g., DOCX to PDF, DOCX to HTML) during assembly."
 keywords: format conversion, PDF output, HTML output, convert format, change format, output format, DOCX to PDF

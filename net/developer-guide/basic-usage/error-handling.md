@@ -1,6 +1,7 @@
 ---
 id: assembly-basic-usage-error-handling
 url: assembly/net/basic-usage-error-handling
+linktitle: Handle Common Errors
 title: Handle Common Template and Data Errors
 weight: 31
 description: "Catch and handle common exceptions during document assembly and validate template syntax and data."

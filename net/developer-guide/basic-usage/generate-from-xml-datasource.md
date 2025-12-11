@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-xml-datasource
 url: assembly/net/basic-usage-xml-datasource
-title: Generate Document from XML Data Source in C#
+linktitle: Generate from XML
+title: Generate Document from XML Data Source
 weight: 7
 description: "Create reports from XML data sources using XmlDataSource class to load and bind XML data to templates."
 keywords: XML data source, XmlDataSource, XML binding, parse XML, generate from XML, assemble XML, compose from XML

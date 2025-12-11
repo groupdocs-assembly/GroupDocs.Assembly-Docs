@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-database-datasource
 url: assembly/net/basic-usage-database-datasource
-title: Generate Document from Database in C#
+linktitle: Generate from Database
+title: Generate Document from Database
 weight: 9
 description: "Create reports from database data using DataSet, DataTable, or IDataReader as data sources for templates."
 keywords: database, DataSet, DataTable, ADO.NET, SQL, database binding, generate from database, assemble from database

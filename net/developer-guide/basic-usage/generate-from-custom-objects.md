@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-custom-objects
 url: assembly/net/basic-usage-custom-objects
-title: Generate Document from Custom .NET Objects in C#
+linktitle: Generate from Custom Objects
+title: Generate Document from Custom .NET Objects
 weight: 6
 description: "Generate documents by binding data from custom .NET classes and objects to template documents."
 keywords: custom objects, .NET classes, object properties, data binding, C# objects, assemble document, generate from objects

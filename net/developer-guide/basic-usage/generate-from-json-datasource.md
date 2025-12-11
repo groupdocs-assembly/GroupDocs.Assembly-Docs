@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-json-datasource
 url: assembly/net/basic-usage-json-datasource
-title: Generate Document from JSON Data Source in C#
+linktitle: Generate from JSON
+title: Generate Document from JSON Data Source
 weight: 8
 description: "Build documents from JSON data sources using JsonDataSource class to load and bind JSON data to templates in .NET applications."
 keywords: JSON data source, JsonDataSource, JSON binding, parse JSON, generate from JSON, compose JSON, assemble JSON

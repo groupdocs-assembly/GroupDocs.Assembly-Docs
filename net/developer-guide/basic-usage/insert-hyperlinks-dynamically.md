@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-insert-hyperlinks
 url: assembly/net/basic-usage-insert-hyperlinks
-title: Insert Hyperlinks Dynamically in C#
+linktitle: Insert Hyperlinks Dynamically
+title: Insert Hyperlinks Dynamically
 weight: 21
 description: "Create hyperlinks in documents with URLs and text dynamically set from data sources during assembly."
 keywords: insert hyperlinks, dynamic hyperlinks, link URLs, hyperlink text, clickable links, generate links

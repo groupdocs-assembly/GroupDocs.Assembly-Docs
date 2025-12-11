@@ -1,7 +1,8 @@
 ---
 id: assembly-basic-usage-aggregates
 url: assembly/net/basic-usage-aggregates
-title: Use Simple Aggregates (Sum, Count, Average) in C#
+linktitle: Use Simple Aggregates
+title: Use Simple Aggregates (Sum, Count, Average)
 weight: 24
 description: "Calculate and display aggregate values like sums, counts, and averages from data collections in templates."
 keywords: aggregates, sum, count, average, totals, calculations, aggregate functions, LINQ aggregates

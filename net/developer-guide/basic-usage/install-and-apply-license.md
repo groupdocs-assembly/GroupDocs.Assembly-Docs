@@ -1,6 +1,7 @@
 ---
 id: assembly-basic-usage-install-license
 url: assembly/net/basic-usage-install-and-license
+linktitle: Install and Apply License
 title: Install GroupDocs.Assembly for .NET and Apply License
 weight: 1
 description: "Learn how to install GroupDocs.Assembly via NuGet and apply a license to remove evaluation limitations in your .NET applications."

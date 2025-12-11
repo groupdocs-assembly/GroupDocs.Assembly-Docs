@@ -1,6 +1,7 @@
 ---
 id: assembly-basic-usage-same-format-output
 url: assembly/net/basic-usage-same-format-output
+linktitle: Generate Output in Same Format
 title: Generate Output in Same Format as Template
 weight: 12
 description: "Save assembled documents in the same format as the template (e.g., DOCX to DOCX, XLSX to XLSX)."
