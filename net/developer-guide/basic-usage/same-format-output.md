@@ -6,7 +6,7 @@ weight: 12
 description: "Save assembled documents in the same format as the template (e.g., DOCX to DOCX, XLSX to XLSX)."
 keywords: same format, output format, save document, preserve format, DOCX output, XLSX output, PPTX output
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

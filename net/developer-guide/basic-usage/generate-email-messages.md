@@ -6,7 +6,7 @@ weight: 29
 description: "Create email messages with dynamic subject, body, and recipients from data sources using templates."
 keywords: generate emails, email messages, email subject, email body, email recipients, MSG, EML, compose emails
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

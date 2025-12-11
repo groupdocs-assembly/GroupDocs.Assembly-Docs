@@ -2,7 +2,7 @@
 id: basic-usage
 url: assembly/net/basic-usage
 title: Basic Usage
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Assembly for .NET

@@ -6,7 +6,7 @@ weight: 7
 description: "Create reports from XML data sources using XmlDataSource class to load and bind XML data to templates."
 keywords: XML data source, XmlDataSource, XML binding, parse XML, generate from XML, assemble XML, compose from XML
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

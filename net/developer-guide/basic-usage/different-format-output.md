@@ -6,7 +6,7 @@ weight: 13
 description: "Convert assembled documents to different formats (e.g., DOCX to PDF, DOCX to HTML) during assembly."
 keywords: format conversion, PDF output, HTML output, convert format, change format, output format, DOCX to PDF
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ weight: 19
 description: "Control the OOXML compliance level (Ecma, Transitional, or Strict) when saving Word documents to OOXML formats using GroupDocs.Assembly for .NET."
 keywords: OOXML compliance, OoxmlCompliance, Ecma, Transitional, Strict, DOCX compliance, Word document compliance, ISO/IEC 29500
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

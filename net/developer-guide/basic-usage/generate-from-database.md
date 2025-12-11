@@ -6,7 +6,7 @@ weight: 9
 description: "Create reports from database data using DataSet, DataTable, or IDataReader as data sources for templates."
 keywords: database, DataSet, DataTable, ADO.NET, SQL, database binding, generate from database, assemble from database
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

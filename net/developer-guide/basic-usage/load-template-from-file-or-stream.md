@@ -6,7 +6,7 @@ weight: 3
 description: "Learn how to load template documents from file paths and streams for document assembly in .NET applications."
 keywords: load template, file path, stream, template document, DOCX, XLSX, PPTX, load from file, load from stream
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

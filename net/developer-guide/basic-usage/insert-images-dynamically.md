@@ -6,7 +6,7 @@ weight: 20
 description: "Insert images into documents from file paths, URLs, or binary data sources during document assembly."
 keywords: insert images, dynamic images, image from file, image from URL, image from stream, generate images
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

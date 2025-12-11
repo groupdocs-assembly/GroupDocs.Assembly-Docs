@@ -6,7 +6,7 @@ weight: 5
 description: "Introduction to basic template syntax including expression tags and simple field access in templates."
 keywords: template syntax, expression tags, fields, basic syntax, template expressions, assemble, generate
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

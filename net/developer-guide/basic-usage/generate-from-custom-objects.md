@@ -6,7 +6,7 @@ weight: 6
 description: "Generate documents by binding data from custom .NET classes and objects to template documents."
 keywords: custom objects, .NET classes, object properties, data binding, C# objects, assemble document, generate from objects
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

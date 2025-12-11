@@ -6,7 +6,7 @@ weight: 21
 description: "Create hyperlinks in documents with URLs and text dynamically set from data sources during assembly."
 keywords: insert hyperlinks, dynamic hyperlinks, link URLs, hyperlink text, clickable links, generate links
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

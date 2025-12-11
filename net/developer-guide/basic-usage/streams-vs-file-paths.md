@@ -6,7 +6,7 @@ weight: 14
 description: "Learn when and how to use streams versus file paths for template loading and document saving in .NET."
 keywords: streams, file paths, memory streams, file streams, stream handling, efficient processing, memory efficient
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

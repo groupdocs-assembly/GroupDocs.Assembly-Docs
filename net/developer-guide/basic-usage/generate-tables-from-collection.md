@@ -6,7 +6,7 @@ weight: 15
 description: "Create dynamic tables in documents by iterating over collections and displaying data in table rows using GroupDocs.Assembly for .NET."
 keywords: generate tables, table reports, foreach data band, table rows, collection data, tabular data, dynamic tables
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

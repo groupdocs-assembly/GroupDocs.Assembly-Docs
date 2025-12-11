@@ -6,7 +6,7 @@ weight: 23
 description: "Display content conditionally in templates using if/elseif/else blocks based on data values."
 keywords: conditional content, if else, conditional blocks, conditional display, conditional formatting, if elseif
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

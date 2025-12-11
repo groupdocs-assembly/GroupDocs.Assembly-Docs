@@ -6,7 +6,7 @@ weight: 31
 description: "Catch and handle common exceptions during document assembly and validate template syntax and data."
 keywords: error handling, exceptions, template errors, data errors, validation, error catching, assembly errors
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

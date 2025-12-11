@@ -6,7 +6,7 @@ weight: 16
 description: "Create bulleted lists in documents by iterating over data collections and displaying items as bullets."
 keywords: bullet lists, bulleted lists, foreach data band, list items, collection iteration, generate bullets
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ weight: 22
 description: "Format numeric values, date-time values, and text strings in templates using format strings and functions."
 keywords: formatting, number format, date format, text format, format strings, numeric formatting, date formatting
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

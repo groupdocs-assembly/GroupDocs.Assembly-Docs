@@ -6,7 +6,7 @@ weight: 8
 description: "Build documents from JSON data sources using JsonDataSource class to load and bind JSON data to templates in .NET applications."
 keywords: JSON data source, JsonDataSource, JSON binding, parse JSON, generate from JSON, compose JSON, assemble JSON
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

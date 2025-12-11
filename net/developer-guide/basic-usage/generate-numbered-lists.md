@@ -6,7 +6,7 @@ weight: 17
 description: "Create numbered lists in documents by iterating over data collections and displaying items with numbers."
 keywords: numbered lists, numbered items, foreach data band, list numbering, ordered lists, generate numbered
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

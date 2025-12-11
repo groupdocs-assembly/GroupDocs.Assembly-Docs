@@ -6,7 +6,7 @@ weight: 2
 description: "Create your first document by generating a simple report from an in-memory .NET object using GroupDocs.Assembly for .NET."
 keywords: generate document, create report, first example, .NET object, C#, assemble, compose, build document
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

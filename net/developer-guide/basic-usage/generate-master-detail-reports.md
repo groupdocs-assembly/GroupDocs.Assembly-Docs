@@ -6,7 +6,7 @@ weight: 18
 description: "Create parent-child reports with nested data bands to display master records with their detail records."
 keywords: master detail, parent child, nested foreach, hierarchical data, orders and items, generate master detail
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

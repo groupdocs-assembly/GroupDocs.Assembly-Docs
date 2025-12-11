@@ -6,7 +6,7 @@ weight: 1
 description: "Learn how to install GroupDocs.Assembly via NuGet and apply a license to remove evaluation limitations in your .NET applications."
 keywords: install, NuGet, license, setup, configure, GroupDocs.Assembly, .NET, C#, apply license
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview

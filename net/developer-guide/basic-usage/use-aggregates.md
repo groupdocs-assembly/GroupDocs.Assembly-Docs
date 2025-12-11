@@ -6,7 +6,7 @@ weight: 24
 description: "Calculate and display aggregate values like sums, counts, and averages from data collections in templates."
 keywords: aggregates, sum, count, average, totals, calculations, aggregate functions, LINQ aggregates
 productName: GroupDocs.Assembly for .NET
-toc: True
+hideChildren: False
 ---
 
 ## Overview
