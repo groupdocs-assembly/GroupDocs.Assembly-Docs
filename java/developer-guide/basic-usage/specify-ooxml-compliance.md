@@ -1,6 +1,6 @@
 ---
 id: assembly-basic-usage-ooxml-compliance-java
-url: assembly/java/basic-usage-ooxml-compliance
+url: assembly/java/developer-guide/basic-usage/specify-ooxml-compliance
 linktitle: Specify OOXML Compliance
 title: Specify OOXML Compliance Level for Word Documents
 weight: 19
