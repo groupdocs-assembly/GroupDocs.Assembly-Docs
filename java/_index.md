@@ -43,6 +43,7 @@ GroupDocs.Assembly supports over [170 popular file formats](/assembly/java/suppo
 <ul>
     <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/working-with-a-business-case/business-case-of-manager-client-contract-system.md" >}}'>Business case of manager client contract system</a></li>
     <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/working-with-a-business-case/the-business-layer.md" >}}'>The business layer</a></li>
+    <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/specify-ooxml-compliance.md" >}}'>Specify OOXML Compliance</a></li>
     <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis.md" >}}'>GroupDocs.Assembly Engine APIs</a></li>
     <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2.md" >}}'>Template Syntax - Part 1 of 2</a></li>
     <li><a href='{{< ref "assembly/java/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2.md" >}}'>Template Syntax - Part 2 of 2</a></li>
