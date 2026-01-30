@@ -1,5 +1,5 @@
 ---
-id: assembly-basic-usage-ooxml-compliance
+id: assembly-basic-usage-ooxml-compliance-java
 url: assembly/java/basic-usage-ooxml-compliance
 linktitle: Specify OOXML Compliance
 title: Specify OOXML Compliance Level for Word Documents
