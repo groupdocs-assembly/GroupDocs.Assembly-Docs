@@ -1,6 +1,8 @@
 ---
 id: evaluation-limitations-and-licensing
 url: assembly/python-net/evaluation-limitations-and-licensing
+aliases:
+    - /assembly/python-net/licensing-and-subscription/
 title: Evaluation Limitations and Licensing
 weight: 5
 description: "GroupDocs.Assembly for Python provides different plans for purchase or offers a Free Trial and a 30-day Temporary License for evaluation."

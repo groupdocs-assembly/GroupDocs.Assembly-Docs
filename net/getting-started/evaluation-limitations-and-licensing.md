@@ -1,6 +1,8 @@
 ---
 id: evaluation-limitations-and-licensing
 url: assembly/net/evaluation-limitations-and-licensing
+aliases:
+    - /assembly/net/licensing-and-subscription/
 title: Evaluation Limitations and Licensing
 weight: 5
 description: ""

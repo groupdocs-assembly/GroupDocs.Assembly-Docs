@@ -44,7 +44,7 @@ Following sections show that how we can load from and save to Markdown documents
 
 ### Saving an Assembled Markdown Documents to Word Processing Docs
 
-Suppose, we have an assembled Markdown (MD) document ([ReadMe.md](attachments/85230860/85426211.md)) as template having the content as shown below:
+Suppose, we have an assembled Markdown (MD) document as template having the content as shown below:
 
 ```csharp
 # <<[product]>>
@@ -61,19 +61,19 @@ The following code snippet demonstrates the saving this MD document to a Word Pr
 
 {{< gist GroupDocsGists b06d6c5655c84fc772c6411d66016943 SaveMdtoWord_UsingExtension_19.8.cs >}}
 
-The resultant word document ([ReadMe Out.docx](attachments/85230860/85426210.docx)) is available for download.
+The resultant Word document is produced by the code snippet above.
 
 ### Saving an Assembled Word Processing Document or Email to Markdown
 
 {{< alert style="info" >}}The version 19.8 supports only assembled emails and Word Processing documents to save into Markdown format.{{< /alert >}}
 
-Suppose, we have a Word Processing template([ReadMe.docx](attachments/85230860/85426212.docx)) having the same content as above Markdown template.
+Suppose, we have a Word Processing template having the same content as above Markdown template.
 
 The following code snippet demonstrates the saving this assembled Word Processing document to a Markdown file.
 
 {{< gist GroupDocsGists b06d6c5655c84fc772c6411d66016943 SaveWordtoMD_UsingExtension_19.8.cs >}}
 
-The resultant word document ([ReadMe Out.md](attachments/85230860/85426213.md)) is available for download.
+The resultant Markdown document is produced by the code snippet above.
 
 ### Saving an Assembled Word Processing Document or Email to Markdown (Explicit)
 

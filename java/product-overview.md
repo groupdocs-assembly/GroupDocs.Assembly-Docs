@@ -44,7 +44,7 @@ If you are new to GroupDocs.Assembly, see the following topics first:
 
 * [System requirements](/assembly/java/system-requirements/)
 * [Installation](/assembly/java/installation/)
-* [Licensing](/assembly/java/licensing-and-subscription/)
+* [Licensing](/assembly/java/evaluation-limitations-and-licensing/)
 
 ## Technical support
 

@@ -122,8 +122,4 @@ F & Partners (Manager: Tony Anderson)
 	3.	Carpet Cleaning
 ```
 
-Download Numbered List Template
 
-Please download the sample Numbered List template we created in this article:
-
-*    [Numbered List\_RestartNum.docx](attachments/29360197/85426183.docx) (Template for DataBase, DataSet and JSON Data examples)

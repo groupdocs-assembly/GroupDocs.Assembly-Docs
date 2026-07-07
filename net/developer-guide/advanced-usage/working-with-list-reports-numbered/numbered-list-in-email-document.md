@@ -110,8 +110,3 @@ John Smith (+458789)
 	1.	Oven Cleaning
 ```
 
-## Download Numbered List Template
-
-Please download the sample Numbered List template we created in this article:
-
-*   [Numbered List\_RestartNum.msg](attachments/50266283/85426182.msg)

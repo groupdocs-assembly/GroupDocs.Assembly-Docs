@@ -44,7 +44,7 @@ If you are new to GroupDocs.Assembly, see the following topics first:
 
 * [System requirements](/assembly/net/system-requirements/)
 * [Installation](/assembly/net/installation/)
-* [Licensing](/assembly/net/licensing-and-subscription/)
+* [Licensing](/assembly/net/evaluation-limitations-and-licensing/)
 
 ## Technical support
 

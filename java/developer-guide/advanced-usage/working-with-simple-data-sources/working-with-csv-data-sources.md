@@ -93,7 +93,3 @@ Also, you can use *CsvDataLoadOptions* to customize the following characters p
 #### Data Source Document
 
 *   [Person.csv](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Data%20Sources/XML%20DataSource/Managers.xml?raw=true)
-
-#### Template
-
-*   [Template Demo.txt](attachments/85819665/85917712.txt)

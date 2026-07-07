@@ -44,7 +44,7 @@ Following sections show that how we can load from and save to Markdown documents
 
 ### Saving an Assembled Markdown Documents to Word Processing Docs
 
-Suppose, we have an assembled Markdown (MD) document ([ReadMe.md](https://docs.groupdocs.com/download/attachments/85230860/ReadMe.md?version=1&modificationDate=1566999867974&api=v2)) as template having the content as shown below:
+Suppose, we have an assembled Markdown (MD) document as template having the content as shown below:
 
 ```java
 # <<[product]>>
@@ -61,19 +61,19 @@ The following code snippet demonstrates the saving this MD document to a Word Pr
 
 {{< gist GroupDocsGists a71a5d818455bbb866dc60349138fcd5 saveMdtoWord_UsingExtension_19.8.java >}}
 
-The resultant word document ([ReadMe Out.docx](https://docs.groupdocs.com/download/attachments/85230860/ReadMe%20Out.docx?version=1&modificationDate=1566999867970&api=v2)) is available for download.
+The resultant Word document is produced by the code snippet above.
 
 ### Saving an Assembled Word Processing Document or Email to Markdown
 
 {{< alert style="info" >}}The version 19.8 supports only assembled emails and Word Processing documents to save into Markdown format.{{< /alert >}}
 
-Suppose, we have a Word Processing template([ReadMe.docx](https://docs.groupdocs.com/download/attachments/85230860/ReadMe.docx?version=1&modificationDate=1567001059552&api=v2)) having the same content as above Markdown template.
+Suppose, we have a Word Processing template having the same content as above Markdown template.
 
  The following code snippet demonstrates the saving this assembled Word Processing document to a Markdown file.
 
 {{< gist GroupDocsGists a71a5d818455bbb866dc60349138fcd5 saveWordOrEmailtoMD_UsingExtension_19.8.java >}}
 
-The resultant word document ([ReadMe Out.md](https://docs.groupdocs.com/download/attachments/85230860/ReadMe%20Out.md?version=1&modificationDate=1567001143475&api=v2)) is available for download.
+The resultant Markdown document is produced by the code snippet above.
 
 ### Saving an Assembled Word Processing Document or Email to Markdown (Explicit)
 

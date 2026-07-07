@@ -210,7 +210,3 @@ Contracts:
 #### Data Source Document
 
 *   [Managers.xml](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Data%20Sources/XML%20DataSource/Managers.xml?raw=true)
-
-#### Template
-
-*   [SimpleDatasetDemo.docx](attachments/85819663/85917711.docx)

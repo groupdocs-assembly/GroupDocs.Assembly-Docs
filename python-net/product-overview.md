@@ -44,7 +44,7 @@ If you are new to GroupDocs.Assembly, see the following topics first:
 
 * [System requirements](/assembly/python-net/system-requirements/)
 * [Installation](/assembly/python-net/installation/)
-* [Licensing](/assembly/python-net/licensing-and-subscription/)
+* [Licensing](/assembly/python-net/evaluation-limitations-and-licensing/)
 
 ## Technical support
 
