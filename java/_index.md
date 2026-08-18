@@ -9,7 +9,7 @@ productName: GroupDocs.Assembly for Java
 hideChildren: True
 ---
 
-<img src="/assembly/java/images/home.png" alt="groupdocs-assembly-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/logo/128x128/groupdocs-assembly-java.png" alt="groupdocs-assembly-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 {{< button style="primary" link="https://releases.groupdocs.com/assembly/java/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
 {{< button style="primary" link="https://pypi.org/project/groupdocs-assembly" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
