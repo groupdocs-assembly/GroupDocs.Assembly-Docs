@@ -1,0 +1,5 @@
+[
+  { "Name": "John Smith", "Contracts": [ { "Price": 1200000 }, { "Price": 750000 }, { "Price": 350000 } ] },
+  { "Name": "Tony Anderson", "Contracts": [ { "Price": 650000 }, { "Price": 550000 } ] },
+  { "Name": "July James", "Contracts": [ { "Price": 350000 }, { "Price": 250000 } ] }
+]

@@ -19,6 +19,11 @@ Learn about the advanced features of GroupDocs.Assembly for Node.js via Java fro
 - [Defining Relations Between DocumentTable Instances Loaded from a Single Document](/assembly/nodejs-java/defining-relations-between-documenttable-instances-loaded-from-a-single-document/)
 - [Changing Automatically Detected Types of DocumentTable Columns](/assembly/nodejs-java/changing-automatically-detected-types-of-documenttable-columns/)
 
+## Lists and charts
+
+- [Working with List Reports - Bulleted](/assembly/nodejs-java/working-with-list-reports-bulleted/): [Bulleted List in Word Processing Document](/assembly/nodejs-java/bulleted-list-in-word-processing-document/)
+- [Working with Chart Reports - Pie](/assembly/nodejs-java/working-with-chart-reports-pie/): [Pie Chart in Presentation Document](/assembly/nodejs-java/pie-chart-in-presentation-document/)
+
 ## Output and assembly options
 
 - [Changing Target File Format](/assembly/nodejs-java/changing-target-file-format/)
