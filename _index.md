@@ -19,6 +19,7 @@ GroupDocs.Assembly is a document automation and reports generation API designed 
 <ul >
 <li><a href="#assembly_net">.NET</a></li>
 <li><a href="#assembly_java">Java</a></li>
+<li><a href="#assembly_nodejs-java">Node.js</a></li>
 <li><a href="#assembly_python-net">Python</a></li>
 </ul>
 </div>
@@ -110,6 +111,51 @@ GroupDocs.Assembly is a document automation and reports generation API designed 
         </div>
         <div class="gdoc-platform__footer">
             <a class="gdoc-platform__footer-btn"  href='/assembly/java/'>More</a>
+        </div>
+    </div>
+    <div class="gdoc-platform">
+    <a id="assembly_nodejs-java"></a>
+        <div class="gdoc-platform__header">
+            <svg class="gdoc-platform__header-icon"><use xlink:href="/img/groupdocs-stack.svg#nodejs"></use></svg>
+            <a class="gdoc-platform__header-title"  href='/assembly/nodejs-java/'>GroupDocs.Assembly for Node.js via Java</a>
+            <a class="gdoc-platform__header-btn"  href='/assembly/nodejs-java/'>More</a>
+        </div>
+        <div class="gdoc-platform__cols">
+            <div class="gdoc-platform__col">
+                <div class="gdoc-platform__col-title">
+                <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#time"></use></svg>
+                <div>Getting started</div></div>
+                <div class="gdoc-platform__col-descr">Start quickly with our getting started documentation</div>
+                <ul class="gdoc-platform__col-links">
+                <li> <a href='/assembly/nodejs-java/features-overview/'>Features overview</a></li>
+                <li> <a href='/assembly/nodejs-java/supported-document-formats/'>Supported document formats</a></li>
+                <li> <a href='/assembly/nodejs-java/system-requirements/'>System requirements</a></li>
+                <li> <a href='/assembly/nodejs-java/installation/'>Installation</a></li>
+                </ul>
+            </div>
+            <div class="gdoc-platform__col">
+                    <div class="gdoc-platform__col-title">
+                    <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
+                    <div>Developer guide</div></div>
+                    <div class="gdoc-platform__col-descr">Developer guide</div>
+                    <ul class="gdoc-platform__col-links">
+                    <li> <a href='/assembly/nodejs-java/basic-usage'>Basic Usage</a></li>
+                    <li> <a href='/assembly/nodejs-java/advanced-usage'>Advanced Usage</a></li>
+                    </ul>
+                    </div>
+            <div class="gdoc-platform__col">
+                    <div class="gdoc-platform__col-title">
+                    <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
+                    <div>Node.js resources</div></div>
+                    <div class="gdoc-platform__col-descr">Package and quick start</div>
+                    <ul class="gdoc-platform__col-links gdoc-platform__col-links--alt">
+                    <li> <a href='/assembly/nodejs-java/quick-start-guide/'>Quick start guide</a></li>
+                    <li> <a href='https://www.npmjs.com/package/@groupdocs/groupdocs.assembly'>npm package</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="gdoc-platform__footer">
+            <a class="gdoc-platform__footer-btn"  href='/assembly/nodejs-java/'>More</a>
         </div>
     </div>
     <div class="gdoc-platform">

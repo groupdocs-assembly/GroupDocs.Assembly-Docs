@@ -6,7 +6,7 @@ This repository contains Markdown files used to generate [GroupDocs.Assembly](ht
 
 [GroupDocs.Assembly](https://products.groupdocs.com/assembly/) is a document automation SDK that enables you to generate documents by assembling templates with data from various sources.
 
-Available for .NET, Java, and Python.
+Available for .NET, Java, Node.js, and Python.
 
 ## Repository Purpose
 

@@ -1,0 +1,9 @@
+{
+  "Customer": "Northwind Traders",
+  "Date": "2026-09-30T00:00:00",
+  "Items": [
+    { "Product": "Laptop", "Quantity": 2, "Price": 1250.5 },
+    { "Product": "Monitor", "Quantity": 3, "Price": 310 },
+    { "Product": "Keyboard", "Quantity": 5, "Price": 45.99 }
+  ]
+}
