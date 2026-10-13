@@ -15,8 +15,9 @@ hideChildren: False
 GroupDocs.Assembly for Java allows you to control the OOXML compliance level when saving Word documents to OOXML formats (DOCX, DOCM, DOTX, DOTM, FlatOpc, etc.). You can explicitly specify the compliance level or let the system automatically preserve the original document's compliance level.
 
 The main classes involved are:
-- [LoadSaveOptions](https://reference.groupdocs.com/assembly/java/groupdocs.assembly/loadsaveoptions/) - contains the OoxmlCompliance property
-- [DocumentAssembler](https://reference.groupdocs.com/assembly/java/groupdocs.assembly/documentassembler/) - assembles documents with specified compliance
+- [LoadSaveOptions](https://reference.groupdocs.com/assembly/java/com.groupdocs.assembly/loadsaveoptions/) - contains the OoxmlCompliance property
+- [OoxmlCompliance](https://reference.groupdocs.com/assembly/java/com.groupdocs.assembly/ooxmlcompliance/) - class with constants specifying compliance levels
+- [DocumentAssembler](https://reference.groupdocs.com/assembly/java/com.groupdocs.assembly/documentassembler/) - assembles documents with specified compliance
 
 Here are the steps to specify OOXML compliance:
 
@@ -62,7 +63,7 @@ public static void specifyExplicitCompliance() throws Exception
 }
 
 // Simple POJO for the data source (getters required for assembly engine)
-static class CompanyData
+public static class CompanyData
 {
     private String companyName;
     private int year;
@@ -79,7 +80,7 @@ static class CompanyData
 For maximum compatibility with older Office versions, use Transitional compliance:
 
 ```java
-import com.groupdocs.assembly;
+import com.groupdocs.assembly.*;
 
 public static void useTransitionalCompliance() throws Exception
 {
@@ -97,7 +98,7 @@ public static void useTransitionalCompliance() throws Exception
 }
 
 // POJO for the data source
-static class OrderData
+public static class OrderData
 {
     private String customerName;
     private String orderNumber;
@@ -132,7 +133,7 @@ public static void useEcmaCompliance() throws Exception
 }
 
 // POJO for the data source
-static class ReportData
+public static class ReportData
 {
     private String reportTitle;
     private String month;
@@ -169,7 +170,7 @@ public static void preserveOriginalCompliance() throws Exception
 }
 
 // POJO for the data source
-static class DocumentData
+public static class DocumentData
 {
     private String title;
     private String content;
@@ -216,7 +217,7 @@ public static void useWithDifferentFormats() throws Exception
 }
 
 // POJO for the data source
-static class ItemData
+public static class ItemData
 {
     private String name;
     private int value;
@@ -244,7 +245,7 @@ public static void useComplianceWithStreams() throws Exception
     options.setOoxmlCompliance(OoxmlCompliance.STRICT);
 
     CompanyData data = new CompanyData();
-    data.setCompany("My Company");
+    data.setCompanyName("My Company");
     data.setYear(2024);
 
     try (InputStream templateStream = new FileInputStream("Template.docx");
@@ -253,18 +254,6 @@ public static void useComplianceWithStreams() throws Exception
         assembler.assembleDocument(templateStream, outputStream, options,
             new DataSourceInfo(data, "company"));
     }
-}
-
-// POJO for the data source
-static class CompanyData
-{
-    private String company;
-    private int year;
-
-    public String getCompany() { return company; }
-    public void setCompany(String value) { this.company = value; }
-    public int getYear() { return year; }
-    public void setYear(int value) { this.year = value; }
 }
 ```
 
@@ -309,7 +298,7 @@ public static void demonstrateComplianceBehavior() throws Exception
 }
 
 // POJO for the data source
-static class DocData
+public static class DocData
 {
     private String title;
     private String content;
