@@ -1,0 +1,27 @@
+From: "Harbor Lane Provisions" <orders@harborlane.example>
+To: "Quayside Bistro" <orders@quaysidebistro.example>
+Subject: Invoice for order 10001
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart86_5a4f4a58-d3d5-42d4-be55-e21f69d47430"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart86_5a4f4a58-d3d5-42d4-be55-e21f69d47430
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear customer,=0A=
+=0A=
+Your invoice for order 10001 comes to 552=2E00 and is due by 13 February 20=
+15=2E=0A=
+=0A=
+Harbor Lane Provisions=0A=
+18 Quayside Road, Port Ellery
+----_=_NextPart86_5a4f4a58-d3d5-42d4-be55-e21f69d47430
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart86_5a4f4a58-d3d5-42d4-be55-e21f69d47430--
+

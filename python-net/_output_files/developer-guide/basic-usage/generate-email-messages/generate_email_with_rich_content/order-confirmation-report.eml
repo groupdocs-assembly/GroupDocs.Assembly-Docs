@@ -1,0 +1,28 @@
+From: "Harbor Lane Provisions" <orders@harborlane.example>
+To: orders@quaysidebistro.example
+Subject: Order Confirmation
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart76_a4018a24-133a-426c-a90f-f2b8520f8876"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart76_a4018a24-133a-426c-a90f-f2b8520f8876
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Quayside Bistro,=0A=
+=0A=
+Thank you for your order=2E Here are your items:=0A=
+=0A=
+=E2=80=A2 Harbor Blend whole bean coffee - $18=2E40=0A=
+=E2=80=A2 Aged harbour cheddar - $16=2E50=0A=
+=0A=
+Total: $34=2E90
+----_=_NextPart76_a4018a24-133a-426c-a90f-f2b8520f8876
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart76_a4018a24-133a-426c-a90f-f2b8520f8876--
+

@@ -1,0 +1,28 @@
+# GroupDocs.Assembly documentation
+
+> On-premise SDK docs for document automation and report generation: filling Microsoft Office, OpenDocument, email, HTML, Markdown and text templates with data from objects, JSON, XML, CSV and document tables, and saving the reports as DOCX, XLSX, PPTX, PDF, HTML, email and more.
+> Platforms: net | java | nodejs-java | python-net
+> .NET TFMs: a metapackage over net40-client, net462, netstandard2.0, net6.0, net8.0 and net10.0 builds (since 26.6)
+
+## Hubs
+
+- https://docs.groupdocs.com/assembly/net/
+- https://docs.groupdocs.com/assembly/java/
+- https://docs.groupdocs.com/assembly/nodejs-java/
+- https://docs.groupdocs.com/assembly/python-net/
+
+## Formats (authoritative tables)
+
+- https://docs.groupdocs.com/assembly/net/supported-document-formats/
+- https://docs.groupdocs.com/assembly/java/supported-document-formats/
+- https://docs.groupdocs.com/assembly/nodejs-java/supported-document-formats/
+- https://docs.groupdocs.com/assembly/python-net/supported-document-formats/
+
+## Related surfaces
+
+- Products: https://products.groupdocs.com/assembly/
+- Releases: https://releases.groupdocs.com/assembly/
+- API reference: https://reference.groupdocs.com/assembly/
+- Python agent guide: https://docs.groupdocs.com/assembly/python-net/agents-and-llm-integration/
+- MCP (link only): https://docs.groupdocs.com/mcp
+- Agent guide in-repo: AGENTS.md

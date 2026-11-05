@@ -1,0 +1,13 @@
+From: "Harbor Lane Provisions" <orders@harborlane.example>
+To: "<<[order.Email]>>" <recipient@harborlane.example>
+Subject: <<[order.Subject]>>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear <<[order.CustomerName]>>,
+
+Thank you for your order. Here are your items:
+
+<<foreach [in order.Items]>>• <<[ProductName]>> - <<[Price]:"C">>
+<</foreach>>
+Total: <<[order.Items.Sum(i => i.Price)]:"C">>

@@ -1,0 +1,22 @@
+From: accounts@harborlane.example
+To: orders@quaysidebistro.example
+Subject: Statement for January 2015
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart82_c0670427-ca55-42ab-b1ee-ee4a727ea787"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart82_c0670427-ca55-42ab-b1ee-ee4a727ea787
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Your statement for January 2015 is ready=2E Reply to this message with any =
+questions=2E
+----_=_NextPart82_c0670427-ca55-42ab-b1ee-ee4a727ea787
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart82_c0670427-ca55-42ab-b1ee-ee4a727ea787--
+

@@ -1,0 +1,11 @@
+From: "Harbor Lane Provisions" <warehouse@harborlane.example>
+To: "Jonas Weber" <jonas.weber@harborlane.example>
+Subject: Tasks to complete
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Tasks to complete:
+
+<<foreach [in tasks]>><<[NumberOf()]>>. <<[Title]>> - <<[Description]>>
+<</foreach>>
+Harbor Lane Provisions

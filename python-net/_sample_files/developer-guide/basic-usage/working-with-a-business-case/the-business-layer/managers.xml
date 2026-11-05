@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Managers>
+  <Manager>
+    <Name>Mei Tanaka</Name>
+    <Contract>
+      <Client>
+        <Name>Harbourview Hotel</Name>
+      </Client>
+      <Price>120000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Quayside Bistro</Name>
+      </Client>
+      <Price>75000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Saltmarsh Deli</Name>
+      </Client>
+      <Price>35000</Price>
+    </Contract>
+  </Manager>
+  <Manager>
+    <Name>Daniel Reyes</Name>
+    <Contract>
+      <Client>
+        <Name>Lantern Street Café</Name>
+      </Client>
+      <Price>65000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Millbrook Market</Name>
+      </Client>
+      <Price>55000</Price>
+    </Contract>
+  </Manager>
+  <Manager>
+    <Name>Sofia Marino</Name>
+    <Contract>
+      <Client>
+        <Name>Pier Nine Kitchen</Name>
+      </Client>
+      <Price>35000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>The Copper Kettle</Name>
+      </Client>
+      <Price>25000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Driftwood Grill</Name>
+      </Client>
+      <Price>10000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Tidewater Tavern</Name>
+      </Client>
+      <Price>10000</Price>
+    </Contract>
+  </Manager>
+</Managers>

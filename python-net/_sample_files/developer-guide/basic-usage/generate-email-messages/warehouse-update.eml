@@ -1,0 +1,7 @@
+From: "Harbor Lane Provisions" <news@harborlane.example>
+To: "<<foreach [r in email.Recipients]>><<[r]>>; <</foreach>>" <recipients@harborlane.example>
+Subject: <<[email.Subject]>>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+<<[email.Message]>>

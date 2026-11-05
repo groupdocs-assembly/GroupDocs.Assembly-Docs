@@ -1,0 +1,9 @@
+From: "Harbor Lane Provisions" <accounts@harborlane.example>
+To: "<<[email.To]>>" <recipient@harborlane.example>
+Cc: "<<[email.Cc]>>" <copy@harborlane.example>
+Bcc: "<<[email.Bcc]>>" <blind-copy@harborlane.example>
+Subject: <<[email.Subject]>>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+<<[email.Body]>>

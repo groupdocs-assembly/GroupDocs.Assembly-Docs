@@ -1,0 +1,26 @@
+From: "Harbor Lane Provisions" <orders@harborlane.example>
+To: "Quayside Bistro" <orders@quaysidebistro.example>
+Subject: Our products
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart68_e3f2bad2-0906-4a9f-92f6-027fe4abd502"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart68_e3f2bad2-0906-4a9f-92f6-027fe4abd502
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+We provide the following products:=0A=
+=0A=
+=E2=80=A2 Harbor Blend whole bean coffee - Medium roast, roasted weekly=0A=
+=E2=80=A2 Aged harbour cheddar - Matured for two years=0A=
+=0A=
+Harbor Lane Provisions
+----_=_NextPart68_e3f2bad2-0906-4a9f-92f6-027fe4abd502
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart68_e3f2bad2-0906-4a9f-92f6-027fe4abd502--
+

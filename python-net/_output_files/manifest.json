@@ -1,0 +1,2349 @@
+{
+  "developer-guide/advanced-usage/adding-next-field-into-template-syntax#example1": {
+    "type": "file",
+    "file": "next-field-report.docx",
+    "path": "developer-guide/advanced-usage/adding-next-field-into-template-syntax/the_code/next-field-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/calculate-formula-while-assembling-spreadsheet-documents#example1": {
+    "type": "file",
+    "file": "update-field-report.xlsx",
+    "path": "developer-guide/advanced-usage/calculate-formula-while-assembling-spreadsheet-documents/the_code/update-field-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/changing-automatically-detected-types-of-documenttable-columns#example1": {
+    "type": "file",
+    "file": "changed-column-type-report.pptx",
+    "path": "developer-guide/advanced-usage/changing-automatically-detected-types-of-documenttable-columns/changing_document_table_column_type/changed-column-type-report.pptx",
+    "preview": "Binary file (PPTX, 36 KB)",
+    "function": "changing_document_table_column_type"
+  },
+  "developer-guide/advanced-usage/changing-background-color-dynamically#example1": {
+    "type": "file",
+    "file": "background-color-report.docx",
+    "path": "developer-guide/advanced-usage/changing-background-color-dynamically/the_code/background-color-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example1": {
+    "type": "file",
+    "file": "bubble-chart-report.pdf",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension/bubble-chart-report.pdf",
+    "preview": "Binary file (PDF, 44 KB)",
+    "function": "changing_target_file_format_using_file_extension"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example2": {
+    "type": "file",
+    "file": "conversion-template-report.pptx",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension_2/conversion-template-report.pptx",
+    "preview": "Binary file (PPTX, 38 KB)",
+    "function": "changing_target_file_format_using_file_extension_2"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example3": {
+    "type": "file",
+    "file": "conversion-template-report.pot",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension_3/conversion-template-report.pot",
+    "preview": "Binary file (POT, 180 KB)",
+    "function": "changing_target_file_format_using_file_extension_3"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example4": {
+    "type": "file",
+    "file": "conversion-template-report.otp",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension_4/conversion-template-report.otp",
+    "preview": "Binary file (OTP, 7 KB)",
+    "function": "changing_target_file_format_using_file_extension_4"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example5": {
+    "type": "file",
+    "file": "conversion-template-report.xlsx",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension_5/conversion-template-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "changing_target_file_format_using_file_extension_5"
+  },
+  "developer-guide/advanced-usage/changing-target-file-format#example6": {
+    "type": "file",
+    "file": "conversion-template-report.xlt",
+    "path": "developer-guide/advanced-usage/changing-target-file-format/changing_target_file_format_using_file_extension_6/conversion-template-report.xlt",
+    "preview": "Binary file (XLT, 14 KB)",
+    "function": "changing_target_file_format_using_file_extension_6"
+  },
+  "developer-guide/advanced-usage/defining-relations-between-documenttable-instances-loaded-from-a-single-document#example1": {
+    "type": "file",
+    "file": "table-relations-report.docx",
+    "path": "developer-guide/advanced-usage/defining-relations-between-documenttable-instances-loaded-from-a-single-document/using_document_table_relations/table-relations-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "using_document_table_relations"
+  },
+  "developer-guide/advanced-usage/inserting-documents-dynamically#example1": {
+    "type": "file",
+    "file": "inserting-document-report.docx",
+    "path": "developer-guide/advanced-usage/inserting-documents-dynamically/inserting_documents_dynamically/inserting-document-report.docx",
+    "preview": "Binary file (DOCX, 17 KB)",
+    "function": "inserting_documents_dynamically"
+  },
+  "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-bookmarks-dynamically#example1": {
+    "type": "file",
+    "file": "inserting-bookmark-report.docx",
+    "path": "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-bookmarks-dynamically/dynamic_insertion_of_bookmarks_for_word_processing_documents/inserting-bookmark-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "dynamic_insertion_of_bookmarks_for_word_processing_documents"
+  },
+  "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically#example1": {
+    "type": "file",
+    "file": "inserting-hyperlink-report.docx",
+    "path": "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically/word_processing_documents/inserting-hyperlink-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "word_processing_documents"
+  },
+  "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically#example2": {
+    "type": "file",
+    "file": "inserting-hyperlink-report.pptx",
+    "path": "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically/presentation_documents/inserting-hyperlink-report.pptx",
+    "preview": "Binary file (PPTX, 37 KB)",
+    "function": "presentation_documents"
+  },
+  "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically#example3": {
+    "type": "file",
+    "file": "inserting-hyperlink-report.xlsx",
+    "path": "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically/spreadsheet_documents/inserting-hyperlink-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "spreadsheet_documents"
+  },
+  "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically#example4": {
+    "type": "file",
+    "file": "inserting-hyperlink-report.msg",
+    "path": "developer-guide/advanced-usage/inserting-hyperlinks-or-bookmarks/inserting-hyperlinks-dynamically/email_documents/inserting-hyperlink-report.msg",
+    "preview": "Binary file (MSG, 16 KB)",
+    "function": "email_documents"
+  },
+  "developer-guide/advanced-usage/inserting-images-dynamically#example1": {
+    "type": "file",
+    "file": "inserting-image-report.docx",
+    "path": "developer-guide/advanced-usage/inserting-images-dynamically/inserting_images_dynamically/inserting-image-report.docx",
+    "preview": "Binary file (DOCX, 16 KB)",
+    "function": "inserting_images_dynamically"
+  },
+  "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/loading-of-template-documents-from-html-with-resources#example1": {
+    "type": "file",
+    "file": "externalresourcefiles-report.docx",
+    "path": "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/loading-of-template-documents-from-html-with-resources/loading_of_template_documents_from_html_with_resources/externalresourcefiles-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "loading_of_template_documents_from_html_with_resources"
+  },
+  "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/loading-of-template-documents-from-html-with-resources#example2": {
+    "type": "file",
+    "file": "externalresourcefiles-report.docx",
+    "path": "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/loading-of-template-documents-from-html-with-resources/loading_of_template_documents_from_html_with_resources_2/externalresourcefiles-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "loading_of_template_documents_from_html_with_resources_2"
+  },
+  "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/saving-to-html-with-external-resource-files#example1": {
+    "type": "zip",
+    "file": "saving-to-html-with-external-resource-files-outputs.zip",
+    "path": "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/saving-to-html-with-external-resource-files/saving_to_html_with_external_resource_files/saving-to-html-with-external-resource-files-outputs.zip",
+    "contents": [
+      "externalresourcefiles-report.htm",
+      "externalresourcefiles-report_files/Aspose.Words.165b7697-7df9-499c-92f6-dda9068177f6.001.jpeg"
+    ],
+    "preview": "externalresourcefiles-report.htm (698 bytes)\nexternalresourcefiles-report_files/Aspose.Words.165b7697-7df9-499c-92f6-dda9068177f6.001.jpeg (2 KB)",
+    "function": "saving_to_html_with_external_resource_files"
+  },
+  "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/saving-to-html-with-external-resource-files#example2": {
+    "type": "zip",
+    "file": "saving-to-html-with-external-resource-files-2-outputs.zip",
+    "path": "developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/saving-to-html-with-external-resource-files/saving_to_html_with_external_resource_files_2/saving-to-html-with-external-resource-files-2-outputs.zip",
+    "contents": [
+      "externalresourcefiles-report.htm",
+      "resources/Aspose.Words.5ece6732-d711-4035-b268-404c3fb6d420.001.jpeg"
+    ],
+    "preview": "externalresourcefiles-report.htm (725 bytes)\nresources/Aspose.Words.5ece6732-d711-4035-b268-404c3fb6d420.001.jpeg (2 KB)",
+    "function": "saving_to_html_with_external_resource_files_2"
+  },
+  "developer-guide/advanced-usage/loading-multiple-documenttable-objects-from-a-single-file-as-a-single-operation#example1": {
+    "type": "file",
+    "file": "several-tables-report.pptx",
+    "path": "developer-guide/advanced-usage/loading-multiple-documenttable-objects-from-a-single-file-as-a-single-operation/loading_documenttableset_using_default_options/several-tables-report.pptx",
+    "preview": "Binary file (PPTX, 36 KB)",
+    "function": "loading_documenttableset_using_default_options"
+  },
+  "developer-guide/advanced-usage/removing-empty-paragraphs#example1": {
+    "type": "file",
+    "file": "empty-paragraph-report.docx",
+    "path": "developer-guide/advanced-usage/removing-empty-paragraphs/removing_empty_paragraphs_in_word_processing_document/empty-paragraph-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "removing_empty_paragraphs_in_word_processing_document"
+  },
+  "developer-guide/advanced-usage/removing-empty-paragraphs#example2": {
+    "type": "file",
+    "file": "empty-paragraph-report.pptx",
+    "path": "developer-guide/advanced-usage/removing-empty-paragraphs/removing_empty_paragraphs_in_presentation_document/empty-paragraph-report.pptx",
+    "preview": "Binary file (PPTX, 33 KB)",
+    "function": "removing_empty_paragraphs_in_presentation_document"
+  },
+  "developer-guide/advanced-usage/removing-empty-paragraphs#example3": {
+    "type": "file",
+    "file": "empty-paragraph-report.msg",
+    "path": "developer-guide/advanced-usage/removing-empty-paragraphs/removing_empty_paragraphs_in_email_document/empty-paragraph-report.msg",
+    "preview": "Binary file (MSG, 16 KB)",
+    "function": "removing_empty_paragraphs_in_email_document"
+  },
+  "developer-guide/advanced-usage/set-checkbox-values-dynamically#example1": {
+    "type": "file",
+    "file": "checkbox-report.docx",
+    "path": "developer-guide/advanced-usage/set-checkbox-values-dynamically/set_checkbox_values_dynamically/checkbox-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "set_checkbox_values_dynamically"
+  },
+  "developer-guide/advanced-usage/set-checkbox-values-dynamically#example2": {
+    "type": "file",
+    "file": "dropdown-report.docx",
+    "path": "developer-guide/advanced-usage/set-checkbox-values-dynamically/set_checkbox_values_dynamically_2/dropdown-report.docx",
+    "preview": "Binary file (DOCX, 16 KB)",
+    "function": "set_checkbox_values_dynamically_2"
+  },
+  "developer-guide/advanced-usage/set-checkbox-values-dynamically#example3": {
+    "type": "file",
+    "file": "combobox-report.docx",
+    "path": "developer-guide/advanced-usage/set-checkbox-values-dynamically/set_checkbox_values_dynamically_3/combobox-report.docx",
+    "preview": "Binary file (DOCX, 15 KB)",
+    "function": "set_checkbox_values_dynamically_3"
+  },
+  "developer-guide/advanced-usage/updating-fields-while-assembling-word-processing-documents#example1": {
+    "type": "file",
+    "file": "update-field-report.docx",
+    "path": "developer-guide/advanced-usage/updating-fields-while-assembling-word-processing-documents/the_code/update-field-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/use-of-in-line-syntax-error-messages-into-templates#example1": {
+    "type": "file",
+    "file": "inline-error-report.docx",
+    "path": "developer-guide/advanced-usage/use-of-in-line-syntax-error-messages-into-templates/use_of_in_line_syntax_error_messages_into_templates/inline-error-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "use_of_in_line_syntax_error_messages_into_templates"
+  },
+  "developer-guide/advanced-usage/using-documents-as-data-source/using-spreadsheets-as-data-sources#example1": {
+    "type": "file",
+    "file": "table-row-report.docx",
+    "path": "developer-guide/advanced-usage/using-documents-as-data-source/using-spreadsheets-as-data-sources/the_code/table-row-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/using-documents-as-data-source/using-tables-of-presentation-documents-as-data-sources#example1": {
+    "type": "file",
+    "file": "table-row-report.pptx",
+    "path": "developer-guide/advanced-usage/using-documents-as-data-source/using-tables-of-presentation-documents-as-data-sources/the_code/table-row-report.pptx",
+    "preview": "Binary file (PPTX, 34 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/using-documents-as-data-source/using-tables-of-word-processing-documents-as-data-sources#example1": {
+    "type": "file",
+    "file": "importing-word-processing-table-into-presentation-report.pptx",
+    "path": "developer-guide/advanced-usage/using-documents-as-data-source/using-tables-of-word-processing-documents-as-data-sources/the_code/importing-word-processing-table-into-presentation-report.pptx",
+    "preview": "Binary file (PPTX, 34 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example1": {
+    "type": "file",
+    "file": "readme-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do/readme-report.md",
+    "preview": "# Harbor Lane Provisions\n-----\n## Description\nSpecialty food wholesale from the Quayside, Port Ellery.\n## Evaluation and Licensing\nThe library comes up with some limitations in the evaluation mode. In order to test full features of Harbor Lane Provisions, please request a **free 30-day temporary license**.",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example2": {
+    "type": "file",
+    "file": "readme-report.docx",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_2/readme-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_2"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example3": {
+    "type": "file",
+    "file": "list-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_3/list-report.md",
+    "preview": "# List Demo\n- foo\n- foo\n+ bar",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_3"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example4": {
+    "type": "file",
+    "file": "ordered-list-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_4/ordered-list-report.md",
+    "preview": "# Harbor Lane Provisions\n-----\n## Description\nSpecialty food wholesale from the Quayside, Port Ellery.\n## Evaluation and Licensing\nThe library comes up with some limitations in the evaluation mode. In order to test full features of Harbor Lane Provisions, please request a **free 30-day temporary license**.\n\n# List Demo\n1. foo\n2. bar\n[TRUNCATED]",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_4"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example5": {
+    "type": "file",
+    "file": "tables-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_5/tables-report.md",
+    "preview": "## Table\n\n| Item | Price |\n| - | - |\n| Apple | $1.50 |\n| Banana | $1.10 |\n| Carrot | $0.75 |\n\n## Justified Table\n\n[TRUNCATED]",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_5"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example6": {
+    "type": "file",
+    "file": "autolinks-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_6/autolinks-report.md",
+    "preview": "## URL\n\n<https://www.google.com/>\n\n## Email address\n\n<JohnDoe@sample.com>\n\n## Template that may recieve an inline link\n\n[TRUNCATED]",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_6"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example7": {
+    "type": "file",
+    "file": "inline-links-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_7/inline-links-report.md",
+    "preview": "## URL\n\n[Click here to visit the Google home page](https://www.google.com/)\n\n## Email address\n\n[Click here to send an email](JohnDoe@sample.com)\n\n## Custom link\n\n[TRUNCATED]",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_7"
+  },
+  "developer-guide/advanced-usage/using-markdown-documents#example8": {
+    "type": "file",
+    "file": "inline-image-report.md",
+    "path": "developer-guide/advanced-usage/using-markdown-documents/saving_an_assembled_markdown_documents_to_word_processing_do_8/inline-image-report.md",
+    "preview": "## Local file system image\n\n![Image from the local file system](images/Logo.jpg)\n\n## Image URL\n\n![Image from the web](https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/words/header/aspose_words-for-net.png)\n\n## Custom inline image\n\n[TRUNCATED]",
+    "function": "saving_an_assembled_markdown_documents_to_word_processing_do_8"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-presentation-document#example1": {
+    "type": "file",
+    "file": "barcode-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-presentation-document/the_code/barcode-report.pptx",
+    "preview": "Binary file (PPTX, 35 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "barcode-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-spreadsheet-document/the_code/barcode-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "barcode-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcode-image-generation-in-word-processing-document/the_code/barcode-report.docx",
+    "preview": "Binary file (DOCX, 12 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example1": {
+    "type": "file",
+    "file": "customer-barcodes-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/inserting_barcodes_dynamically/customer-barcodes-report.docx",
+    "preview": "Binary file (DOCX, 17 KB)",
+    "function": "inserting_barcodes_dynamically"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example2": {
+    "type": "file",
+    "file": "barcode-base-size-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/configuring_initial_scaling_of_barcode_symbols/barcode-base-size-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "configuring_initial_scaling_of_barcode_symbols"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example3": {
+    "type": "file",
+    "file": "barcode-sizes-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/setting_height_of_1d_barcode_symbols/barcode-sizes-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "setting_height_of_1d_barcode_symbols"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example4": {
+    "type": "file",
+    "file": "product-ean-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/using_barcode_text_auto_correction/product-ean-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "using_barcode_text_auto_correction"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example5": {
+    "type": "file",
+    "file": "customer-barcodes-300-dpi.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/setting_barcode_image_resolution/customer-barcodes-300-dpi.docx",
+    "preview": "Binary file (DOCX, 30 KB)",
+    "function": "setting_barcode_image_resolution"
+  },
+  "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties#example6": {
+    "type": "file",
+    "file": "barcode-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-barcode-image-generation/barcodes-syntax-and-properties/example_with_output/barcode-report.docx",
+    "preview": "Binary file (DOCX, 12 KB)",
+    "function": "example_with_output"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-email-document#example1": {
+    "type": "file",
+    "file": "bubble-chart-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-email-document/generating_the_report/bubble-chart-report.msg",
+    "preview": "Binary file (MSG, 63 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-presentation-document#example1": {
+    "type": "file",
+    "file": "bubble-chart-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-presentation-document/generating_the_report/bubble-chart-report.pptx",
+    "preview": "Binary file (PPTX, 46 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "bubble-chart-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-spreadsheet-document/generating_the_report/bubble-chart-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "bubble-chart-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-bubble/bubble-chart-in-word-processing-document/generating_the_report/bubble-chart-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-email-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-email-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.msg",
+    "preview": "Binary file (MSG, 60 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-presentation-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-presentation-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.pptx",
+    "preview": "Binary file (PPTX, 46 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-spreadsheet-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/column-chart-in-word-processing-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-email-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-email-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.msg",
+    "preview": "Binary file (MSG, 60 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-presentation-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-presentation-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.pptx",
+    "preview": "Binary file (PPTX, 46 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-spreadsheet-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-word-document#example1": {
+    "type": "file",
+    "file": "chart-with-filtering-and-dynamic-title-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/inserting-chart-axis-title-dynamically-in-word-document/generating_the_report/chart-with-filtering-and-dynamic-title-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/removing-selective-chart-series-dynamically#example1": {
+    "type": "file",
+    "file": "remove-selective-chart-series-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-filtered-ordered-grouped/removing-selective-chart-series-dynamically/generating_the_report/remove-selective-chart-series-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-email-document#example1": {
+    "type": "file",
+    "file": "pie-chart-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-email-document/generating_the_report/pie-chart-report.msg",
+    "preview": "Binary file (MSG, 62 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-presentation-document#example1": {
+    "type": "file",
+    "file": "pie-chart-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-presentation-document/generating_the_report/pie-chart-report.pptx",
+    "preview": "Binary file (PPTX, 44 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "pie-chart-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-spreadsheet-document/generating_the_report/pie-chart-report.xlsx",
+    "preview": "Binary file (XLSX, 12 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "pie-chart-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-pie/pie-chart-in-word-processing-document/generating_the_report/pie-chart-report.docx",
+    "preview": "Binary file (DOCX, 12 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-email-document#example1": {
+    "type": "file",
+    "file": "scatter-chart-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-email-document/generating_the_report/scatter-chart-report.msg",
+    "preview": "Binary file (MSG, 51 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-presentation-document#example1": {
+    "type": "file",
+    "file": "scatter-chart-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-presentation-document/generating_the_report/scatter-chart-report.pptx",
+    "preview": "Binary file (PPTX, 44 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "scatter-chart-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-spreadsheet-document/generating_the_report/scatter-chart-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "scatter-chart-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-reports-scatter/scatter-chart-in-word-processing-document/generating_the_report/scatter-chart-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-email-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-series-color-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-email-document/generating_the_report/dynamic-chart-series-color-report.msg",
+    "preview": "Binary file (MSG, 40 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-presentation-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-series-color-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-presentation-document/generating_the_report/dynamic-chart-series-color-report.pptx",
+    "preview": "Binary file (PPTX, 46 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-series-color-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-spreadsheet-document/generating_the_report/dynamic-chart-series-color-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-series-color-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-chart-series-coloring/chart-series-coloring-in-word-processing-document/generating_the_report/dynamic-chart-series-color-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-email-document#example1": {
+    "type": "file",
+    "file": "common-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-email-document/generating_the_report/common-list-report.msg",
+    "preview": "Binary file (MSG, 34 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-html-document#example1": {
+    "type": "file",
+    "file": "common-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-html-document/generating_the_report/common-list-report.html",
+    "preview": "<html>\n<body>\n\n<img height=\"100\" width=\"100\" src=\"data:image/jpeg;base64,quayside-bistro.png\"/>\n<h2>Quayside Bistro</h2>\n\n<img height=\"100\" width=\"100\" src=\"data:image/jpeg;base64,lantern-street-cafe.png\"/>\n<h2>Lantern Street Café</h2>\n\n<img height=\"100\" width=\"100\" src=\"data:image/jpeg;base64,saltmarsh-deli.png\"/>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-presentation-document#example1": {
+    "type": "file",
+    "file": "common-list-report.odp",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-presentation-document/generating_the_report/common-list-report.odp",
+    "preview": "Binary file (ODP, 7 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "common-list-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-spreadsheet-document/generating_the_report/common-list-report.ods",
+    "preview": "Binary file (ODS, 22 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "common-list-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-image-in-word-processing-document/generating_the_report/common-list-report.odt",
+    "preview": "Binary file (ODT, 22 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-in-text-document#example1": {
+    "type": "file",
+    "file": "common-list-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-list/common-list-in-text-document/generating_the_report/common-list-report.txt",
+    "preview": "Quayside Bistro\nLantern Street Café\nSaltmarsh Deli\nPier Nine Kitchen",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-email-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-email-document/generating_the_report/common-master-detail-report.msg",
+    "preview": "Binary file (MSG, 39 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-html-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-photos-report.html",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-html-document/generating_the_report/common-master-detail-photos-report.html",
+    "preview": "<html>\n<body>\n\n<img height=\"100\" width=\"100\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAABHNCSVQICAgIfAhkiAAAE+pJREFUeJzt3X1QVOe9B/AvcQWCLMgiL4LKimwElKIhopC4Go3lRquGjpqkNzHR29ibjnfCH53ea9JkMm1Tm0w719ybmdyajk0ybROTToz16g1NogZTfCuaiCiKIkoEBVyQXXCBVe8fZhN8QdjnPLtnn3O+n38ycTzP+cnwPc85z3nO80R0XfJeBREp6Q69CyAicQwwkcIYYCKFMcBECmOAiRTGABMpjAEmUhgDTKQwBphIYQwwkcIYYCKFMcBECmOAiRTGABMpjAEmUphFawNaPyaOuMWfNbS34e+njuNsZztc3R64urvg6u7ChW4PvL6+6/7ud+/K03T+vx2v1nQ8z2+s80dbhiMxJha\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-html-document#example2": {
+    "type": "file",
+    "file": "common-master-detail-photo-bytes-report.html",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-html-document/encoding_the_photos_in_the_template/common-master-detail-photo-bytes-report.html",
+    "preview": "<html>\n<body>\n\n<img height=\"100\" width=\"100\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAABHNCSVQICAgIfAhkiAAAE+pJREFUeJzt3X1QVOe9B/AvcQWCLMgiL4LKimwElKIhopC4Go3lRquGjpqkNzHR29ibjnfCH53ea9JkMm1Tm0w719ybmdyajk0ybROTToz16g1NogZTfCuaiCiKIkoEBVyQXXCBVe8fZhN8QdjnPLtnn3O+n38ycTzP+cnwPc85z3nO80R0XfJeBREp6Q69CyAicQwwkcIYYCKFMcBECmOAiRTGABMpjAEmUhgDTKQwBphIYQwwkcIYYCKFMcBECmOAiRTGABMpjAEmUphFawNaPyaOuMWfNbS34e+njuNsZztc3R64urvg6u7ChW4PvL6+6/7ud+/K03T+vx2v1nQ8z2+s80dbhiMxJha\n[TRUNCATED]",
+    "function": "encoding_the_photos_in_the_template"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-presentation-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-presentation-document/generating_the_report/common-master-detail-report.pptx",
+    "preview": "Binary file (PPTX, 41 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-spreadsheet-document/generating_the_report/common-master-detail-report.xlsx",
+    "preview": "Binary file (XLSX, 43 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-image-in-word-processing-document/generating_the_report/common-master-detail-report.docx",
+    "preview": "Binary file (DOCX, 29 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-in-text-document#example1": {
+    "type": "file",
+    "file": "common-master-detail-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-common-master-detail/common-master-detail-in-text-document/generating_the_report/common-master-detail-report.txt",
+    "preview": "Quayside Bistro\nProducts: Harbor Blend whole bean coffee, Aged harbour cheddar, Cold-pressed olive oil\n\nLantern Street Café\nProducts: Lighthouse Espresso beans, Oat and honey biscuits\n\nSaltmarsh Deli\nProducts: Chestnut honey, Smoked gouda, Autumn Harvest apple butter\n\nPier Nine Kitchen\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-email-document#example1": {
+    "type": "file",
+    "file": "single-row-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-email-document/generating_the_report/single-row-report.msg",
+    "preview": "Binary file (MSG, 36 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-html-document#example1": {
+    "type": "file",
+    "file": "single-row-report.html",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-html-document/generating_the_report/single-row-report.html",
+    "preview": "<html>\n<body>\n<table>\n<tr>\n<td>\n<img height=\"100\" width=\"100\" src=\"data:image/jpeg;base64,quayside-bistro.png\"/>\n</td>\n<td>\n<table>\n<tr>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-presentation-document#example1": {
+    "type": "file",
+    "file": "single-row-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-presentation-document/generating_the_report/single-row-report.pptx",
+    "preview": "Binary file (PPTX, 32 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "single-row-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-spreadsheet-document/generating_the_report/single-row-report.xlsx",
+    "preview": "Binary file (XLSX, 20 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "single-row-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-image-in-word-processing-document/generating_the_report/single-row-report.docx",
+    "preview": "Binary file (DOCX, 16 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-in-text-document#example1": {
+    "type": "file",
+    "file": "single-row-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-image-reports-single-row/single-row-in-text-document/generating_the_report/single-row-report.txt",
+    "preview": "Name:\tQuayside Bistro\nAge:\t+1 555 0142 811",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-email-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-point-series-color-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-email-document/generating_the_report/dynamic-chart-point-series-color-report.msg",
+    "preview": "Binary file (MSG, 46 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-presentation-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-point-series-color-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-presentation-document/generating_the_report/dynamic-chart-point-series-color-report.pptx",
+    "preview": "Binary file (PPTX, 44 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-point-series-color-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-spreadsheet-document/generating_the_report/dynamic-chart-point-series-color-report.xlsx",
+    "preview": "Binary file (XLSX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "dynamic-chart-point-series-color-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-individual-series-point-coloring/individual-series-point-coloring-in-word-processing-document/generating_the_report/dynamic-chart-point-series-color-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-lazy-and-recursive-access-of-data#example1": {
+    "type": "file",
+    "file": "recursive-customer-data-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-lazy-and-recursive-access-of-data/generating_the_report/recursive-customer-data-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-email-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-email-document/generating_the_report/bulleted-list-report.msg",
+    "preview": "Binary file (MSG, 52 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-html-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-html-document/generating_the_report/bulleted-list-report.html",
+    "preview": "<html>\n<body>\nWe provide support for the following products:\n<ul>\n\n<li>Harbor Blend whole bean coffee</li>\n\n<li>Lighthouse Espresso beans</li>\n\n<li>Aged harbour cheddar</li>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-presentation-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.odp",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-presentation-document/generating_the_report/bulleted-list-report.odp",
+    "preview": "Binary file (ODP, 7 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-spreadsheet-document/generating_the_report/bulleted-list-report.ods",
+    "preview": "Binary file (ODS, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-text-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-text-document/generating_the_report/bulleted-list-report.txt",
+    "preview": "We provide support for the following products:\n�\tHarbor Blend whole bean coffee\n�\tLighthouse Espresso beans\n�\tAged harbour cheddar\n�\tChestnut honey\n�\tOat and honey biscuits\n�\tCold-pressed olive oil\n�\tSmoked sea salt\n�\tSmoked gouda\n�\tAutumn Harvest apple butter\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "bulleted-list-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-bulleted/bulleted-list-in-word-processing-document/generating_the_report/bulleted-list-report.odt",
+    "preview": "Binary file (ODT, 5 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-email-document#example1": {
+    "type": "file",
+    "file": "multicolored-numbered-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-email-document/generating_the_report/multicolored-numbered-list-report.msg",
+    "preview": "Binary file (MSG, 52 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-html-document#example1": {
+    "type": "file",
+    "file": "multicolored-numbered-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-html-document/generating_the_report/multicolored-numbered-list-report.html",
+    "preview": "<html>\n<body>\nWe provide support for the following products:\n<ol>\n\n<li style=\"background-color:#FFF8DC\">Harbor Blend whole bean coffee</li>\n\n<li >Lighthouse Espresso beans</li>\n\n<li style=\"background-color:#FFF8DC\">Aged harbour cheddar</li>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-presentation-document#example1": {
+    "type": "file",
+    "file": "multicolored-numbered-list-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-presentation-document/generating_the_report/multicolored-numbered-list-report.pptx",
+    "preview": "Binary file (PPTX, 38 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "multicolored-numbered-list-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-spreadsheet-document/generating_the_report/multicolored-numbered-list-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "multicolored-numbered-list-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-multicolored-numbered/multicolored-numbered-list-in-word-processing-document/generating_the_report/multicolored-numbered-list-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-email-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-email-document/generating_the_report/numbered-list-report.msg",
+    "preview": "Binary file (MSG, 52 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-email-document#example2": {
+    "type": "file",
+    "file": "numbered-list-with-restartnum-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-email-document/generating_the_report_2/numbered-list-with-restartnum-report.msg",
+    "preview": "Binary file (MSG, 60 KB)",
+    "function": "generating_the_report_2"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-html-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-html-document/generating_the_report/numbered-list-report.html",
+    "preview": "<html>\n<body>\nWe provide support for the following products:\n<ol>\n\n<li>Harbor Blend whole bean coffee</li>\n\n<li>Lighthouse Espresso beans</li>\n\n<li>Aged harbour cheddar</li>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-presentation-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.odp",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-presentation-document/generating_the_report/numbered-list-report.odp",
+    "preview": "Binary file (ODP, 7 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-spreadsheet-document/generating_the_report/numbered-list-report.ods",
+    "preview": "Binary file (ODS, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-text-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-text-document/generating_the_report/numbered-list-report.txt",
+    "preview": "We provide support for the following products:\n1. Harbor Blend whole bean coffee\n2. Lighthouse Espresso beans\n3. Aged harbour cheddar\n4. Chestnut honey\n5. Oat and honey biscuits\n6. Cold-pressed olive oil\n7. Smoked sea salt\n8. Smoked gouda\n9. Autumn Harvest apple butter\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "numbered-list-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-word-processing-document/generating_the_report/numbered-list-report.odt",
+    "preview": "Binary file (ODT, 4 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-word-processing-document#example2": {
+    "type": "file",
+    "file": "numbered-list-with-restartnum-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-list-reports-numbered/numbered-list-in-word-processing-document/generating_the_report_2/numbered-list-with-restartnum-report.docx",
+    "preview": "Binary file (DOCX, 13 KB)",
+    "function": "generating_the_report_2"
+  },
+  "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-presentation-document#example1": {
+    "type": "file",
+    "file": "multiple-data-source-report.odp",
+    "path": "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-presentation-document/generating_the_report/multiple-data-source-report.odp",
+    "preview": "Binary file (ODP, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "multiple-data-source-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-spreadsheet-document/generating_the_report/multiple-data-source-report.ods",
+    "preview": "Binary file (ODS, 22 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "multiple-data-source-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-multiple-data-sources/generating-report-using-multiple-data-sources-in-word-processing-document/generating_the_report/multiple-data-source-report.odt",
+    "preview": "Binary file (ODT, 5 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-outer-document-insertion#example1": {
+    "type": "file",
+    "file": "inserting-document-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-outer-document-insertion/the_code/inserting-document-report.odt",
+    "preview": "Binary file (ODT, 11 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-outer-document-insertion#example2": {
+    "type": "file",
+    "file": "nested-external-document-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-outer-document-insertion/the_code_2/nested-external-document-report.docx",
+    "preview": "Binary file (DOCX, 16 KB)",
+    "function": "the_code_2"
+  },
+  "developer-guide/advanced-usage/working-with-outer-document-insertion#example3": {
+    "type": "file",
+    "file": "nested-external-document-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-outer-document-insertion/the_code_3/nested-external-document-report.msg",
+    "preview": "Binary file (MSG, 36 KB)",
+    "function": "the_code_3"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-email-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-email-document/generating_the_report/in-paragraph-list-report.msg",
+    "preview": "Binary file (MSG, 32 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-html-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-html-document/generating_the_report/in-paragraph-list-report.html",
+    "preview": "<html>\n<body>\nWe provide support for the following products: Harbor Blend whole bean coffee, Lighthouse Espresso beans, Aged harbour cheddar, Chestnut honey, Oat and honey biscuits, Cold-pressed olive oil, Smoked sea salt, Smoked gouda, Autumn Harvest apple butter, Autumn Harvest spiced roast\n</body>\n</html>",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.odp",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-presentation-document/generating_the_report/in-paragraph-list-report.odp",
+    "preview": "Binary file (ODP, 7 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-spreadsheet-document/generating_the_report/in-paragraph-list-report.ods",
+    "preview": "Binary file (ODS, 5 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-text-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-text-document/generating_the_report/in-paragraph-list-report.txt",
+    "preview": "We provide support for the following products: Harbor Blend whole bean coffee, Lighthouse Espresso beans, Aged harbour cheddar, Chestnut honey, Oat and honey biscuits, Cold-pressed olive oil, Smoked sea salt, Smoked gouda, Autumn Harvest apple butter, Autumn Harvest spiced roast",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-paragraph-list-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-paragraph-reports/in-paragraph-list-in-word-processing-document/generating_the_report/in-paragraph-list-report.odt",
+    "preview": "Binary file (ODT, 4 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-csv-data-sources#example1": {
+    "type": "file",
+    "file": "data-destination-with-nested-elements-report.txt",
+    "path": "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-csv-data-sources/configure_data_source_to_read_column_names/data-destination-with-nested-elements-report.txt",
+    "preview": "Name: Amara Osei, Age: 41, Date of\nBirth: 12.03.1984\nName: Jonas Weber, Age: 37, Date of\nBirth: 04.07.1988\nName: Lena Park, Age: 29, Date of\nBirth: 21.11.1996\n\nAverage age: 35.666666666666664",
+    "function": "configure_data_source_to_read_column_names"
+  },
+  "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources#example1": {
+    "type": "file",
+    "file": "data-destination-with-nested-elements-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources/source_code/data-destination-with-nested-elements-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "source_code"
+  },
+  "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-xml-data-sources#example1": {
+    "type": "file",
+    "file": "data-destination-with-nested-elements-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-simple-data-sources/working-with-xml-data-sources/source_code/data-destination-with-nested-elements-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "source_code"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-email-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-alternate-content-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-email-document/generating_the_report/in-table-list-with-alternate-content-report.msg",
+    "preview": "Binary file (MSG, 48 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-html-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-alternate-content-report.html",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-html-document/generating_the_report/in-table-list-with-alternate-content-report.html",
+    "preview": "<html>\n<body>\n<table>\nRegular text. <span style=\"background-color:orange\">Highlighted text.</span>\n<th>\nCustomer\n</th>\n<th>\nOrder Price\n</th>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-alternate-content-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-presentation-document/generating_the_report/in-table-list-with-alternate-content-report.pptx",
+    "preview": "Binary file (PPTX, 34 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-alternate-content-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-spreadsheet-document/generating_the_report/in-table-list-with-alternate-content-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-alternate-content-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-alternate-content/in-table-list-with-alternate-content-in-word-processing-document/generating_the_report/in-table-list-with-alternate-content-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-email-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-filtering-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-email-document/generating_the_report/in-table-list-with-filtering-report.msg",
+    "preview": "Binary file (MSG, 38 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-html-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-filtering-report.html",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-html-document/generating_the_report/in-table-list-with-filtering-report.html",
+    "preview": "<html>\n<body>\n<table>\n<tr>\n<th>\nCustomer\n</th>\n<th>\nOrder Price\n</th>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-filtering-grouping-and-ordering-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-presentation-document/generating_the_report/in-table-list-with-filtering-grouping-and-ordering-report.pptx",
+    "preview": "Binary file (PPTX, 32 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-filtering-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-spreadsheet-document/generating_the_report/in-table-list-with-filtering-report.ods",
+    "preview": "Binary file (ODS, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-filtering-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-filtered-ordered-grouped/in-table-list-with-filtering-grouping-and-ordering-in-word-processing-document/generating_the_report/in-table-list-with-filtering-report.odt",
+    "preview": "Binary file (ODT, 5 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-email-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-highlighted-rows-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-email-document/generating_the_report/in-table-list-with-highlighted-rows-report.msg",
+    "preview": "Binary file (MSG, 49 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-html-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-highlighted-rows-report.html",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-html-document/generating_the_report/in-table-list-with-highlighted-rows-report.html",
+    "preview": "<html>\n<body>\n<table>\n<tr>\n<th>\nCustomer\n</th>\n<th>\nOrder Price\n</th>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-highlighted-rows-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-presentation-document/generating_the_report/in-table-list-with-highlighted-rows-report.pptx",
+    "preview": "Binary file (PPTX, 34 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-highlighted-rows-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-spreadsheet-document/generating_the_report/in-table-list-with-highlighted-rows-report.ods",
+    "preview": "Binary file (ODS, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-table-list-with-highlighted-rows-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-highlighted-rows/in-table-list-with-highlighted-rows-in-word-processing-document/generating_the_report/in-table-list-with-highlighted-rows-report.odt",
+    "preview": "Binary file (ODT, 5 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-email-document#example1": {
+    "type": "file",
+    "file": "in-table-master-detail-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-email-document/generating_the_report/in-table-master-detail-report.msg",
+    "preview": "Binary file (MSG, 55 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-html-document#example1": {
+    "type": "file",
+    "file": "in-table-master-detail-report.html",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-html-document/generating_the_report/in-table-master-detail-report.html",
+    "preview": "<html>\n<body>\n<table>\n<tr>\n<th>\nCustomer\n</th>\n<th>\nOrder Price\n</th>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-table-master-detail-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-presentation-document/generating_the_report/in-table-master-detail-report.pptx",
+    "preview": "Binary file (PPTX, 35 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-table-master-detail-report.ods",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-spreadsheet-document/generating_the_report/in-table-master-detail-report.ods",
+    "preview": "Binary file (ODS, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-table-master-detail-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-table-reports-master-detail/in-table-master-detail-in-word-processing-document/generating_the_report/in-table-master-detail-report.odt",
+    "preview": "Binary file (ODT, 6 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-email-document#example1": {
+    "type": "file",
+    "file": "in-table-list-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-email-document/generating_the_report/in-table-list-report.msg",
+    "preview": "Binary file (MSG, 40 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-html-document#example1": {
+    "type": "file",
+    "file": "in-table-list-report.html",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-html-document/generating_the_report/in-table-list-report.html",
+    "preview": "<html>\n<body>\n<table>\n<tr>\n<th>\nCustomer\n</th>\n<th>\nOrder Price\n</th>\n[TRUNCATED]",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-presentation-document#example1": {
+    "type": "file",
+    "file": "in-table-list-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-presentation-document/generating_the_report/in-table-list-report.pptx",
+    "preview": "Binary file (PPTX, 33 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-spreadsheet-document#example1": {
+    "type": "file",
+    "file": "in-table-list-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-spreadsheet-document/generating_the_report/in-table-list-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-word-processing-document#example1": {
+    "type": "file",
+    "file": "in-table-list-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/in-table-list-in-word-processing-document/generating_the_report/in-table-list-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "generating_the_report"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically#example1": {
+    "type": "file",
+    "file": "merging-table-cells-dynamically-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically/the_code/merging-table-cells-dynamically-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically#example2": {
+    "type": "file",
+    "file": "merging-table-cells-dynamically-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically/the_code_2/merging-table-cells-dynamically-report.pptx",
+    "preview": "Binary file (PPTX, 33 KB)",
+    "function": "the_code_2"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically#example3": {
+    "type": "file",
+    "file": "merging-table-cells-dynamically-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically/the_code_3/merging-table-cells-dynamically-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "the_code_3"
+  },
+  "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically#example4": {
+    "type": "file",
+    "file": "merging-table-cells-dynamically-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-reports/merging-table-cells-dynamically/the_code_4/merging-table-cells-dynamically-report.msg",
+    "preview": "Binary file (MSG, 36 KB)",
+    "function": "the_code_4"
+  },
+  "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-email-messages#example1": {
+    "type": "file",
+    "file": "data-table-report.msg",
+    "path": "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-email-messages/the_code/data-table-report.msg",
+    "preview": "Binary file (MSG, 47 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-presentation-documents#example1": {
+    "type": "file",
+    "file": "data-table-report.pptx",
+    "path": "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-presentation-documents/the_code/data-table-report.pptx",
+    "preview": "Binary file (PPTX, 37 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-spreadsheet-documents#example1": {
+    "type": "file",
+    "file": "data-table-report.xlsx",
+    "path": "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-spreadsheet-documents/the_code/data-table-report.xlsx",
+    "preview": "Binary file (XLSX, 9 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-word-processing-documents#example1": {
+    "type": "file",
+    "file": "data-table-report.docx",
+    "path": "developer-guide/advanced-usage/working-with-table-row-data-bands/working-with-word-processing-documents/the_code/data-table-report.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/advanced-usage/working-with-template-syntax-formatting#example1": {
+    "type": "file",
+    "file": "numeric-format-report.odt",
+    "path": "developer-guide/advanced-usage/working-with-template-syntax-formatting/the_code/numeric-format-report.odt",
+    "preview": "Binary file (ODT, 6 KB)",
+    "function": "the_code"
+  },
+  "developer-guide/basic-usage/apply-formatting#example1": {
+    "type": "file",
+    "file": "invoice-numbers-report.docx",
+    "path": "developer-guide/basic-usage/apply-formatting/format_numbers/invoice-numbers-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "format_numbers"
+  },
+  "developer-guide/basic-usage/apply-formatting#example2": {
+    "type": "file",
+    "file": "report-dates-report.docx",
+    "path": "developer-guide/basic-usage/apply-formatting/format_dates_and_times/report-dates-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "format_dates_and_times"
+  },
+  "developer-guide/basic-usage/apply-formatting#example3": {
+    "type": "file",
+    "file": "product-text-case-report.docx",
+    "path": "developer-guide/basic-usage/apply-formatting/format_text_case_transformation/product-text-case-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "format_text_case_transformation"
+  },
+  "developer-guide/basic-usage/apply-formatting#example4": {
+    "type": "file",
+    "file": "order-line-total-report.docx",
+    "path": "developer-guide/basic-usage/apply-formatting/combine_formatting_with_calculations/order-line-total-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "combine_formatting_with_calculations"
+  },
+  "developer-guide/basic-usage/apply-formatting#example5": {
+    "type": "file",
+    "file": "custom-number-formats-report.docx",
+    "path": "developer-guide/basic-usage/apply-formatting/custom_numeric_formats/custom-number-formats-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "custom_numeric_formats"
+  },
+  "developer-guide/basic-usage/apply-formatting#example6": {
+    "type": "file",
+    "file": "invoice-formatting-report.xlsx",
+    "path": "developer-guide/basic-usage/apply-formatting/formatting_in_different_document_types/invoice-formatting-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "formatting_in_different_document_types"
+  },
+  "developer-guide/basic-usage/basic-template-syntax#example1": {
+    "type": "file",
+    "file": "person-details-report.docx",
+    "path": "developer-guide/basic-usage/basic-template-syntax/basic_expression_tags/person-details-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "basic_expression_tags"
+  },
+  "developer-guide/basic-usage/basic-template-syntax#example2": {
+    "type": "file",
+    "file": "product-summary-report.docx",
+    "path": "developer-guide/basic-usage/basic-template-syntax/using_contextual_object_member_access/product-summary-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_contextual_object_member_access"
+  },
+  "developer-guide/basic-usage/basic-template-syntax#example3": {
+    "type": "file",
+    "file": "order-calculation-report.docx",
+    "path": "developer-guide/basic-usage/basic-template-syntax/simple_calculations_in_expressions/order-calculation-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "simple_calculations_in_expressions"
+  },
+  "developer-guide/basic-usage/basic-template-syntax#example4": {
+    "type": "file",
+    "file": "company-header-report.docx",
+    "path": "developer-guide/basic-usage/basic-template-syntax/using_string_methods/company-header-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_string_methods"
+  },
+  "developer-guide/basic-usage/basic-template-syntax#example5": {
+    "type": "file",
+    "file": "invoice-format-strings-report.docx",
+    "path": "developer-guide/basic-usage/basic-template-syntax/expression_tag_formatting/invoice-format-strings-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "expression_tag_formatting"
+  },
+  "developer-guide/basic-usage/conditional-content#example1": {
+    "type": "file",
+    "file": "customer-status-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/simple_if_else_block/customer-status-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "simple_if_else_block"
+  },
+  "developer-guide/basic-usage/conditional-content#example2": {
+    "type": "file",
+    "file": "order-discount-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/if_elseif_else_block/order-discount-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "if_elseif_else_block"
+  },
+  "developer-guide/basic-usage/conditional-content#example3": {
+    "type": "file",
+    "file": "report-items-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/conditional_content_with_collections/report-items-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "conditional_content_with_collections"
+  },
+  "developer-guide/basic-usage/conditional-content#example4": {
+    "type": "file",
+    "file": "product-stock-status-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/conditional_content_in_data_bands/product-stock-status-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "conditional_content_in_data_bands"
+  },
+  "developer-guide/basic-usage/conditional-content#example5": {
+    "type": "file",
+    "file": "employee-review-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/complex_conditions/employee-review-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "complex_conditions"
+  },
+  "developer-guide/basic-usage/conditional-content#example6": {
+    "type": "file",
+    "file": "invoice-payment-status-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/conditional_formatting/invoice-payment-status-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "conditional_formatting"
+  },
+  "developer-guide/basic-usage/conditional-content#example7": {
+    "type": "file",
+    "file": "order-contents-report.docx",
+    "path": "developer-guide/basic-usage/conditional-content/using_methods_in_conditions/order-contents-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_methods_in_conditions"
+  },
+  "developer-guide/basic-usage/different-format-output#example1": {
+    "type": "file",
+    "file": "customer-invoice-report.pdf",
+    "path": "developer-guide/basic-usage/different-format-output/convert_docx_template_to_pdf/customer-invoice-report.pdf",
+    "preview": "Binary file (PDF, 20 KB)",
+    "function": "convert_docx_template_to_pdf"
+  },
+  "developer-guide/basic-usage/different-format-output#example2": {
+    "type": "file",
+    "file": "monthly-report-report.html",
+    "path": "developer-guide/basic-usage/different-format-output/convert_docx_template_to_html/monthly-report-report.html",
+    "preview": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><meta http-equiv=\"Content-Style-Type\" content=\"text/css\" /><meta name=\"generator\" content=\"Aspose.Words for .NET 26.7.0\" /><title></title></head><body style=\"font-family:'Times New Roman'; font-size:12pt\"><div><h1 style=\"margin-top:12pt; margin-bottom:3pt; page-break-after:avoid; font-size:11pt\"><span style=\"font-family:Calibri; font-weight:normal\">Monthly Report</span></h1><p style=\"margin-top:0pt; margin-bottom:0p\n[TRUNCATED]",
+    "function": "convert_docx_template_to_html"
+  },
+  "developer-guide/basic-usage/different-format-output#example3": {
+    "type": "file",
+    "file": "price-notice-report.xps",
+    "path": "developer-guide/basic-usage/different-format-output/convert_docx_template_to_xps/price-notice-report.xps",
+    "preview": "Binary file (XPS, 50 KB)",
+    "function": "convert_docx_template_to_xps"
+  },
+  "developer-guide/basic-usage/different-format-output#example4": {
+    "type": "file",
+    "file": "sales-summary-report.pdf",
+    "path": "developer-guide/basic-usage/different-format-output/convert_xlsx_template_to_pdf/sales-summary-report.pdf",
+    "preview": "Binary file (PDF, 32 KB)",
+    "function": "convert_xlsx_template_to_pdf"
+  },
+  "developer-guide/basic-usage/different-format-output#example5": {
+    "type": "file",
+    "file": "quarterly-slides-report.pdf",
+    "path": "developer-guide/basic-usage/different-format-output/convert_pptx_template_to_pdf/quarterly-slides-report.pdf",
+    "preview": "Binary file (PDF, 28 KB)",
+    "function": "convert_pptx_template_to_pdf"
+  },
+  "developer-guide/basic-usage/different-format-output#example6": {
+    "type": "file",
+    "file": "invoice-notice-report.pdf",
+    "path": "developer-guide/basic-usage/different-format-output/convert_email_template_to_pdf/invoice-notice-report.pdf",
+    "preview": "Binary file (PDF, 1 KB)",
+    "function": "convert_email_template_to_pdf"
+  },
+  "developer-guide/basic-usage/different-format-output#example7": {
+    "type": "file",
+    "file": "customer-invoice-from-stream.pdf",
+    "path": "developer-guide/basic-usage/different-format-output/choose_the_format_with_loadsaveoptions/customer-invoice-from-stream.pdf",
+    "preview": "Binary file (PDF, 20 KB)",
+    "function": "choose_the_format_with_loadsaveoptions"
+  },
+  "developer-guide/basic-usage/error-handling#example1": {
+    "type": "file",
+    "file": "staff-greeting-report.docx",
+    "path": "developer-guide/basic-usage/error-handling/basic_error_handling/staff-greeting-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "basic_error_handling"
+  },
+  "developer-guide/basic-usage/error-handling#example2": {
+    "type": "text",
+    "file": "handle-template-syntax-errors.txt",
+    "path": "developer-guide/basic-usage/error-handling/handle_template_syntax_errors/handle-template-syntax-errors.txt",
+    "preview": "Template error: Expression tag is not well-formed. Character '>' is unexpected.",
+    "function": "handle_template_syntax_errors"
+  },
+  "developer-guide/basic-usage/error-handling#example3": {
+    "type": "file",
+    "file": "missing-email-report.docx",
+    "path": "developer-guide/basic-usage/error-handling/handle_missing_data_members/missing-email-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "handle_missing_data_members"
+  },
+  "developer-guide/basic-usage/error-handling#example4": {
+    "type": "file",
+    "file": "product-catalog-report.docx",
+    "path": "developer-guide/basic-usage/error-handling/validate_data_before_assembly/product-catalog-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "validate_data_before_assembly"
+  },
+  "developer-guide/basic-usage/error-handling#example5": {
+    "type": "file",
+    "file": "staff-greeting-checked.docx",
+    "path": "developer-guide/basic-usage/error-handling/handle_file_not_found_errors/staff-greeting-checked.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "handle_file_not_found_errors"
+  },
+  "developer-guide/basic-usage/error-handling#example6": {
+    "type": "file",
+    "file": "invoice-amount-report.docx",
+    "path": "developer-guide/basic-usage/error-handling/handle_missing_values/invoice-amount-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "handle_missing_values"
+  },
+  "developer-guide/basic-usage/error-handling#example7": {
+    "type": "file",
+    "file": "missing-email-checked.docx",
+    "path": "developer-guide/basic-usage/error-handling/comprehensive_error_handling/missing-email-checked.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "comprehensive_error_handling"
+  },
+  "developer-guide/basic-usage/error-handling#example8": {
+    "type": "file",
+    "file": "staff-greeting-from-stream.docx",
+    "path": "developer-guide/basic-usage/error-handling/handle_stream_errors/staff-greeting-from-stream.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "handle_stream_errors"
+  },
+  "developer-guide/basic-usage/error-handling#example9": {
+    "type": "text",
+    "file": "report-template-errors-inside-the-document.txt",
+    "path": "developer-guide/basic-usage/error-handling/report_template_errors_inside_the_document/report-template-errors-inside-the-document.txt",
+    "preview": "Template parsed without errors: False\nName: <<[data.Name]> Error! Character '>' is unexpected.",
+    "function": "report_template_errors_inside_the_document"
+  },
+  "developer-guide/basic-usage/generate-bullet-lists#example1": {
+    "type": "file",
+    "file": "product-bullets-report.docx",
+    "path": "developer-guide/basic-usage/generate-bullet-lists/generate_bullet_list_from_a_python_list/product-bullets-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_bullet_list_from_a_python_list"
+  },
+  "developer-guide/basic-usage/generate-bullet-lists#example2": {
+    "type": "file",
+    "file": "product-bullets-from-database.docx",
+    "path": "developer-guide/basic-usage/generate-bullet-lists/generate_bullet_list_from_database_rows/product-bullets-from-database.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_bullet_list_from_database_rows"
+  },
+  "developer-guide/basic-usage/generate-bullet-lists#example3": {
+    "type": "file",
+    "file": "simple-bullets-report.docx",
+    "path": "developer-guide/basic-usage/generate-bullet-lists/simple_bullet_list_name_only/simple-bullets-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "simple_bullet_list_name_only"
+  },
+  "developer-guide/basic-usage/generate-bullet-lists#example4": {
+    "type": "file",
+    "file": "product-bullets-report.xlsx",
+    "path": "developer-guide/basic-usage/generate-bullet-lists/bullet_list_in_spreadsheet/product-bullets-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "bullet_list_in_spreadsheet"
+  },
+  "developer-guide/basic-usage/generate-bullet-lists#example5": {
+    "type": "file",
+    "file": "product-bullets-report.eml",
+    "path": "developer-guide/basic-usage/generate-bullet-lists/bullet_list_in_email/product-bullets-report.eml",
+    "preview": "Binary file (EML, 877 bytes)",
+    "function": "bullet_list_in_email"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example1": {
+    "type": "file",
+    "file": "invoice-notification-report.eml",
+    "path": "developer-guide/basic-usage/generate-email-messages/generate_email_with_subject_and_body/invoice-notification-report.eml",
+    "preview": "Binary file (EML, 786 bytes)",
+    "function": "generate_email_with_subject_and_body"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example2": {
+    "type": "file",
+    "file": "warehouse-update-report.eml",
+    "path": "developer-guide/basic-usage/generate-email-messages/generate_email_with_multiple_recipients/warehouse-update-report.eml",
+    "preview": "Binary file (EML, 763 bytes)",
+    "function": "generate_email_with_multiple_recipients"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example3": {
+    "type": "file",
+    "file": "invoice-cc-bcc-report.eml",
+    "path": "developer-guide/basic-usage/generate-email-messages/generate_email_with_cc_and_bcc/invoice-cc-bcc-report.eml",
+    "preview": "Binary file (EML, 742 bytes)",
+    "function": "generate_email_with_cc_and_bcc"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example4": {
+    "type": "file",
+    "file": "order-confirmation-report.eml",
+    "path": "developer-guide/basic-usage/generate-email-messages/generate_email_with_rich_content/order-confirmation-report.eml",
+    "preview": "Binary file (EML, 870 bytes)",
+    "function": "generate_email_with_rich_content"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example5": {
+    "type": "zip",
+    "file": "generate-email-from-collection-outputs.zip",
+    "path": "developer-guide/basic-usage/generate-email-messages/generate_email_from_collection/generate-email-from-collection-outputs.zip",
+    "contents": [
+      "personal-greeting-quayside-bistro.eml",
+      "personal-greeting-saltmarsh-deli.eml"
+    ],
+    "preview": "personal-greeting-quayside-bistro.eml (897 bytes)\npersonal-greeting-saltmarsh-deli.eml (895 bytes)",
+    "function": "generate_email_from_collection"
+  },
+  "developer-guide/basic-usage/generate-email-messages#example6": {
+    "type": "file",
+    "file": "sender-address-report.eml",
+    "path": "developer-guide/basic-usage/generate-email-messages/set_email_from_address/sender-address-report.eml",
+    "preview": "Binary file (EML, 725 bytes)",
+    "function": "set_email_from_address"
+  },
+  "developer-guide/basic-usage/generate-first-document#example1": {
+    "type": "file",
+    "file": "person-card-report.docx",
+    "path": "developer-guide/basic-usage/generate-first-document/generate_document_from_a_dict/person-card-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_a_dict"
+  },
+  "developer-guide/basic-usage/generate-first-document#example2": {
+    "type": "file",
+    "file": "person-card-contextual-report.docx",
+    "path": "developer-guide/basic-usage/generate-first-document/using_contextual_object_member_access/person-card-contextual-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_contextual_object_member_access"
+  },
+  "developer-guide/basic-usage/generate-from-custom-objects#example1": {
+    "type": "file",
+    "file": "customer-profile-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-custom-objects/generate_document_from_single_object/customer-profile-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_single_object"
+  },
+  "developer-guide/basic-usage/generate-from-custom-objects#example2": {
+    "type": "file",
+    "file": "customer-balances-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-custom-objects/generate_document_from_object_collection/customer-balances-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_object_collection"
+  },
+  "developer-guide/basic-usage/generate-from-custom-objects#example3": {
+    "type": "file",
+    "file": "order-confirmation-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-custom-objects/using_nested_objects/order-confirmation-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_nested_objects"
+  },
+  "developer-guide/basic-usage/generate-from-custom-objects#example4": {
+    "type": "file",
+    "file": "product-line-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-custom-objects/calculating_values/product-line-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "calculating_values"
+  },
+  "developer-guide/basic-usage/generate-from-custom-objects#example5": {
+    "type": "file",
+    "file": "customer-balances-from-classes.docx",
+    "path": "developer-guide/basic-usage/generate-from-custom-objects/using_instances_of_your_own_classes/customer-balances-from-classes.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_instances_of_your_own_classes"
+  },
+  "developer-guide/basic-usage/generate-from-database#example1": {
+    "type": "file",
+    "file": "customer-accounts-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-database/generate_document_from_query_rows/customer-accounts-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_document_from_query_rows"
+  },
+  "developer-guide/basic-usage/generate-from-database#example2": {
+    "type": "file",
+    "file": "customers-and-orders-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-database/generate_document_from_several_tables/customers-and-orders-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_document_from_several_tables"
+  },
+  "developer-guide/basic-usage/generate-from-database#example3": {
+    "type": "file",
+    "file": "customer-accounts-filtered.docx",
+    "path": "developer-guide/basic-usage/generate-from-database/filtering_and_sorting_rows/customer-accounts-filtered.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "filtering_and_sorting_rows"
+  },
+  "developer-guide/basic-usage/generate-from-database#example4": {
+    "type": "file",
+    "file": "customer-orders-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-database/working_with_related_tables/customer-orders-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "working_with_related_tables"
+  },
+  "developer-guide/basic-usage/generate-from-json-datasource#example1": {
+    "type": "file",
+    "file": "staff-member-card-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-json-datasource/generate_document_from_json_file/staff-member-card-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_json_file"
+  },
+  "developer-guide/basic-usage/generate-from-json-datasource#example2": {
+    "type": "file",
+    "file": "staff-member-card-from-string.docx",
+    "path": "developer-guide/basic-usage/generate-from-json-datasource/generate_document_from_json_string/staff-member-card-from-string.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_json_string"
+  },
+  "developer-guide/basic-usage/generate-from-json-datasource#example3": {
+    "type": "file",
+    "file": "staff-list-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-json-datasource/working_with_json_arrays/staff-list-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "working_with_json_arrays"
+  },
+  "developer-guide/basic-usage/generate-from-json-datasource#example4": {
+    "type": "file",
+    "file": "company-profile-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-json-datasource/working_with_nested_json_objects/company-profile-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "working_with_nested_json_objects"
+  },
+  "developer-guide/basic-usage/generate-from-json-datasource#example5": {
+    "type": "file",
+    "file": "trade-account-list-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-json-datasource/configure_json_data_load_options/trade-account-list-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "configure_json_data_load_options"
+  },
+  "developer-guide/basic-usage/generate-from-xml-datasource#example1": {
+    "type": "file",
+    "file": "staff-profile-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-xml-datasource/generate_document_from_xml_file/staff-profile-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_xml_file"
+  },
+  "developer-guide/basic-usage/generate-from-xml-datasource#example2": {
+    "type": "file",
+    "file": "staff-profile-from-string.docx",
+    "path": "developer-guide/basic-usage/generate-from-xml-datasource/generate_document_from_xml_string/staff-profile-from-string.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_document_from_xml_string"
+  },
+  "developer-guide/basic-usage/generate-from-xml-datasource#example3": {
+    "type": "file",
+    "file": "staff-roster-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-xml-datasource/working_with_xml_arrays/staff-roster-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "working_with_xml_arrays"
+  },
+  "developer-guide/basic-usage/generate-from-xml-datasource#example4": {
+    "type": "file",
+    "file": "company-overview-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-xml-datasource/working_with_nested_xml_elements/company-overview-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "working_with_nested_xml_elements"
+  },
+  "developer-guide/basic-usage/generate-from-xml-datasource#example5": {
+    "type": "file",
+    "file": "staff-roster-root-report.docx",
+    "path": "developer-guide/basic-usage/generate-from-xml-datasource/configure_xml_data_load_options/staff-roster-root-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "configure_xml_data_load_options"
+  },
+  "developer-guide/basic-usage/generate-master-detail-reports#example1": {
+    "type": "file",
+    "file": "order-details-report.docx",
+    "path": "developer-guide/basic-usage/generate-master-detail-reports/generate_master_detail_report/order-details-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_master_detail_report"
+  },
+  "developer-guide/basic-usage/generate-master-detail-reports#example2": {
+    "type": "file",
+    "file": "order-items-table-report.docx",
+    "path": "developer-guide/basic-usage/generate-master-detail-reports/master_detail_in_tables/order-items-table-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "master_detail_in_tables"
+  },
+  "developer-guide/basic-usage/generate-master-detail-reports#example3": {
+    "type": "file",
+    "file": "order-items-subtotals-report.docx",
+    "path": "developer-guide/basic-usage/generate-master-detail-reports/using_aggregates_in_master_detail/order-items-subtotals-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_aggregates_in_master_detail"
+  },
+  "developer-guide/basic-usage/generate-numbered-lists#example1": {
+    "type": "file",
+    "file": "numbered-tasks-report.docx",
+    "path": "developer-guide/basic-usage/generate-numbered-lists/generate_numbered_list_from_a_python_list/numbered-tasks-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_numbered_list_from_a_python_list"
+  },
+  "developer-guide/basic-usage/generate-numbered-lists#example2": {
+    "type": "file",
+    "file": "numbered-items-report.docx",
+    "path": "developer-guide/basic-usage/generate-numbered-lists/using_numberof_function/numbered-items-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_numberof_function"
+  },
+  "developer-guide/basic-usage/generate-numbered-lists#example3": {
+    "type": "file",
+    "file": "numbered-tasks-from-csv.docx",
+    "path": "developer-guide/basic-usage/generate-numbered-lists/generate_numbered_list_from_a_csv_file/numbered-tasks-from-csv.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_numbered_list_from_a_csv_file"
+  },
+  "developer-guide/basic-usage/generate-numbered-lists#example4": {
+    "type": "file",
+    "file": "numbered-tasks-report.xlsx",
+    "path": "developer-guide/basic-usage/generate-numbered-lists/numbered_list_in_spreadsheet/numbered-tasks-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "numbered_list_in_spreadsheet"
+  },
+  "developer-guide/basic-usage/generate-numbered-lists#example5": {
+    "type": "file",
+    "file": "numbered-tasks-report.eml",
+    "path": "developer-guide/basic-usage/generate-numbered-lists/numbered_list_in_email/numbered-tasks-report.eml",
+    "preview": "Binary file (EML, 875 bytes)",
+    "function": "numbered_list_in_email"
+  },
+  "developer-guide/basic-usage/generate-tables-from-collection#example1": {
+    "type": "file",
+    "file": "stock-table-report.docx",
+    "path": "developer-guide/basic-usage/generate-tables-from-collection/generate_table_from_a_python_list/stock-table-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_table_from_a_python_list"
+  },
+  "developer-guide/basic-usage/generate-tables-from-collection#example2": {
+    "type": "file",
+    "file": "stock-price-table-report.docx",
+    "path": "developer-guide/basic-usage/generate-tables-from-collection/generate_table_with_formatting/stock-price-table-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_table_with_formatting"
+  },
+  "developer-guide/basic-usage/generate-tables-from-collection#example3": {
+    "type": "file",
+    "file": "stock-price-table-from-json.docx",
+    "path": "developer-guide/basic-usage/generate-tables-from-collection/generate_table_from_a_json_file/stock-price-table-from-json.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_table_from_a_json_file"
+  },
+  "developer-guide/basic-usage/generate-tables-from-collection#example4": {
+    "type": "file",
+    "file": "stock-totals-table-report.docx",
+    "path": "developer-guide/basic-usage/generate-tables-from-collection/generate_table_with_totals/stock-totals-table-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "generate_table_with_totals"
+  },
+  "developer-guide/basic-usage/generate-tables-from-collection#example5": {
+    "type": "file",
+    "file": "stock-table-report.xlsx",
+    "path": "developer-guide/basic-usage/generate-tables-from-collection/generate_table_in_spreadsheet/stock-table-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "generate_table_in_spreadsheet"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example1": {
+    "type": "file",
+    "file": "website-link-report.docx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/insert_hyperlink_with_url_and_text/website-link-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "insert_hyperlink_with_url_and_text"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example2": {
+    "type": "file",
+    "file": "website-url-link-report.docx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/hyperlink_with_url_only/website-url-link-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "hyperlink_with_url_only"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example3": {
+    "type": "file",
+    "file": "website-links-report.docx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/insert_multiple_hyperlinks_from_collection/website-links-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "insert_multiple_hyperlinks_from_collection"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example4": {
+    "type": "file",
+    "file": "bookmark-link-report.docx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/hyperlink_to_bookmark_word_documents/bookmark-link-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "hyperlink_to_bookmark_word_documents"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example5": {
+    "type": "file",
+    "file": "cell-link-report.xlsx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/hyperlink_to_cell_spreadsheet_documents/cell-link-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "hyperlink_to_cell_spreadsheet_documents"
+  },
+  "developer-guide/basic-usage/insert-hyperlinks-dynamically#example6": {
+    "type": "file",
+    "file": "slide-link-report.pptx",
+    "path": "developer-guide/basic-usage/insert-hyperlinks-dynamically/hyperlink_to_slide_presentation_documents/slide-link-report.pptx",
+    "preview": "Binary file (PPTX, 31 KB)",
+    "function": "hyperlink_to_slide_presentation_documents"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example1": {
+    "type": "file",
+    "file": "customer-photo-report.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/insert_image_from_file_path/customer-photo-report.docx",
+    "preview": "Binary file (DOCX, 14 KB)",
+    "function": "insert_image_from_file_path"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example2": {
+    "type": "file",
+    "file": "customer-photo-from-url.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/insert_image_from_url/customer-photo-from-url.docx",
+    "preview": "Binary file (DOCX, 14 KB)",
+    "function": "insert_image_from_url"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example3": {
+    "type": "file",
+    "file": "customer-photo-from-bytes.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/insert_image_from_bytes/customer-photo-from-bytes.docx",
+    "preview": "Binary file (DOCX, 14 KB)",
+    "function": "insert_image_from_bytes"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example4": {
+    "type": "file",
+    "file": "customer-photo-from-stream.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/insert_image_from_stream/customer-photo-from-stream.docx",
+    "preview": "Binary file (DOCX, 14 KB)",
+    "function": "insert_image_from_stream"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example5": {
+    "type": "file",
+    "file": "image-sizing-report.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/image_sizing_options/image-sizing-report.docx",
+    "preview": "Binary file (DOCX, 14 KB)",
+    "function": "image_sizing_options"
+  },
+  "developer-guide/basic-usage/insert-images-dynamically#example6": {
+    "type": "file",
+    "file": "customer-photos-report.docx",
+    "path": "developer-guide/basic-usage/insert-images-dynamically/insert_multiple_images_from_collection/customer-photos-report.docx",
+    "preview": "Binary file (DOCX, 26 KB)",
+    "function": "insert_multiple_images_from_collection"
+  },
+  "developer-guide/basic-usage/install-and-apply-license#example1": {
+    "type": "text",
+    "file": "apply-license-from-file.txt",
+    "path": "developer-guide/basic-usage/install-and-apply-license/apply_license_from_file/apply-license-from-file.txt",
+    "preview": "License applied successfully from file.",
+    "function": "apply_license_from_file"
+  },
+  "developer-guide/basic-usage/install-and-apply-license#example2": {
+    "type": "text",
+    "file": "apply-license-from-stream.txt",
+    "path": "developer-guide/basic-usage/install-and-apply-license/apply_license_from_stream/apply-license-from-stream.txt",
+    "preview": "License applied successfully from stream.",
+    "function": "apply_license_from_stream"
+  },
+  "developer-guide/basic-usage/install-and-apply-license#example3": {
+    "type": "file",
+    "file": "license-check-report.docx",
+    "path": "developer-guide/basic-usage/install-and-apply-license/verify_license_application/license-check-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "verify_license_application"
+  },
+  "developer-guide/basic-usage/load-template-from-file-or-stream#example1": {
+    "type": "file",
+    "file": "invoice-summary-report.docx",
+    "path": "developer-guide/basic-usage/load-template-from-file-or-stream/load_template_from_file_path/invoice-summary-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "load_template_from_file_path"
+  },
+  "developer-guide/basic-usage/load-template-from-file-or-stream#example2": {
+    "type": "file",
+    "file": "report-cover-report.docx",
+    "path": "developer-guide/basic-usage/load-template-from-file-or-stream/load_template_from_stream/report-cover-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "load_template_from_stream"
+  },
+  "developer-guide/basic-usage/load-template-from-file-or-stream#example3": {
+    "type": "file",
+    "file": "company-letter-report.docx",
+    "path": "developer-guide/basic-usage/load-template-from-file-or-stream/load_template_from_remote_source/company-letter-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "load_template_from_remote_source"
+  },
+  "developer-guide/basic-usage/load-template-from-file-or-stream#example4": {
+    "type": "file",
+    "file": "item-label-report.docx",
+    "path": "developer-guide/basic-usage/load-template-from-file-or-stream/mixed_file_and_stream_usage/item-label-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "mixed_file_and_stream_usage"
+  },
+  "developer-guide/basic-usage/same-format-output#example1": {
+    "type": "file",
+    "file": "invoice-letter-report.docx",
+    "path": "developer-guide/basic-usage/same-format-output/generate_docx_from_docx_template/invoice-letter-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "generate_docx_from_docx_template"
+  },
+  "developer-guide/basic-usage/same-format-output#example2": {
+    "type": "file",
+    "file": "monthly-sales-report.xlsx",
+    "path": "developer-guide/basic-usage/same-format-output/generate_xlsx_from_xlsx_template/monthly-sales-report.xlsx",
+    "preview": "Binary file (XLSX, 7 KB)",
+    "function": "generate_xlsx_from_xlsx_template"
+  },
+  "developer-guide/basic-usage/same-format-output#example3": {
+    "type": "file",
+    "file": "quarterly-review-report.pptx",
+    "path": "developer-guide/basic-usage/same-format-output/generate_pptx_from_pptx_template/quarterly-review-report.pptx",
+    "preview": "Binary file (PPTX, 30 KB)",
+    "function": "generate_pptx_from_pptx_template"
+  },
+  "developer-guide/basic-usage/same-format-output#example4": {
+    "type": "file",
+    "file": "invoice-email-report.eml",
+    "path": "developer-guide/basic-usage/same-format-output/generate_an_email_from_an_email_template/invoice-email-report.eml",
+    "preview": "Binary file (EML, 855 bytes)",
+    "function": "generate_an_email_from_an_email_template"
+  },
+  "developer-guide/basic-usage/same-format-output#example5": {
+    "type": "file",
+    "file": "invoice-letter-from-stream.docx",
+    "path": "developer-guide/basic-usage/same-format-output/using_streams_with_same_format/invoice-letter-from-stream.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "using_streams_with_same_format"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example1": {
+    "type": "file",
+    "file": "annual-summary-report.docx",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/specify_explicit_ooxml_compliance_level/annual-summary-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "specify_explicit_ooxml_compliance_level"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example2": {
+    "type": "file",
+    "file": "order-acknowledgement-report.docx",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/use_transitional_compliance/order-acknowledgement-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "use_transitional_compliance"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example3": {
+    "type": "file",
+    "file": "monthly-bulletin-report.docx",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/use_ecma_compliance/monthly-bulletin-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "use_ecma_compliance"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example4": {
+    "type": "file",
+    "file": "status-notice-report.docx",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/keep_the_template_s_compliance_level/status-notice-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "keep_the_template_s_compliance_level"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example5": {
+    "type": "zip",
+    "file": "using-with-different-ooxml-formats-outputs.zip",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/using_with_different_ooxml_formats/using-with-different-ooxml-formats-outputs.zip",
+    "contents": [
+      "stock-card-report.docm",
+      "stock-card-report.docx",
+      "stock-card-report.dotx"
+    ],
+    "preview": "stock-card-report.docm (8 KB)\nstock-card-report.docx (8 KB)\nstock-card-report.dotx (8 KB)",
+    "function": "using_with_different_ooxml_formats"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example6": {
+    "type": "file",
+    "file": "annual-summary-from-stream.docx",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/using_with_streams/annual-summary-from-stream.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "using_with_streams"
+  },
+  "developer-guide/basic-usage/specify-ooxml-compliance#example7": {
+    "type": "zip",
+    "file": "compliance-level-behavior-outputs.zip",
+    "path": "developer-guide/basic-usage/specify-ooxml-compliance/compliance_level_behavior/compliance-level-behavior-outputs.zip",
+    "contents": [
+      "compliance-demo-auto.docx",
+      "compliance-demo-strict.docx",
+      "compliance-demo.pdf"
+    ],
+    "preview": "compliance-demo-auto.docx (7 KB)\ncompliance-demo-strict.docx (8 KB)\ncompliance-demo.pdf (19 KB)",
+    "function": "compliance_level_behavior"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example1": {
+    "type": "file",
+    "file": "delivery-invoice-report.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/when_to_use_file_paths/delivery-invoice-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "when_to_use_file_paths"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example2": {
+    "type": "file",
+    "file": "stock-report-report.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/when_to_use_streams/stock-report-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "when_to_use_streams"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example3": {
+    "type": "text",
+    "file": "mixed-approach-file-input-stream-output.txt",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/mixed_approach_file_input_stream_output/mixed-approach-file-input-stream-output.txt",
+    "preview": "Document assembled, output size: 7529 bytes",
+    "function": "mixed_approach_file_input_stream_output"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example4": {
+    "type": "file",
+    "file": "stock-report-from-stream.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/mixed_approach_stream_input_file_output/stock-report-from-stream.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "mixed_approach_stream_input_file_output"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example5": {
+    "type": "file",
+    "file": "web-order-report.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/web_application_example/web-order-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "web_application_example"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example6": {
+    "type": "file",
+    "file": "web-order-from-url.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/loading_template_from_remote_source/web-order-from-url.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "loading_template_from_remote_source"
+  },
+  "developer-guide/basic-usage/streams-vs-file-paths#example7": {
+    "type": "file",
+    "file": "stock-item-report.docx",
+    "path": "developer-guide/basic-usage/streams-vs-file-paths/stream_disposal_best_practices/stock-item-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "stream_disposal_best_practices"
+  },
+  "developer-guide/basic-usage/use-aggregates#example1": {
+    "type": "file",
+    "file": "aggregate-sum-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/calculate_sum/aggregate-sum-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "calculate_sum"
+  },
+  "developer-guide/basic-usage/use-aggregates#example2": {
+    "type": "file",
+    "file": "aggregate-count-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/calculate_count/aggregate-count-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "calculate_count"
+  },
+  "developer-guide/basic-usage/use-aggregates#example3": {
+    "type": "file",
+    "file": "aggregate-average-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/calculate_average/aggregate-average-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "calculate_average"
+  },
+  "developer-guide/basic-usage/use-aggregates#example4": {
+    "type": "file",
+    "file": "aggregate-min-max-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/calculate_min_and_max/aggregate-min-max-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "calculate_min_and_max"
+  },
+  "developer-guide/basic-usage/use-aggregates#example5": {
+    "type": "file",
+    "file": "aggregate-summary-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/multiple_aggregates/aggregate-summary-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "multiple_aggregates"
+  },
+  "developer-guide/basic-usage/use-aggregates#example6": {
+    "type": "file",
+    "file": "aggregate-filtered-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/aggregates_with_conditions/aggregate-filtered-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "aggregates_with_conditions"
+  },
+  "developer-guide/basic-usage/use-aggregates#example7": {
+    "type": "file",
+    "file": "aggregate-master-detail-report.docx",
+    "path": "developer-guide/basic-usage/use-aggregates/aggregates_in_master_detail_reports/aggregate-master-detail-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "aggregates_in_master_detail_reports"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example1": {
+    "type": "file",
+    "file": "shop-customer-orders-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_customers_details/shop-customer-orders-report.docx",
+    "preview": "Binary file (DOCX, 9 KB)",
+    "function": "getting_customers_details"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example2": {
+    "type": "file",
+    "file": "shop-order-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_order_details/shop-order-list-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "getting_order_details"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example3": {
+    "type": "file",
+    "file": "shop-product-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_product_details/shop-product-list-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "getting_product_details"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example4": {
+    "type": "file",
+    "file": "shop-customer-card-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_single_customer_details/shop-customer-card-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "getting_single_customer_details"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example5": {
+    "type": "file",
+    "file": "shop-product-list-from-database.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/database_entities/shop-product-list-from-database.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "database_entities"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example6": {
+    "type": "file",
+    "file": "shop-manager-contracts-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_data_from_a_json_file/shop-manager-contracts-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "getting_data_from_a_json_file"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example7": {
+    "type": "file",
+    "file": "shop-manager-contracts-from-xml.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/getting_data_from_an_xml_file/shop-manager-contracts-from-xml.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "getting_data_from_an_xml_file"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example8": {
+    "type": "file",
+    "file": "shop-staff-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/csv_data_source/shop-staff-list-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "csv_data_source"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example9": {
+    "type": "text",
+    "file": "use-spreadsheets-as-data-sources.txt",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/use_spreadsheets_as_data_sources/use-spreadsheets-as-data-sources.txt",
+    "preview": "Columns: 3\nClient str\nManager str\nPrice float",
+    "function": "use_spreadsheets_as_data_sources"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example10": {
+    "type": "text",
+    "file": "use-tables-of-word-processing-documents-as-data-sources.txt",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/use_tables_of_word_processing_documents_as_data_sources/use-tables-of-word-processing-documents-as-data-sources.txt",
+    "preview": "Columns: 2\n['Column1', 'Column2']",
+    "function": "use_tables_of_word_processing_documents_as_data_sources"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example11": {
+    "type": "text",
+    "file": "use-tables-of-presentation-documents-as-data-sources.txt",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/use_tables_of_presentation_documents_as_data_sources/use-tables-of-presentation-documents-as-data-sources.txt",
+    "preview": "Columns: 2\n['Column1', 'Column2']",
+    "function": "use_tables_of_presentation_documents_as_data_sources"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example12": {
+    "type": "text",
+    "file": "use-all-tables-of-a-document-as-data-sources.txt",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/use_all_tables_of_a_document_as_data_sources/use-all-tables-of-a-document-as-data-sources.txt",
+    "preview": "MANAGER ['ID', 'NAME']\nCLIENT ['ID', 'NAME']\nCONTRACT ['ID', 'CLIENT_ID', 'MANAGER_ID', 'PRICE']",
+    "function": "use_all_tables_of_a_document_as_data_sources"
+  },
+  "developer-guide/basic-usage/working-with-a-business-case/the-business-layer#example13": {
+    "type": "text",
+    "file": "use-all-tables-of-a-document-as-data-sources-2.txt",
+    "path": "developer-guide/basic-usage/working-with-a-business-case/the-business-layer/use_all_tables_of_a_document_as_data_sources_2/use-all-tables-of-a-document-as-data-sources-2.txt",
+    "preview": "Table1 ['Planet', 'Number']\nTable2 ['First_Name', 'Last_Name']\nTable3 ['Name', 'Address']",
+    "function": "use_all_tables_of_a_document_as_data_sources_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example1": {
+    "type": "file",
+    "file": "in-table-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/building_reports/in-table-list-report.docx",
+    "preview": "Binary file (DOCX, 10 KB)",
+    "function": "building_reports"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example2": {
+    "type": "file",
+    "file": "customer-contact-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/building_reports_2/customer-contact-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "building_reports_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example3": {
+    "type": "file",
+    "file": "staff-certificates-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data/staff-certificates-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_xml_data"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example4": {
+    "type": "file",
+    "file": "staff-ages-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_2/staff-ages-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_xml_data_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example5": {
+    "type": "file",
+    "file": "staff-ages-root-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_3/staff-ages-root-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_xml_data_3"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example6": {
+    "type": "file",
+    "file": "manager-contract-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_4/manager-contract-list-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "accessing_xml_data_4"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example7": {
+    "type": "file",
+    "file": "staff-certificates-from-json.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data/staff-certificates-from-json.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_json_data"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example8": {
+    "type": "file",
+    "file": "staff-ages-from-json.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_2/staff-ages-from-json.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_json_data_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example9": {
+    "type": "file",
+    "file": "staff-ages-wrapped-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_3/staff-ages-wrapped-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_json_data_3"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example10": {
+    "type": "file",
+    "file": "manager-contract-list-from-json.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_4/manager-contract-list-from-json.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "accessing_json_data_4"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example11": {
+    "type": "zip",
+    "file": "accessing-json-data-5-outputs.zip",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_5/accessing-json-data-5-outputs.zip",
+    "contents": [
+      "product-codes-loose.docx",
+      "product-codes-strict.docx"
+    ],
+    "preview": "product-codes-loose.docx (7 KB)\nproduct-codes-strict.docx (7 KB)",
+    "function": "accessing_json_data_5"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example12": {
+    "type": "file",
+    "file": "delivery-dates-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_6/delivery-dates-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_json_data_6"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example13": {
+    "type": "file",
+    "file": "staff-ages-columns-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_csv_data/staff-ages-columns-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_csv_data"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example14": {
+    "type": "file",
+    "file": "staff-ages-from-csv.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_csv_data_2/staff-ages-from-csv.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_csv_data_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example15": {
+    "type": "file",
+    "file": "order-unit-prices-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/setting_up_known_external_types/order-unit-prices-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "setting_up_known_external_types"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example16": {
+    "type": "file",
+    "file": "customer-emails-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_missing_members_of_data_objects/customer-emails-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "accessing_missing_members_of_data_objects"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis#example17": {
+    "type": "file",
+    "file": "order-prices-report.xlsx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/integrating_with_native_spreadsheet_data_types/order-prices-report.xlsx",
+    "preview": "Binary file (XLSX, 8 KB)",
+    "function": "integrating_with_native_spreadsheet_data_types"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2#example1": {
+    "type": "zip",
+    "file": "using-contextual-object-member-access-outputs.zip",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2/using_contextual_object_member_access/using-contextual-object-member-access-outputs.zip",
+    "contents": [
+      "staff-table-contextual-report.docx",
+      "staff-table-named-report.docx"
+    ],
+    "preview": "staff-table-contextual-report.docx (7 KB)\nstaff-table-named-report.docx (7 KB)",
+    "function": "using_contextual_object_member_access"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2#example1": {
+    "type": "file",
+    "file": "contract-list-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2/table_row_data_bands/contract-list-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "table_row_data_bands"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2#example2": {
+    "type": "file",
+    "file": "manager-contract-totals-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2/table_row_data_bands_2/manager-contract-totals-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "table_row_data_bands_2"
+  },
+  "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2#example3": {
+    "type": "file",
+    "file": "manager-clients-report.docx",
+    "path": "developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2/table_row_data_bands_3/manager-clients-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "table_row_data_bands_3"
+  },
+  "getting-started/hello-world#code-example-hello-world": {
+    "type": "file",
+    "file": "hello-world-report.docx",
+    "path": "getting-started/hello-world/hello_world/hello-world-report.docx",
+    "preview": "Binary file (DOCX, 7 KB)",
+    "function": "hello_world"
+  },
+  "getting-started/quick-start-guide#demo_app_table_report": {
+    "type": "file",
+    "file": "order-table-report.docx",
+    "path": "getting-started/quick-start-guide/table_report/order-table-report.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "table_report"
+  },
+  "getting-started/quick-start-guide#demo_app_json_to_pdf": {
+    "type": "file",
+    "file": "orders-by-customer.pdf",
+    "path": "getting-started/quick-start-guide/json_to_pdf/orders-by-customer.pdf",
+    "preview": "Binary file (PDF, 47 KB)",
+    "function": "json_to_pdf"
+  },
+  "getting-started/quick-start-guide#demo_app_fill_spreadsheet": {
+    "type": "file",
+    "file": "stock-sheet-report.xlsx",
+    "path": "getting-started/quick-start-guide/fill_spreadsheet/stock-sheet-report.xlsx",
+    "preview": "Binary file (XLSX, 8 KB)",
+    "function": "fill_spreadsheet"
+  },
+  "product-overview#product-overview-quick-example": {
+    "type": "file",
+    "file": "customer-summary.pdf",
+    "path": "product-overview/quick_example/customer-summary.pdf",
+    "preview": "Binary file (PDF, 37 KB)",
+    "function": "quick_example"
+  }
+}

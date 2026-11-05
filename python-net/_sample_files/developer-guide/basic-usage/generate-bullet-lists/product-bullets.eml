@@ -1,0 +1,11 @@
+From: "Harbor Lane Provisions" <orders@harborlane.example>
+To: "Quayside Bistro" <orders@quaysidebistro.example>
+Subject: Our products
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+We provide the following products:
+
+<<foreach [in products]>>• <<[Name]>> - <<[Description]>>
+<</foreach>>
+Harbor Lane Provisions

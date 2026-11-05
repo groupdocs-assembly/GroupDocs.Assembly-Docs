@@ -1,0 +1,27 @@
+From: "Harbor Lane Provisions" <accounts@harborlane.example>
+To: orders@quaysidebistro.example
+Subject: Invoice #1001
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart70_52a39682-9cae-4787-90df-0034aad9e31c"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart70_52a39682-9cae-4787-90df-0034aad9e31c
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Quayside Bistro,=0A=
+=0A=
+Please find your invoice below:=0A=
+=0A=
+Amount: $1,500=2E00=0A=
+=0A=
+Thank you for your business=2E
+----_=_NextPart70_52a39682-9cae-4787-90df-0034aad9e31c
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart70_52a39682-9cae-4787-90df-0034aad9e31c--
+

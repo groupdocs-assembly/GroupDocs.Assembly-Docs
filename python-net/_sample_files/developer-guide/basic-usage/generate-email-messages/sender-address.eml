@@ -1,0 +1,7 @@
+From: "<<[email.From]>>" <sender@harborlane.example>
+To: "<<[email.To]>>" <recipient@harborlane.example>
+Subject: <<[email.Subject]>>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your statement for January 2015 is ready. Reply to this message with any questions.

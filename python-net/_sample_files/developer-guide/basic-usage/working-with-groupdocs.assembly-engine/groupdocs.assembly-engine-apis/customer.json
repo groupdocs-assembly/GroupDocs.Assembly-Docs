@@ -1,0 +1,74 @@
+{
+  "CustomerName": "Quayside Bistro",
+  "ShippingAddress": "3 Harbour Steps, Port Ellery",
+  "CustomerContactNumber": "+1 555 0142 811",
+  "Barcode": "20150114001",
+  "Photo": "quayside-bistro.png",
+  "Document": "outer-document.docx",
+  "Color": "#2E8B7A",
+  "Order": [
+    {
+      "OrderNumber": 10001,
+      "Product": {
+        "ProductName": "Harbor Blend whole bean coffee",
+        "UnitInStock": 240,
+        "Discount": 0,
+        "ProductPrice": "$18.40"
+      },
+      "ProductQuantity": 30,
+      "Price": 552,
+      "OrderDate": "2015-01-14T00:00:00",
+      "ShippingDate": "2015-01-15T00:00:00",
+      "Barcode": "HLP-10001",
+      "Services": [
+        {
+          "ServiceName": "Next-day delivery"
+        },
+        {
+          "ServiceName": "Menu pairing advice"
+        }
+      ]
+    },
+    {
+      "OrderNumber": 10004,
+      "Product": {
+        "ProductName": "Aged harbour cheddar",
+        "UnitInStock": 90,
+        "Discount": 5,
+        "ProductPrice": "$16.50"
+      },
+      "ProductQuantity": 8,
+      "Price": 132,
+      "OrderDate": "2015-03-05T00:00:00",
+      "ShippingDate": "2015-03-06T00:00:00",
+      "Barcode": "HLP-10004",
+      "Services": [
+        {
+          "ServiceName": "Cold-chain storage"
+        }
+      ]
+    },
+    {
+      "OrderNumber": 10006,
+      "Product": {
+        "ProductName": "Cold-pressed olive oil",
+        "UnitInStock": 320,
+        "Discount": 10,
+        "ProductPrice": "$12.90"
+      },
+      "ProductQuantity": 40,
+      "Price": 516,
+      "OrderDate": "2015-06-18T00:00:00",
+      "ShippingDate": "2015-06-19T00:00:00",
+      "Barcode": "HLP-10006",
+      "Services": [
+        {
+          "ServiceName": "Next-day delivery"
+        },
+        {
+          "ServiceName": "Shelf restocking"
+        }
+      ]
+    }
+  ]
+}

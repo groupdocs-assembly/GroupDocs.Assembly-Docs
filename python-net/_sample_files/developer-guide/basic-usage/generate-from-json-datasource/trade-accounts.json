@@ -1,0 +1,8 @@
+{
+  "accounts": [
+    { "name": "Quayside Bistro", "manager": "Mei Tanaka", "code": "0142" },
+    { "name": "Lantern Street Café", "manager": "Daniel Reyes", "code": "0217" },
+    { "name": "Saltmarsh Deli", "manager": "Mei Tanaka", "code": "0305" },
+    { "name": "Pier Nine Kitchen", "manager": "Sofia Marino", "code": "0421" }
+  ]
+}

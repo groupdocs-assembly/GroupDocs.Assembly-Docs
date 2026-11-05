@@ -1,0 +1,71 @@
+[
+  {
+    "Name": "Mei Tanaka",
+    "Contract": [
+      {
+        "Client": {
+          "Name": "Harbourview Hotel"
+        },
+        "Price": 120000
+      },
+      {
+        "Client": {
+          "Name": "Quayside Bistro"
+        },
+        "Price": 75000
+      },
+      {
+        "Client": {
+          "Name": "Saltmarsh Deli"
+        },
+        "Price": 35000
+      }
+    ]
+  },
+  {
+    "Name": "Daniel Reyes",
+    "Contract": [
+      {
+        "Client": {
+          "Name": "Lantern Street Café"
+        },
+        "Price": 65000
+      },
+      {
+        "Client": {
+          "Name": "Millbrook Market"
+        },
+        "Price": 55000
+      }
+    ]
+  },
+  {
+    "Name": "Sofia Marino",
+    "Contract": [
+      {
+        "Client": {
+          "Name": "Pier Nine Kitchen"
+        },
+        "Price": 35000
+      },
+      {
+        "Client": {
+          "Name": "The Copper Kettle"
+        },
+        "Price": 25000
+      },
+      {
+        "Client": {
+          "Name": "Driftwood Grill"
+        },
+        "Price": 10000
+      },
+      {
+        "Client": {
+          "Name": "Tidewater Tavern"
+        },
+        "Price": 10000
+      }
+    ]
+  }
+]

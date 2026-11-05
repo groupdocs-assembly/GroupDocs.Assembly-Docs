@@ -1,0 +1,4 @@
+Columns: 3
+Client str
+Manager str
+Price float

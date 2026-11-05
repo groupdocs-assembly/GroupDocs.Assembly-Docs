@@ -1,0 +1,12 @@
+From: "Harbor Lane Provisions" <hello@harborlane.example>
+To: "<<[customer.Email]>>" <recipient@harborlane.example>
+Subject: <<[customer.Subject]>>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear <<[customer.Name]>>,
+
+Thank you for ordering from Harbor Lane Provisions this year. Your account manager will call you about next season's coffee and cheese.
+
+Harbor Lane Provisions
+18 Quayside Road, Port Ellery

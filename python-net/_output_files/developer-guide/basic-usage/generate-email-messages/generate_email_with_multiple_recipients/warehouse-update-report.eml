@@ -1,0 +1,22 @@
+From: "Harbor Lane Provisions" <news@harborlane.example>
+To: orders@quaysidebistro.example, orders@lanternstreetcafe.example
+Subject: Important Update
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart72_619ce049-f9b7-4a7c-a030-05048afa5e1f"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart72_619ce049-f9b7-4a7c-a030-05048afa5e1f
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Our warehouse at 18 Quayside Road closes at noon on Friday, 16 January 2015=
+=2E
+----_=_NextPart72_619ce049-f9b7-4a7c-a030-05048afa5e1f
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart72_619ce049-f9b7-4a7c-a030-05048afa5e1f--
+

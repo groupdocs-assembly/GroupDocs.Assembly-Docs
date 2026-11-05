@@ -1,0 +1,8 @@
+﻿Name: Amara Osei, Age: 41, Date of
+Birth: 12.03.1984
+Name: Jonas Weber, Age: 37, Date of
+Birth: 04.07.1988
+Name: Lena Park, Age: 29, Date of
+Birth: 21.11.1996
+
+Average age: 35.666666666666664

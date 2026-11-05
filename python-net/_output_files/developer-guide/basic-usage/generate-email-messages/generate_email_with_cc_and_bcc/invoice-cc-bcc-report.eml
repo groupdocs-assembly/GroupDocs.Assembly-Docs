@@ -1,0 +1,23 @@
+From: "Harbor Lane Provisions" <accounts@harborlane.example>
+To: orders@quaysidebistro.example
+Cc: mei.tanaka@harborlane.example
+Bcc: archive@harborlane.example
+Subject: Invoice
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--_=_NextPart74_eeea34fd-e678-4513-9015-412ffec22e3e"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart74_eeea34fd-e678-4513-9015-412ffec22e3e
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Please find attached invoice=2E
+----_=_NextPart74_eeea34fd-e678-4513-9015-412ffec22e3e
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+----_=_NextPart74_eeea34fd-e678-4513-9015-412ffec22e3e--
+

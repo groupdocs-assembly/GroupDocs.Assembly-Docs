@@ -2,13 +2,12 @@
 id: basic-usage
 url: assembly/python-net/basic-usage
 title: Basic Usage
-weight: 1
-description: ""
-keywords: 
+weight: 2
+description: "Basic Usage with GroupDocs.Assembly for Python via .NET."
+keywords: basic usage, GroupDocs.Assembly, Python, report generation
 productName: GroupDocs.Assembly for Python via .NET
 hideChildren: False
 ---
-
 Generate documents based on a data source and template, or create reports fast and easy with our intuitive and powerful API just with few lines of code.
 
 Let's look at a scenario for working with a business case and working with GroupDocs.Assembly Engine.
