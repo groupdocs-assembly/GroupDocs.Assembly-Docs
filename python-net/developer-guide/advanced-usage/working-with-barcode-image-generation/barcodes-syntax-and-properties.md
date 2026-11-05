@@ -202,7 +202,7 @@ Binary file (DOCX, 13 KB)
 {{< /tab >}}
 {{< /tabs >}}
 
-Values of the `base_x_dimension` and `base_y_dimension` properties are measured in units defined by the `DocumentAssembler.barcode_settings.graphics_unit` property. By default, they are 0.6 and 2, and `graphics_unit` is 6, the millimeter of the .NET `GraphicsUnit` enumeration.
+Values of the `base_x_dimension` and `base_y_dimension` properties are measured in units defined by the `DocumentAssembler.barcode_settings.graphics_unit` property. By default, they are 0.6 and 2, and `graphics_unit` is `GraphicsUnit.MILLIMETER` (`from groupdocs.assembly import GraphicsUnit`).
 
 {{< alert style="warning" >}}When the scale attribute is provided for a barcode tag, actual x- and y-dimensions are calculated by the engine as the corresponding percent of base x- and y-dimensions.{{< /alert >}}
 
