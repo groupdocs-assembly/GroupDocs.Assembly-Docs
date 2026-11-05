@@ -197,7 +197,7 @@ The license file contains a digital signature. Do not modify the license file, a
 
 ### Advanced Usage Topics
 
-To learn more about the evaluation limitations and the licensing options, please refer to [Evaluation Limitations and Licensing]({{< ref "assembly/python-net/getting-started/evaluation-limitations-and-licensing.md" >}}) and the [advanced usage section]({{< ref "assembly/python-net/developer-guide/advanced-usage/_index.md" >}}).
+To learn more about the evaluation limitations and the licensing options, please refer to [Evaluation Limitations and Licensing]({{< ref "assembly/python-net/getting-started/licensing-and-subscription.md" >}}) and the [advanced usage section]({{< ref "assembly/python-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ## More resources
 
