@@ -3,7 +3,7 @@ id: supported-document-formats
 url: assembly/python-net/supported-document-formats
 title: Supported Document Formats
 weight: 4
-description: "GroupDocs.Assembly for Python via .NET fills templates of Word, Excel, PowerPoint, OpenDocument, email, HTML, Markdown and text formats, more than 40 in all, and saves reports to them and to PDF, XPS, TIFF, SVG, EPUB and more."
+description: "GroupDocs.Assembly for Python via .NET fills templates of 35 Word, Excel, PowerPoint, OpenDocument, email, HTML, Markdown and text formats, and saves reports to them and to 9 more, PDF, XPS, TIFF, SVG and EPUB among them: more than 40 in all."
 keywords: DOCX, DOC, RTF, ODT, XLSX, XLS, ODS, PPTX, PPT, ODP, MSG, EML, HTML, MD, TXT, PDF, XPS, supported formats, template formats, report formats, Python
 productName: GroupDocs.Assembly for Python via .NET
 hideChildren: False

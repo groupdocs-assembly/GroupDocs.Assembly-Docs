@@ -48,7 +48,7 @@ DocumentAssembler().assemble_document("hello-world.docx", "hello-world.pdf", Dat
 
 ## Supported File Formats
 
-GroupDocs.Assembly fills templates of more than 40 file formats. For a complete list, see the [full list of supported formats]({{< ref "assembly/python-net/getting-started/supported-document-formats.md" >}}).
+GroupDocs.Assembly works with more than 40 file formats: it fills templates of 35 of them and saves reports to all of them. For a complete list, see the [full list of supported formats]({{< ref "assembly/python-net/getting-started/supported-document-formats.md" >}}).
 
 - **Word Processing** (DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, ODT, OTT, TXT, MD)
 - **Spreadsheets** (XLS, XLSX, XLSM, XLSB, XLT, XLTX, XLTM, ODS)
