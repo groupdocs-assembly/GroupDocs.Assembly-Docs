@@ -3,7 +3,7 @@ id: getting-started
 url: assembly/python-net/getting-started
 title: Getting Started
 linkTitle: Getting Started
-weight: 2
+weight: 1
 description: "Install GroupDocs.Assembly for Python via .NET, build your first report from a template and a Python dict, and explore the runnable examples repository on Windows, Linux, or macOS."
 keywords: getting started, installation, hello world, quick start, system requirements, licensing, supported formats, python, GroupDocs.Assembly
 productName: GroupDocs.Assembly for Python via .NET
