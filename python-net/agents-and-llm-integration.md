@@ -457,7 +457,7 @@ Or auto-apply: `export GROUPDOCS_LIC_PATH="path/to/license.lic"` (a file or a UR
 
 **`The type initializer for 'Gdip' threw an exception`** -- a presentation template on Linux/macOS: install libgdiplus (`sudo apt install libgdiplus` / `brew install mono-libgdiplus`)
 
-**`Value cannot be null. (Parameter 'trueTypeFont')`** -- a QR code on Linux: install the template's default font (a Word document's default, often Times New Roman; a workbook's Normal style, often Calibri) under that name; DejaVu, Liberation and Carlito do not stand in. Code 128, EAN-13 and Codabar need no particular font
+**`Value cannot be null. (Parameter 'trueTypeFont')`** -- a QR code whose font is not installed (Linux, or any system without it). Install that font under its name: in a Word document, the document's default font (often Times New Roman); in a workbook, the font of the text box that holds the tag (Calibri in the .NET examples' `Barcode.xlsx`), not the Normal style. No other font stands in, not even DejaVu, Liberation or Carlito. Code 128, EAN-13 and Codabar need no particular font
 
 **The first call takes 15-30 seconds** -- Windows, with a licence applied: the engine's licence check, once per process
 
