@@ -31,7 +31,7 @@ As a report developer, you are required to share the following key requirements:
 ```html
 We provide support for the following products:
 <ul>
-&lt;&lt;foreach [in products]&gt;&gt;
+&lt;&lt;foreach [in product]&gt;&gt;
 <li>&lt;&lt;[ProductName]&gt;&gt;</li>
 &lt;&lt;/foreach&gt;&gt;
 </ul>

@@ -31,7 +31,7 @@ As a report developer, you are required to share the information of the products
 
 ```text
 We provide support for the following products:
-<<foreach [in products]>><<[ProductName]>>
+<<foreach [in product]>><<[ProductName]>>
 <</foreach>>
 ```
 

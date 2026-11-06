@@ -289,7 +289,7 @@ DocumentAssembler().assemble_document("orders-by-customer.docx", "orders-by-cust
 | `<<[orders.Sum(o => o.Price)]>>`, `Count()`, `Where(...)`, `OrderBy(...)`, `GroupBy(...)` | sequence operations |
 | `<<var [total = 0]>>` | variables |
 | `<<image [customer.Photo]>>` in a text box, `<<barcode [code] -qr>>` | images (path, bytes, Base64, URL), barcodes |
-| `<<link [uri] [text]>>`, `<<bookmark [name]>>`, `<<doc [path]>>` | hyperlinks, bookmarks, inserted documents (`-build` fills their tags) |
+| `<<link [uri] [text]>>`, `<<bookmark [name]>>`, `<<doc [path]>>` | hyperlinks, bookmarks, inserted documents (`-build` fills their tags; a doc tag fails in spreadsheet and presentation templates) |
 | `<<x [...]>>`, `<<y [...]>>`, `<<size [...]>>` in a chart title or series | chart data |
 
 ## Operations

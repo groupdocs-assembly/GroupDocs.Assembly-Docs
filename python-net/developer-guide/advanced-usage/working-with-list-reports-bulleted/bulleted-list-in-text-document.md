@@ -30,7 +30,7 @@ As a report developer, you are required to share the following key requirements:
 
 ```text
 We provide support for the following products:
-<<foreach [in products]>>•	<<[ProductName]>>
+<<foreach [in product]>>•	<<[ProductName]>>
 <</foreach>>
 
 ```
