@@ -31,7 +31,7 @@ Get the template from here.
 
 ### The Code
 
-{{< alert style="warning" >}}On Linux, a QR code needs the workbook's default font (its Normal style font) installed. This sample template is set in Arial, which `ttf-mscorefonts-installer` provides; a template set in Calibri, the Excel default, needs Calibri itself. Without the font the QR code cannot be drawn: the call raises `Value cannot be null. (Parameter 'trueTypeFont')`, and a substitute font such as Carlito is not used. See [System Requirements]({{< ref "assembly/python-net/getting-started/system-requirements.md" >}}).{{< /alert >}}
+{{< alert style="warning" >}}On Linux, a QR code needs the font of the text box that holds the barcode tag installed, under that font's name; the workbook's cell styles play no part. This sample template is set in Arial, which `ttf-mscorefonts-installer` provides; a text box set in Calibri, the Excel default, needs Calibri itself. Without the font the QR code cannot be drawn: the call raises `Value cannot be null. (Parameter 'trueTypeFont')`, and a substitute font such as Carlito is not used. See [System Requirements]({{< ref "assembly/python-net/getting-started/system-requirements.md" >}}).{{< /alert >}}
 
 {{< tabs "example1" >}}
 {{< tab "Python" >}}
