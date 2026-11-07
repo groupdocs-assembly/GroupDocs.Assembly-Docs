@@ -12,7 +12,7 @@ hideChildren: False
 
 ## In-Table List with Filtering, Grouping, and Ordering in Microsoft Word Document
 
-### Creating a In-Table List with Filtering, Grouping, and Ordering
+### Creating an In-Table List with Filtering, Grouping, and Ordering
 
 Practising the following steps you can create In-Table List with Filtering, Grouping, and Ordering Template in MS Word 2013.
 

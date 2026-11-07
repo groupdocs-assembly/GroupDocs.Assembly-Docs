@@ -12,7 +12,7 @@ hideChildren: False
 
 ## In-Paragraph List in Microsoft Excel Document
 
-### Creating a In-Paragraph List
+### Creating an In-Paragraph List
 
 Practicing the following steps you can create In-Paragraph List Template in MS Excel 2013.
 

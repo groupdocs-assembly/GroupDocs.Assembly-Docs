@@ -12,7 +12,7 @@ hideChildren: False
 
 ## In-Table List in Microsoft Excel Document
 
-### Creating a In-Table List
+### Creating an In-Table List
 
 Practicing the following steps you can create In-Table List Template in MS Excel 2013.
 

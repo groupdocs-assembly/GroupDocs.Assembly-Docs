@@ -16,7 +16,7 @@ hideChildren: True
 {{< button style="primary" link="https://releases.groupdocs.com/assembly/net/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
 {{< button style="primary" link="https://pypi.org/project/groupdocs-assembly" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
 
-GroupDocs.Assembly for Net - A assembly is a document automation and reports generation API designed to create custom documents from templates. This Net reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format.
+GroupDocs.Assembly for Net - An assembly is a document automation and reports generation API designed to create custom documents from templates. This Net reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format.
 
 GroupDocs.Assembly supports over [170 popular file formats](/assembly/net/supported-document-formats). Load text documents, spreadsheets, presentations, PDF files, email messages, and images.
 
