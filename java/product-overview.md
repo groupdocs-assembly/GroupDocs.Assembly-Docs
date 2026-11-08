@@ -9,7 +9,7 @@ keywords: assembly
 productName: GroupDocs.Assembly for Java
 toc: True
 ---
-A assembly is a document automation and reports generation API designed to create custom documents from templates.
+An assembly is a document automation and reports generation API designed to create custom documents from templates.
 
 With its powerful and straightforward API, you can execute the following actions:
 

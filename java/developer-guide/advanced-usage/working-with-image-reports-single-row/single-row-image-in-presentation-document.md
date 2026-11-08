@@ -16,7 +16,7 @@ hideChildren: False
 
 Please follow below steps to create Single Row Image in MS PowerPoint 2013:
 
-1.  Creat a new presentation slide.
+1.  Create a new presentation slide.
 2.  Insert a desired shape to display image in it.
 3.  Go to Insert Tab and select shape by clicking on Shape Icon.
 4.  Write "Name" and "Age" to show name and age info of the customer.

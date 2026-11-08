@@ -12,7 +12,7 @@ hideChildren: False
 
 ## In-Table List with Highlighted Rows in Microsoft PowerPoint Document
 
-### Creating a In-Table List with Highlighted Rows
+### Creating an In-Table List with Highlighted Rows
 
 Practising the following steps you can create In-Table List with Highlighted Rows Template in MS PowerPoint 2013.
 

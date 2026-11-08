@@ -120,7 +120,7 @@ hideChildren: False
 
 
 
-### JOSN DataSource
+### JSON DataSource
 
 #### Getting Customer Data From JSON File
 

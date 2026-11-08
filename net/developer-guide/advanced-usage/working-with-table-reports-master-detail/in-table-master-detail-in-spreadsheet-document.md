@@ -12,7 +12,7 @@ hideChildren: False
 
 ## In-Table Master-Detail in Microsoft Excel Document
 
-### Creating a In-Table Master-Detail
+### Creating an In-Table Master-Detail
 
 Practising the following steps you can create In-Table Master-Detail Template in MS Excel 2013.
 
