@@ -3,7 +3,7 @@ id: inserting-images-dynamically
 url: assembly/java/inserting-images-dynamically
 title: Inserting Images Dynamically
 weight: 42
-description: "How to dynamically inserted image within your template"
+description: "How to dynamically insert image within your template"
 keywords: assembly, java, inserting
 productName: GroupDocs.Assembly for Java
 hideChildren: False
@@ -27,7 +27,7 @@ And simply call the assembler method to generate report like following code snip
 The expression declared within an image tag is used by the assembler to build an image to be inserted. The expression must return a value of one of the following types:
 
 *   A byte array containing an image data
-*   A InputStream instance able to read an image data
+*   An InputStream instance able to read an image data
 *   An BufferredImage object
 *   A string containing an image URI, path, or Base64-encoded image data
 

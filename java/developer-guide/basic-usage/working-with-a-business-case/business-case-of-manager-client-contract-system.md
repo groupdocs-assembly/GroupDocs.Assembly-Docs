@@ -36,7 +36,7 @@ Here are our customer objects:
 
 ## Templates Location
 
-There is a fixed location of templates somewhere /Date/Source/. The report developer may create any number of templates and can create sub directories under /Data/Source/ in order to organize the templates as per convenience.
+There is a fixed location of templates somewhere /Data/Source/. The report developer may create any number of templates and can create sub directories under /Data/Source/ in order to organize the templates as per convenience.
 
 ## Reports Location
 
