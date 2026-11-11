@@ -1,0 +1,437 @@
+{
+  "serverVersion": "26.11.0",
+  "capturedFrom": "GroupDocs.Assembly.Mcp@26.11.0",
+  "tools": [
+    {
+      "name": "get_template_fields",
+      "description": "Lists what a template needs before generating a document from it: every <<…>> tag, the names it uses for its data, the fields it reads, and a JSON skeleton of the data to fill in and pass to assemble_document as 'dataJson'. Use it when the user asks what data a template expects, or before calling assemble_document with data you have to build. Reads DOCX, DOTX, DOCM, RTF, ODT, TXT, Markdown, HTML, XLSX, XLTX, ODS, PPTX, POTX, ODP and EML templates; binary DOC, XLS, PPT and MSG templates cannot be read without generating them (readable=false). Processes no data and does not run the engine. Do NOT pre-check whether files exist — just pass the filename the user provided; a file that cannot be found returns the list of available files instead. Returns JSON: { fileName, family, readable, tagCount, dataSourceNames[], fields[], dataSkeleton, tags: [{ tag, kind, part }], tagsTruncated, notes[] }. fields use '[]' for lists ('customers[].Name'). The skeleton is inferred from the tags; check it against your data. On failure isError is set and the text starts with 'Template inspection failed for'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "template": {
+            "description": "The template document to inspect",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "required": [
+          "template"
+        ]
+      },
+      "annotations": {
+        "idempotentHint": true,
+        "readOnlyHint": true
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "assemble_document",
+      "description": "Generates a document from a template and data: fills the template's <<[field]>>, <<foreach>>, <<if>>, table, chart, image and barcode tags with values and saves the result — a contract, invoice, letter, report or e-mail built from a Word, Excel, PowerPoint, Markdown, HTML or e-mail template. Use it whenever the user asks to generate, fill in, populate or produce a document from a template. Templates: DOCX, DOC, RTF, ODT, TXT, Markdown, HTML, XLSX, XLS, ODS, PPTX, PPT, ODP, MSG, EML and more. Data: pass 'dataJson' (a JSON object or array, inline) or 'data' (a .json, .xml, .csv/.tsv file, or a spreadsheet, Word or presentation document whose table is the data). A JSON object's keys are the names the template uses ({\"customer\":{…},\"items\":[…]} fills <<[customer.Name]>> and <<foreach [i in items]>>); an array, XML, CSV or table is given the name the template uses for it automatically, or pass 'dataSourceName'. Call get_template_fields first to see which names and fields a template expects and a JSON skeleton to fill. Output: the template's own format by default; set 'format' (e.g. pdf, docx, html, md) to save it as another format of the same family, or as PDF. Do NOT pre-check whether files exist — just pass the filename the user provided; a file that cannot be found returns the list of available files instead. Returns 'Assembled …' with the saved path ('Saved to: …') of '<template>_assembled.<ext>'. On failure isError is set and the text starts with 'Document assembly failed for'; a field the data lacks is named in the message.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "template": {
+            "description": "The template document (DOCX, XLSX, PPTX, Markdown, HTML, TXT, MSG, EML, …) containing <<…>> tags",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "dataJson": {
+            "description": "The data as inline JSON: an object whose keys are the names used in the template, or an array. Use this OR 'data'",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "data": {
+            "description": "The data as a file: .json, .xml, .csv or .tsv, or a spreadsheet/Word/presentation document whose table holds the data. Use this OR 'dataJson'",
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "default": null
+          },
+          "dataSourceName": {
+            "description": "The name the template uses for the data (e.g. 'customers' in <<foreach [c in customers]>>). Default: worked out from the template",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "format": {
+            "description": "Output format extension (default: the template's own), e.g. 'pdf', 'docx', 'html', 'md', 'xlsx', 'pptx', 'eml'",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "outputName": {
+            "description": "Output file name (the extension follows the output format). Default: '<template>_assembled.<ext>'",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "allowMissingMembers": {
+            "description": "Treat fields missing from the data as empty instead of failing (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "removeEmptyParagraphs": {
+            "description": "Remove paragraphs that become empty after tags are replaced (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "updateFields": {
+            "description": "Update fields (page numbers, tables of contents) and spreadsheet formulas in the result (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "inlineErrors": {
+            "description": "Write template syntax errors into the output next to the faulty tag instead of failing — for debugging a template (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "dataTable": {
+            "description": "Document data only: which table (worksheet for spreadsheets) holds the data, 1-based (default 1)",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "hasHeaders": {
+            "description": "CSV and document-table data: the first row holds column names (default true)",
+            "type": "boolean",
+            "default": true
+          },
+          "csvDelimiter": {
+            "description": "CSV data: the column delimiter, one character or 'tab' (default ',' — tab for .tsv)",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "template"
+        ]
+      },
+      "annotations": {
+        "destructiveHint": false
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "assemble_per_record",
+      "description": "Generates one document per record — a mail merge: a letter per customer, a certificate per attendee, an invoice per order — by filling the same template once for every element of a JSON array, and saves each result as its own file. Use it when the user wants separate documents for each row or record; use assemble_document for one document that lists all records. Templates: DOCX, DOC, RTF, ODT, TXT, Markdown, HTML, XLSX, PPTX, MSG, EML and more. Data: 'dataJson' (inline) or 'data' (a .json file) holding an array of objects, or an object with the array under 'recordsPath' (found automatically when the object has exactly one array). Each record is the template's data for one document: its keys are the names the template uses (<<[Name]>>), or name the record with 'dataSourceName' (<<[customer.Name]>> → 'customer'; worked out from the template when omitted). Files are named '<template>_<n>.<ext>', or after a record field with 'fileNameField'. At most 'maxDocuments' records (default 100, up to 1000). Do NOT pre-check whether files exist — just pass the filename the user provided; a file that cannot be found returns the list of available files instead. Returns 'Assembled N of M document(s) …' followed by one saved path per line, and the record number and reason for any record that failed. On failure isError is set and the text starts with 'Per-record assembly failed for'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "template": {
+            "description": "The template document (DOCX, XLSX, PPTX, Markdown, HTML, TXT, MSG, EML, …) containing <<…>> tags",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "dataJson": {
+            "description": "The records as inline JSON: an array of objects, or an object holding the array. Use this OR 'data'",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "data": {
+            "description": "The records as a .json file: an array of objects, or an object holding the array. Use this OR 'dataJson'",
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "default": null
+          },
+          "recordsPath": {
+            "description": "Where the array is when the JSON is an object, as a dotted path (e.g. 'customers' or 'batch.items'). Default: its only array",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dataSourceName": {
+            "description": "The name the template uses for one record (e.g. 'customer' in <<[customer.Name]>>). Default: worked out from the template",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "fileNameField": {
+            "description": "A record field whose value names each output file (e.g. 'InvoiceNumber' or 'customer.Name'). Default: a running number",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "format": {
+            "description": "Output format extension (default: the template's own), e.g. 'pdf', 'docx', 'eml'",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "maxDocuments": {
+            "description": "Refuse to run when there are more records than this (default 100, at most 1000)",
+            "type": "integer",
+            "default": 100
+          },
+          "allowMissingMembers": {
+            "description": "Treat fields missing from a record as empty instead of failing that record (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "removeEmptyParagraphs": {
+            "description": "Remove paragraphs that become empty after tags are replaced (default false)",
+            "type": "boolean",
+            "default": false
+          },
+          "updateFields": {
+            "description": "Update fields (page numbers, tables of contents) and spreadsheet formulas in each result (default false)",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "template"
+        ]
+      },
+      "annotations": {
+        "destructiveHint": false
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_document_info",
+      "description": "Inspects a file before generating documents with it, as a template, as data, or both: its template family, size, how many <<…>> tags it has and the data names they use, which formats it can be saved to, and — for a data file — the shape of the data (JSON object keys or array length, CSV columns, the tables of a spreadsheet, Word or presentation document and their columns). Supports DOCX, DOC, RTF, ODT, TXT, Markdown, HTML, XLSX, XLS, ODS, PPTX, PPT, ODP, MSG, EML templates and JSON, XML, CSV, TSV data. Call it when the user asks whether a file is a template, what a data file contains, or what a template can be saved as. Do NOT pre-check whether files exist — just pass the filename the user provided; a file that cannot be found returns the list of available files instead. Returns JSON: { fileName, extension, size, family, isTemplate, tagCount, dataSourceNames[], canSaveTo[], dataKind, data }. family is one of WordProcessing, Spreadsheet, Presentation, Email, or null for a data-only file; isTemplate is null when tags cannot be read (binary DOC/XLS/PPT/MSG). On failure isError is set and the text starts with 'Document-info lookup failed for'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "annotations": {
+        "idempotentHint": true,
+        "readOnlyHint": true
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_supported_formats",
+      "description": "Lists the template formats GroupDocs.Assembly fills, the formats each kind of template can be saved as, and the data formats it reads. Call it when the user asks which formats are supported, or whether a template can be saved as PDF, DOCX, HTML or another format. Returns JSON. Without 'file', the full catalog: { families: [{ family, templateFormats[], saveFormats[] }], dataFormats: [{ kind, extensions[], note }] }; with 'file', the save targets of that template: { fileName, family, saveFormats[] }. Extensions are lower-case without a dot; families are WordProcessing (including TXT, Markdown and HTML templates), Spreadsheet, Presentation and Email. Do NOT pre-check whether files exist — just pass the filename the user provided; a file that cannot be found returns the list of available files instead. On failure isError is set and the text starts with 'Supported-formats lookup failed for'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "description": "Optional template: return only the formats this template can be saved as",
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "default": null
+          }
+        }
+      },
+      "annotations": {
+        "idempotentHint": true,
+        "readOnlyHint": true
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_license_status",
+      "description": "Returns how this MCP server is licensed, and — under metered licensing — how much has been consumed. Call this when the user asks about licensing, evaluation limitations, metered usage, remaining credit, or which product engine version is running. Returns a JSON object with `mode` (\"evaluation\", \"licensed\" or \"metered\"), `licensed` (true for both licensed and metered), `consumption` (null unless metered; otherwise `quantity` and `credit`, or `error` if the reading failed), and `server` / `engine` name and version. Takes no arguments and never modifies anything.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
