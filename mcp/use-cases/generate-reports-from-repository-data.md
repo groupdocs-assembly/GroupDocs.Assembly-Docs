@@ -43,7 +43,7 @@ The commands and config snippets on this page are for the **.NET** build of the 
 ## The repository
 
 ```text
-repo/
+./  (the repository = the storage folder)
   data/release-4.2.0.json        --+
   data/contributors-2026.json    --|--  the data is already in the repo
   templates/release-notes.docx   --|--  the layout is versioned with it
@@ -60,23 +60,23 @@ Captured from server 26.11.0, with the repository as the storage folder (the eva
 
 ```text
 -> get_template_fields {"template":{"filePath":
-     "repo/templates/release-notes.docx"}}
+     "templates/release-notes.docx"}}
 <- { "dataSourceNames": [ "release", "changes" ],
      "fields": [ "release.Product", "release.Version", "release.Date",
                  "changes[].Type", "changes[].Title", "changes[].PullRequest",
                  "changes[].Author" ] }
 
 -> assemble_document {"template":{"filePath":
-     "repo/templates/release-notes.docx"},
-     "data":{"filePath":"repo/data/release-4.2.0.json"},"format":"pdf",
+     "templates/release-notes.docx"},
+     "data":{"filePath":"data/release-4.2.0.json"},"format":"pdf",
      "outputName":"release-notes-4.2.0.pdf"}
 <- Assembled 'release-notes.docx' with 'release-4.2.0.json' (JSON object)
    as PDF
    Saved to: …/release-notes-4.2.0.pdf
 
 -> assemble_per_record {"template":{"filePath":
-     "repo/templates/certificate.docx"},
-     "data":{"filePath":"repo/data/contributors-2026.json"},
+     "templates/certificate.docx"},
+     "data":{"filePath":"data/contributors-2026.json"},
      "recordsPath":"contributors","fileNameField":"Handle","format":"pdf"}
 <- Assembled 3 of 3 document(s) from 'certificate.docx' with
    'contributors-2026.json', one per record (each record as 'contributor'),

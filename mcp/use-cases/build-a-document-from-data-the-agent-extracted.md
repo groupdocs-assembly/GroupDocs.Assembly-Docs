@@ -54,9 +54,9 @@ user              agent                        Assembly MCP server
  |                 |   the agent fills the skeleton from the order     |
  |                 |-- assemble_document --------------------------->|
  |                 |   {"template":{...},"dataJson":"{...}",           |
- |                 |    "format":"pdf"}                                |
+ |                 |    "outputName":"SA-2026-118-contoso.docx"}       |
  |                 |<- "Assembled 'contract-template.docx' with inline |
- |                 |    JSON (JSON object) as PDF" --------------------|
+ |                 |    JSON (JSON object) as DOCX" -------------------|
  |<- "Contract SA-2026-118 is ready: 3 services, total 75500 EUR."     |
    the model writes the data; layout, tables and wording come from the template
 ```
@@ -109,7 +109,7 @@ The right move after the failure is **to ask you** for the address, not to inven
 
 **Can it read the email file itself?** Your agent reads it with its own tools (or another GroupDocs server, such as [Parser](https://docs.groupdocs.com/parser/mcp/)). This server takes the data the agent produced.
 
-**Does the email leave my machine?** The server reads nothing but the template and writes the document locally. What you paste into the conversation goes to your model provider, as always.
+**Does the email leave my machine?** The server reads the template (and whatever its image or document tags name) and writes the document locally. What you paste into the conversation goes to your model provider, as always.
 
 ## Add to your CLAUDE.md or AGENTS.md
 

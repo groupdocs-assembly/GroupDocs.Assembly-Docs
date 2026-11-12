@@ -15,9 +15,12 @@ toc: True
 Run it with one command. The Docker image is self-contained — the runtime and every native dependency the engine needs are inside it:
 
 ```bash
-docker run --rm -i -v $(pwd)/documents:/data \
+docker run --rm -i --user "$(id -u):$(id -g)" \
+  -v $(pwd)/documents:/data \
   ghcr.io/groupdocs-assembly/assembly-net-mcp:latest
 ```
+
+`--user` runs the container as you, so on Linux it can write into a folder you own (the image runs as a non-root user otherwise). Docker Desktop on Windows and macOS does not need it.
 
 With the .NET 10 SDK installed, the same server also runs without Docker:
 
@@ -128,19 +131,20 @@ Exact config blocks for every client: [Register in AI clients]({{< ref "assembly
 
 | | NuGet (`dnx`) | Docker |
 |---|---|---|
-| Prerequisites | .NET 10 SDK (+ `libgdiplus` on Linux/macOS for presentation templates and charts) | Docker only |
+| Prerequisites | .NET 10 SDK (+ `libgdiplus` on Linux/macOS for presentation templates: PPTX, PPT, ODP) | Docker only |
 | Native dependencies | installed by you (or the setup script) | bundled in the image |
 | Package | `GroupDocs.Assembly.Mcp` on NuGet | `ghcr.io/groupdocs-assembly/assembly-net-mcp` · `groupdocs/assembly-net-mcp` |
 | Time zone | the machine's — see the date note in the [tools reference]({{< ref "assembly/mcp/tools-reference/_index.md" >}}#how-the-tools-address-templates-and-data) | UTC |
 
 ## How it works
 
-The server uses MCP's **local stdio transport**: your AI client starts the server as a child process and talks to it over standard input/output. No inbound ports, no external endpoints, no telemetry — the data path is *agent → local server → local filesystem*. Templates and data are read from your storage folder; generated documents are written next to them. Details: [On-premise architecture]({{< ref "assembly/mcp/use-cases/on-premise-document-generation.md" >}}).
+The server uses MCP's **local stdio transport**: your AI client starts the server as a child process and talks to it over standard input/output. No inbound ports, no telemetry — the data path is *agent → local server → local filesystem*. Templates and data are read from your storage folder; generated documents are written next to them. The server goes to the network only for metered licensing, or when a template's image or document tag names a URL — templates are trusted input, like code. Details: [On-premise architecture]({{< ref "assembly/mcp/use-cases/on-premise-document-generation.md" >}}).
 
 ## Resources
 
+* [GroupDocs.Assembly MCP product page](https://products.groupdocs.com/assembly/mcp/) — one-click install for VS Code and Cursor, configs for every other client
 * [Quick start]({{< ref "assembly/mcp/getting-started/_index.md" >}}) · [Use cases]({{< ref "assembly/mcp/use-cases/_index.md" >}}) · [Supported formats]({{< ref "assembly/mcp/supported-formats.md" >}}) · [Troubleshooting & FAQ]({{< ref "assembly/mcp/troubleshooting-faq.md" >}})
 * GitHub: [server source](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp) · [installer](https://github.com/groupdocs/GroupDocs.Mcp.Installer) · [integration tests](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp.Tests)
-* [NuGet package](https://www.nuget.org/packages/GroupDocs.Assembly.Mcp) · [Docker image](https://github.com/orgs/groupdocs-assembly/packages/container/package/assembly-net-mcp) · [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.groupdocs-assembly/groupdocs-assembly-mcp)
+* [NuGet package](https://www.nuget.org/packages/GroupDocs.Assembly.Mcp) · [Docker image](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp/pkgs/container/assembly-net-mcp) · [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.groupdocs-assembly/groupdocs-assembly-mcp)
 * The library behind it: [GroupDocs.Assembly for .NET]({{< ref "assembly/net/_index.md" >}}) and its [template syntax]({{< ref "assembly/net/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2.md" >}})
 * Questions: [Assembly forum](https://forum.groupdocs.com/c/assembly/15)

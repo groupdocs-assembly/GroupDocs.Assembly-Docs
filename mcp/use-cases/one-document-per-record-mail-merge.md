@@ -90,7 +90,7 @@ Three things to notice:
 
 * **One record is `customer`.** The server named each record after the template's data source; no `dataSourceName` was needed.
 * **The run did not stop.** Four letters were written; record 4 is listed with the field it lacks. Fix the record, or pass `allowMissingMembers: true` to print nothing there.
-* **Files are named by `fileNameField`.** Without it they are numbered.
+* **Files are named by `fileNameField`.** Without it they are numbered. A name that already exists is never overwritten: the new file gets ` (1)`.
 
 ## A safety cap
 
@@ -119,7 +119,9 @@ One PDF per good record in the storage folder, named after the customer, and a l
 
 **Can the records come from a CSV or a spreadsheet?** Per-record assembly reads JSON. The agent converts the rows to a JSON array first — or, for one document listing every row, use `assemble_document` with a `<<foreach>>`.
 
-**Can each letter go out by e-mail?** Use an e-mail template (`.eml`/`.msg`) and `format: "eml"` to get one message file per record; sending them is a job for your mail tooling. Unlicensed, the HTML body is replaced by the evaluation line.
+**Can each letter go out by e-mail?** Start from an e-mail template (`.eml`/`.msg`): it saves as `eml`, `emlx` or `msg`, one message file per record; sending them is a job for your mail tooling. A Word template cannot be saved as e-mail — the server answers *"a WordProcessing template cannot be saved as 'eml'"*. Unlicensed, the HTML body is replaced by the evaluation line.
+
+**Can files be named by a nested field?** `fileNameField` reads the record itself: `Name` for the flat records above. A dotted path such as `order.Number` works only when each record nests an object; otherwise every record fails with *"the record has no 'customer.Name' field to name its file"*.
 
 **How large can a run be?** Up to 1000 records per call with `maxDocuments`; split larger sets.
 

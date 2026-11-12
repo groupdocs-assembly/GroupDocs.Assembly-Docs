@@ -24,7 +24,7 @@ pwsh ./install-groupdocs-mcp.ps1 -Interactive
 
 * **Always:** PowerShell 7 — `brew install --cask powershell`.
 * **Docker channel (recommended):** Docker Desktop — `brew install --cask docker`. Launch Docker Desktop once from /Applications to finish its first-run setup.
-* **NuGet channel:** .NET 10 SDK — `brew install --cask dotnet-sdk` — plus the native graphics library `brew install mono-libgdiplus`.
+* **NuGet channel:** .NET 10 SDK — `brew install --cask dotnet-sdk` — plus the native graphics library `brew install mono-libgdiplus` (presentation templates only).
 
 **Apple Silicon note:** the Docker images are published multi-arch (`linux/arm64` + `linux/amd64`), so M-series Macs run them **natively** — no Rosetta emulation. This makes the docker channel the smoothest path on Apple Silicon.
 
@@ -61,7 +61,7 @@ The handshake lists the server's six tools; with a document in your storage fold
 ## macOS-specific troubleshooting
 
 * **Docker daemon not reachable** — Docker Desktop must be running (menu-bar whale icon); the installer's preflight catches this before writing anything.
-* **Native (`dnx`) runs fail on graphics operations** — install `mono-libgdiplus` via Homebrew, or prefer the docker channel where everything is bundled.
+* **Native (`dnx`) runs fail on graphics operations** with presentation templates (PPTX, PPT, ODP) — install `mono-libgdiplus` via Homebrew, or prefer the docker channel where everything is bundled.
 * **`pwsh` not found after install** — open a new terminal so the shell picks up the Homebrew path.
 
 Installing on a different OS? [Windows]({{< ref "assembly/net/mcp/windows-installation.md" >}}) · [Linux]({{< ref "assembly/net/mcp/linux-installation.md" >}})

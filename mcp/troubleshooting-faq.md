@@ -37,7 +37,7 @@ These are properties of the build you run rather than of MCP, so the fixes live 
 
 ## The agent says a file does not exist
 
-Pass the template's and the data file's **names inside the storage folder** — `contract-template.docx`, `repo/data/release-4.2.0.json` — not full paths from your machine. When a name is not found the tool answers with the files it can see, so the agent can correct itself; check that list against [`GROUPDOCS_MCP_STORAGE_PATH`]({{< ref "assembly/net/mcp/configuration.md" >}}).
+Pass the template's and the data file's **names inside the storage folder** — `contract-template.docx`, `data/release-4.2.0.json` — not full paths from your machine. When a name is not found the tool answers with the files it can see, so the agent can correct itself; check that list against [`GROUPDOCS_MCP_STORAGE_PATH`]({{< ref "assembly/net/mcp/configuration.md" >}}).
 
 ## Why does my template come out unchanged?
 
@@ -69,4 +69,4 @@ Ask your agent *"list your GroupDocs assembly tools and the license status"* —
 
 ## Still stuck?
 
-Post your config (redact license paths) and the client name in the [Assembly forum](https://forum.groupdocs.com/c/assembly/15) — we answer MCP questions daily. Bugs: [GitHub issues](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp/issues).
+Post your config (redact license paths) and the client name in the [Assembly forum](https://forum.groupdocs.com/c/assembly/15). Bugs: [GitHub issues](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp/issues).

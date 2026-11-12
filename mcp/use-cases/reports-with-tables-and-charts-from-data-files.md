@@ -37,7 +37,7 @@ The commands and config snippets on this page are for the **.NET** build of the 
 ## Prerequisites
 
 * The server registered in your AI client — [quick start]({{< ref "assembly/mcp/getting-started/_index.md" >}}).
-* A report template with a table row that repeats, and — for a chart — a PowerPoint, Word or Excel template whose chart carries the tags. On Linux with `dnx`, presentation templates and charts need `libgdiplus` ([Linux install]({{< ref "assembly/net/mcp/linux-installation.md" >}})); the Docker image has it.
+* A report template with a table row that repeats, and — for a chart — a PowerPoint, Word or Excel template whose chart carries the tags. On Linux and macOS with `dnx`, presentation templates (the chart slide here) need `libgdiplus` ([Linux install]({{< ref "assembly/net/mcp/linux-installation.md" >}})); Word and Excel templates do not, and the Docker image has everything.
 
 ## Data in, report out
 
@@ -94,16 +94,16 @@ Captured from server 26.11.0 (the evaluation note that opens each response is tr
    as 'sales') as DOCX
 ```
 
-The report lists North, South, East and West with their revenue, **Total revenue: 638650 EUR** and **Best region: West**. The chart came out with the four regions as categories and 182000, 146500, 98250 and 211900 as the series. The same template took the CSV unchanged.
+The report lists North, South, East and West with their revenue, **Total revenue: 638650 EUR** and **Best region: West**. The chart came out with the four regions as categories and 182000, 146500, 98250 and 211900 as the series. The same template took the CSV unchanged, and summed its numbers just like the workbook's: the CSV report also reads **Total revenue: 638650 EUR**.
 
 ## How the chart tags work
 
-Design the chart in PowerPoint (or Word, or Excel) with placeholder data, then put the tags **in the chart's text**, not in a table:
+Design the chart with placeholder data, then put the tags **in the chart's text**, not in a table. The chart on this page is a PowerPoint chart:
 
 * the chart **title** opens the loop and names the category: `Revenue by region<<foreach [r in sales]>><<x [r.Region]>>`;
 * each **series name** names its value: `Revenue<<y [r.Revenue]>>`.
 
-The engine replaces the placeholder data with one point per record and removes the tags. More chart types: the library's [template syntax]({{< ref "assembly/net/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2.md" >}}).
+The engine replaces the placeholder data with one point per record and removes the tags. Word and Excel charts are filled by the same engine; Excel has its own rules for series names. Details and more chart types: the library's [template syntax]({{< ref "assembly/net/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-2-of-2.md" >}}).
 
 ## Expected result
 
@@ -115,7 +115,6 @@ A PDF or Word report and a chart slide whose numbers match the data file, in sec
 |---|---|---|
 | The chart still shows the placeholder data | the tags are not in the chart title / series names | move them into the chart's own text |
 | A column is not found | the first row is data, not headers | `hasHeaders: false`, and refer to columns by position |
-| Numbers summed as text | CSV values are text to the engine | use a spreadsheet, or JSON numbers, for arithmetic |
 
 ## FAQ
 

@@ -48,7 +48,7 @@ spreadsheet / Word table   (columns are the members)             the template, o
 {{name}} in a template   left as text - not Assembly syntax    use <<[name]>>
 ```
 
-**Output names.** `assemble_document` writes `<template>_assembled.<ext>` unless you pass `outputName`; `format` picks the extension (`pdf`, `docx`, `html`, `md`, `xlsx`, `pptx`, `eml`…; default: the template's own). `assemble_per_record` writes one file per record, named by `fileNameField` (`Contoso Pharma.pdf`) or by a running number. Files are written to the storage folder (or `GROUPDOCS_MCP_OUTPUT_PATH`); the template and the data are never modified.
+**Output names.** `assemble_document` writes `<template>_assembled.<ext>` unless you pass `outputName`; `format` picks the extension (`pdf`, `docx`, `html`, `md`, `xlsx`, `pptx`, `eml`…; default: the template's own). `assemble_per_record` writes one file per record, named by `fileNameField` (`Contoso Pharma.pdf`) or by a running number. Files are written to the storage folder (or `GROUPDOCS_MCP_OUTPUT_PATH`); the template and the data are never modified, and an existing file is never replaced — a second run with the same name writes `<name> (1).<ext>`.
 
 **Dates in JSON data.** Write them as ISO **with a time** — `"2026-11-12T00:00:00"` — and format them in the template: `<<[contract.Date]:"d MMMM yyyy">>` prints *12 November 2026*. Two traps, both seen on server 26.11.0: a date-only string (`"2026-11-12"`) is read as a date and shifted by the machine's UTC offset — on a UTC+2 machine it printed as **11 November**, even with a format string — and `"12.11.2026"` is read month-first, as 11 December. An unformatted date prints like `11/12/2026 12:00:00 AM`. The Docker image runs in UTC.
 
@@ -62,7 +62,7 @@ spreadsheet / Word table   (columns are the members)             the template, o
 
 | Field | Type | Description |
 |---|---|---|
-| `filePath` | string | File path or name in the configured storage folder (sub-folders work: `repo/templates/release-notes.docx`) |
+| `filePath` | string | File path or name in the configured storage folder (sub-folders work: `templates/release-notes.docx`) |
 | `fileContent` | string | Base64-encoded file content (alternative to `filePath`) |
 | `fileName` | string | Original filename with extension — required with `fileContent`; on its own it is resolved from the storage folder like `filePath` |
 

@@ -85,7 +85,8 @@ Captured from server 26.11.0 (the evaluation note that opens each response is tr
 <- { "tagCount": 17,
      "dataSourceNames": [ "contract", "customer", "items" ],
      "dataSkeleton": {
-       "contract": { "Number": "", "Date": "", "Discount": "" },
+       "contract": { "Number": "", "Date": "2026-01-31T00:00:00",
+                      "Discount": "" },
        "customer": { "Name": "", "Address": "", "Contact": "", "Email": "" },
        "items": [ { "Title": "", "Quantity": 0, "UnitPrice": 0 } ] } }
 
@@ -108,7 +109,7 @@ The data the agent passed:
           {"Title":"Onboarding workshop","Quantity":1,"UnitPrice":3500}]}
 ```
 
-The server prints the full path inside your storage folder; it is shortened here.
+The skeleton seeds `contract.Date` with a sample ISO date **with a time**, because the template formats it as a date — keep that shape. The server prints the full path inside your storage folder; it is shortened here.
 
 ## Expected result
 

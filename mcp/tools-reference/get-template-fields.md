@@ -52,7 +52,7 @@ JSON — captured from server 26.11.0 (the `tags` array is trimmed to its first 
               "customer.Email",
               "items[].Title", "items[].Quantity", "items[].UnitPrice" ],
   "dataSkeleton": {
-    "contract": { "Number": "", "Date": "", "Discount": "" },
+    "contract": { "Number": "", "Date": "2026-01-31T00:00:00", "Discount": "" },
     "customer": { "Name": "", "Address": "", "Contact": "", "Email": "" },
     "items": [ { "Title": "", "Quantity": 0, "UnitPrice": 0 } ]
   },
@@ -73,7 +73,7 @@ JSON — captured from server 26.11.0 (the `tags` array is trimmed to its first 
 | `readable` | `false` for binary templates (`.msg`, `.doc`, `.xls`, `.ppt`) — their tags cannot be read without generating |
 | `dataSourceNames` | the top-level names the data must provide |
 | `fields` | every member read; `items[].Title` means *a list of objects with `Title`* |
-| `dataSkeleton` | the data shape to fill — numbers where the template does arithmetic |
+| `dataSkeleton` | the data shape to fill — numbers where the template does arithmetic, a sample ISO date with a time (`"2026-01-31T00:00:00"`) where it formats a date |
 | `notes` | what the inference could not see, and syntax problems such as `{{…}}` placeholders |
 
 On a document with `{{…}}` placeholders, `tagCount` is 0 and a note says *"The template contains 2 '{{…}}' placeholder(s). GroupDocs.Assembly does not process that syntax and leaves it as text; write <<[name]>> instead."* It inspects tags statically: an unclosed `<<foreach>>` is still listed — the engine reports it when you generate.

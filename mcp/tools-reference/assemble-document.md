@@ -72,7 +72,7 @@ Saved to: …/sales-report_assembled.pdf
 | Option | Default | Use it when |
 |---|---|---|
 | `outputName` | `<template>_assembled.<ext>` | you want `SA-2026-118-contoso.docx` |
-| `allowMissingMembers` | false | some records lack optional fields — print nothing instead of failing |
+| `allowMissingMembers` | false | some records lack optional fields — print nothing instead of failing (an empty list still fails if the template multiplies or adds its members) |
 | `removeEmptyParagraphs` | false | conditional blocks leave blank lines |
 | `updateFields` | false | the template has a table of contents, page numbers or spreadsheet formulas |
 | `inlineErrors` | false | debugging: write template errors into the output next to the tag |
@@ -95,7 +95,7 @@ template. A block tag is not closed: every <<foreach>> needs <</foreach>> and
 every <<if>> needs <</if>>.
 ```
 
-(Exception type prefixes elided with `...`.)
+(Exception type prefixes elided with `...`.) The hint's last sentence is too broad: with `allowMissingMembers`, an empty list still fails when the template does arithmetic on its members (`item.Quantity * item.UnitPrice`) — see [inspect and fix a template]({{< ref "assembly/mcp/use-cases/inspect-and-fix-a-template.md" >}}).
 
 ## Example prompts
 

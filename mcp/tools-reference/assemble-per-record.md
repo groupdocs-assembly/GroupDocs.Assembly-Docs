@@ -65,7 +65,7 @@ Saved to:
 …/Litware Labs.pdf
 1 record(s) failed:
 record 4: InvalidOperationException: An error has been encountered at the
-end of expression 'customer.FirstInvoice]>'. Can not get the value of member
+end of expression 'customer.FirstInvoice]:'. Can not get the value of member
 'FirstInvoice' on type 'System.Data.DataRow'. The template reads
 'FirstInvoice', which the data does not have. ...
 ```
@@ -73,6 +73,7 @@ end of expression 'customer.FirstInvoice]>'. Can not get the value of member
 (Wrapped for width; the record message continues with the same hint as `assemble_document`.)
 
 * **One record = one data name.** The server names each record after the template's data source (`customer` in `<<[customer.Name]>>`); override with `dataSourceName`.
+* **File names:** `fileNameField` is a field of the record itself — `Name` for flat records; a dotted path (`order.Number`) only when each record nests an object. A record without that field is listed as failed.
 * **Arrays inside an object:** pass `recordsPath` (`"contributors"`, `"batch.items"`).
 * **A safety cap:** `maxDocuments` (default 100, at most 1000) refuses larger runs — *"Per-record assembly failed for 'welcome-letter.docx': there are 5 records, more than maxDocuments=3. Raise 'maxDocuments' (up to 1000) or pass fewer records."*
 * **JSON only.** For CSV or spreadsheet rows, the agent converts them to a JSON array first — or use one `<<foreach>>` document with [`assemble_document`]({{< ref "assembly/mcp/tools-reference/assemble-document.md" >}}).

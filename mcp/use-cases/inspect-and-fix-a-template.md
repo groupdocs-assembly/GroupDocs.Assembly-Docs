@@ -114,12 +114,14 @@ Before a run: the list of data the template needs, and any syntax the engine wil
 | Symptom | Cause | Fix |
 |---|---|---|
 | *"Unexpected end of template. A block tag is not closed"* | a `<<foreach>>` or `<<if>>` without its closing tag | add `<</foreach>>` / `<</if>>` |
-| *"Can not apply operator '*' to operands of type 'System.Object' and 'System.Object'"* | arithmetic over an **empty** list — it carries no types, even with `allowMissingMembers` | pass at least one item, or wrap the block in `<<if [items.Any()]>>` |
+| *"Can not apply operator '*' to operands of type 'System.Object' and 'System.Object'"* | arithmetic over an **empty** list — it carries no types, even with `allowMissingMembers` | pass at least one item, or put computed values in the data (`item.Amount`) and pass `allowMissingMembers: true`; an `<<if [items.Any()]>>` around the block does not help |
 | `"readable": false` | a binary template (MSG, DOC, XLS, PPT) | save it as DOCX/XLSX/PPTX/EML to inspect; pass `dataSourceName` with array, CSV or table data |
 
 ## FAQ
 
 **Is the skeleton exact?** It is inferred from the tags; the server says so in `notes`. Values computed through `Select` or `GroupBy` projections are not followed.
+
+**Can a template handle an empty list?** Only without arithmetic on the list's members. Tested on server 26.11.0 with `"items": []` and `allowMissingMembers: true`: a row that prints `<<[item.Amount]>>` came out empty and `<<if [items.Count() == 0]>>No services ordered.<</if>>` printed; a row that computes `<<[item.Quantity * item.UnitPrice]>>` failed with the operator error — with or without an `<<if [items.Any()]>>` around it, because the engine checks every expression before it runs any. The server's hint (*"pass allowMissingMembers=true to output nothing for … empty lists"*) does not cover that case.
 
 **Why do tags in a chart not show up?** Static reading skips some parts (text boxes in charts, embedded objects); the note says so. The engine still processes chart tags — see [reports with charts]({{< ref "assembly/mcp/use-cases/reports-with-tables-and-charts-from-data-files.md" >}}).
 
