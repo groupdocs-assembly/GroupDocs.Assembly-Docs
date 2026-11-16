@@ -12,6 +12,17 @@ toc: True
 ---
 This topic describes how to add the **GroupDocs.Assembly** library to your .NET project. You can use a NuGet package to install this library or you can download necessary DLLs from the GroupDocs website: [https://releases.groupdocs.com/assembly/net/](https://releases.groupdocs.com/assembly/net/).
 
+## Builds for target frameworks
+
+The **GroupDocs.Assembly** NuGet package contains builds for .NET Framework 4.0 Client Profile (`net40-client`), .NET Framework 4.6.2 (`net462`), .NET Framework 4.8 (`net48`), .NET Standard 2.0, .NET 6, .NET 8 and .NET 10. NuGet picks the build matching the target framework of your project:
+
+* Projects targeting .NET Framework 4.8 or 4.8.1 get the `net48` build automatically, with no code changes required. This build is included starting with version 26.11.
+* Projects targeting .NET Framework 4.6.2–4.7.2 keep working with the `net462` build for now.
+
+{{< alert style="warning" >}}
+Microsoft ends support for .NET Framework 4.6.2 on **January 12, 2027**. After that date, we will continue shipping the .NET Framework 4.6.2 build (`net462`) as deprecated for a few more months, and then remove it. From that point, .NET Framework 4.8 will be the minimum supported .NET Framework version. We recommend moving projects that target .NET Framework 4.6.2–4.7.2 to .NET Framework 4.8 before January 2027.
+{{< /alert >}}
+
 ## Install GroupDocs.Assembly using NuGet packages
 
 You can use the following tools to install the **GroupDocs.Assembly** NuGet packages: 

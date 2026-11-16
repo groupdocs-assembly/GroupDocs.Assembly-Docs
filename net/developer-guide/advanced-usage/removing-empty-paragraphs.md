@@ -35,3 +35,46 @@ GroupDocs.Assembly for .NET API supports the removal of paragraphs becoming empt
 ### Download
 
 *   [Empty Paragraph.msg](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Source/Email%20Templates/Empty%20Paragraph.msg)
+
+## Removing Empty Paragraphs in Spreadsheet and Plain Text Documents
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+In spreadsheet templates and plain text documents, a paragraph is a line of text: a line of a cell's text, or of a text document, that becomes empty after template tags are removed or replaced with empty values is removed together with its line break. Tags such as `<<if>>` and `<<foreach>>` written on their own lines no longer leave empty lines behind.
+
+```csharp
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.Options = DocumentAssemblyOptions.RemoveEmptyParagraphs;
+assembler.AssembleDocument("Empty paragraph.txt", "result.txt", new DataSourceInfo("dummy", "dummy"));
+```
+
+Template:
+
+```
+Prefix
+<<[""]>>
+Suffix
+
+Prefix
+<<if [false]>>
+Text to be removed
+<</if>>
+Suffix
+```
+
+Result:
+
+```
+Prefix
+Suffix
+
+Prefix
+Suffix
+```
+
+The same template text in a cell of a spreadsheet gives the same result within the cell. Example: [RemoveEmptyParagraphs.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/RemoveEmptyParagraphs.cs), which assembles the DOCX, PPTX, MSG, XLSX and TXT variants.
+
+### Download
+
+*   [Empty paragraph.xlsx](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Templates/Empty%20paragraph.xlsx)
+*   [Empty paragraph.txt](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Templates/Empty%20paragraph.txt)

@@ -95,3 +95,21 @@ The following table shows which output file formats are supported by GroupDocs.A
 | **MHTML** | Supported | Supported | Not Supported | Supported | Supported |
 | **Markdown, Plain Text, XAML, OpenXPS, EPUB, SVG, PS, PCL** | Supported | Not Supported | Not Supported | Supported | Supported |
 
+## Template Formats Supporting Document Insertion
+
+Documents can be inserted dynamically with a `doc` tag into Word Processing templates and email templates with HTML or RTF bodies only (see [Supported Features Detail for Email File Formats](#supported-features-detail-for-email-file-formats) for the email variants). In spreadsheet, presentation, HTML, Markdown and plain text templates, a `doc` tag fails with the following error:
+
+```
+Tag 'doc' is not supported for this template format. Documents can be inserted into Word Processing templates and email templates with HTML or RTF bodies only.
+```
+
+## Encoding of Text and HTML Reports
+
+A report built from a plain text or HTML template is written in the encoding of the template, determined in this order:
+
+1. A byte order mark of the template.
+2. An encoding declared in the template: `<meta charset>` in HTML, or an XML declaration.
+3. The encoding of the template bytes. A template made of ASCII characters only gives a UTF-8 report without a byte order mark, so non-Latin data such as `Привет` is written correctly.
+
+To get a report in an ANSI code page, declare that encoding in the template (`<meta charset>` in HTML), or save the template in that encoding with a non-ASCII character. An MHTML report saved from an ASCII-only template declares `charset="utf-8"`.
+

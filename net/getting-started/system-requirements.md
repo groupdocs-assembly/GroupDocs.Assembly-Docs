@@ -59,6 +59,14 @@ GroupDocs.Assembly for .NET  supports .NET and Mono frameworks as follows:
 *   .NET Framework 4.6.2
 *   .NET Framework 4.7
 *   .NET Framework 4.7.2
+*   .NET Framework 4.8
+*   .NET Framework 4.8.1
+
+Starting with version 26.11, GroupDocs.Assembly for .NET includes a build for **.NET Framework 4.8** (`net48`). Projects targeting .NET Framework 4.8 or 4.8.1 get it automatically from NuGet, with no code changes required. Projects targeting .NET Framework 4.6.2–4.7.2 keep working with the .NET Framework 4.6.2 build (`net462`) for now.
+
+{{< alert style="warning" >}}
+Microsoft ends support for .NET Framework 4.6.2 on **January 12, 2027**. After that date, we will continue shipping the .NET Framework 4.6.2 build (`net462`) as deprecated for a few more months, and then remove it. From that point, .NET Framework 4.8 will be the minimum supported .NET Framework version. We recommend moving projects that target .NET Framework 4.6.2–4.7.2 to .NET Framework 4.8 before January 2027.
+{{< /alert >}}
 
 ### Mono Framework
 

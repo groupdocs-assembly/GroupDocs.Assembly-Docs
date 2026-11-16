@@ -10,7 +10,11 @@ hideChildren: False
 ---
 {{< alert style="info" >}}This feature is supported by version 20.3 or greater.{{< /alert >}}{{< alert style="info" >}}The code uses some of the objects defined in [The Business Layer](https://docs.groupdocs.com/assembly/net/the-business-layer/).{{< /alert >}}
 
-{{< alert style="warning" >}}Dynamic insertion of documents from Base64-encoded bytes is available for file formats where dynamic document insertion is available for Word Processing documents and emails with HTML and RTF bodies only.{{< /alert >}}
+{{< alert style="warning" >}}Documents can be inserted into Word Processing templates and email templates with HTML or RTF bodies only. In spreadsheet, presentation, HTML, Markdown and plain text templates, a `doc` tag fails with "Tag 'doc' is not supported for this template format".{{< /alert >}}
+
+{{< alert style="info" >}}Documents given as Base64-encoded bytes can be inserted wherever a `doc` tag can be used.{{< /alert >}}
+
+{{< alert style="warning" >}}Since version 26.11, a document URI reaching the network that comes from data, and the external resources of a document inserted from data, are skipped by default. See [Controlling External Resources]({{< ref "assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}).{{< /alert >}}
 
 You can insert contents of outer documents to your reports dynamically using `doc` tags. A `doc` tag denotes a placeholder within a template for a document to be inserted during runtime.
 

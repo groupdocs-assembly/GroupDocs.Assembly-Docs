@@ -23,7 +23,7 @@ Here are the steps to generate tables from collections:
 * Create a table in your template document with a header row
 * Add a data band row using `<<foreach>>` syntax to iterate over your collection
 * Reference collection item properties in table cells
-* Close the data band with `<<foreach>>`
+* Close the data band with `<</foreach>>`
 * Assemble the document with your collection data
 
 {{< alert style="info" >}}
@@ -70,11 +70,9 @@ In your template document (TableTemplate.docx), create a table with this structu
 
 | Product Name | Price | Quantity |
 |--------------|-------|----------|
-| `<<foreach [in products]>>` | | |
-| `<<[Name]>>` | `<<[Price]>>` | `<<[Quantity]>>` |
-| `<<foreach>>` | | |
+| `<<foreach [in products]>><<[Name]>>` | `<<[Price]>>` | `<<[Quantity]>><</foreach>>` |
 
-The `<<foreach>>` tags should span the entire data row. After assembly, you'll get:
+The data band spans the entire data row: it opens in the row's first cell and closes in its last cell. After assembly, you'll get:
 
 | Product Name | Price | Quantity |
 |--------------|-------|----------|
@@ -108,9 +106,7 @@ Template with formatting:
 
 | Product Name | Price | Quantity |
 |--------------|-------|----------|
-| `<<foreach [in products]>>` | | |
-| `<<[Name]>>` | `<<[Price]:"C">>` | `<<[Quantity]>>` |
-| `<<foreach>>` | | |
+| `<<foreach [in products]>><<[Name]>>` | `<<[Price]:"C">>` | `<<[Quantity]>><</foreach>>` |
 
 The `:"C"` format string formats the price as currency.
 
@@ -172,9 +168,7 @@ Template structure:
 
 | Product Name | Price | Quantity |
 |--------------|-------|----------|
-| `<<foreach [in products]>>` | | |
-| `<<[Name]>>` | `<<[Price]:"C">>` | `<<[Quantity]>>` |
-| `<<foreach>>` | | |
+| `<<foreach [in products]>><<[Name]>>` | `<<[Price]:"C">>` | `<<[Quantity]>><</foreach>>` |
 | **Total** | `<<[products.Sum(p => p.Price)]:"C">>` | `<<[products.Sum(p => p.Quantity)]>>` |
 
 ## Generate Table in Spreadsheet
@@ -201,8 +195,10 @@ public static void GenerateTableInSpreadsheet()
 }
 ```
 
+The worksheet holds the same header row and data band row as the Word table, in plain cells.
+
 {{< alert style="warning" >}}
-In spreadsheet templates, the data band row must be within a table structure. Select the range and create a table in Excel before adding the foreach syntax.
+In spreadsheet templates, the data band is a range of cells: the band opens in the first cell of the row and closes in its last cell, and the row is repeated for each item. The cells need no Excel table around them.
 {{< /alert >}}
 
 ### Advanced Usage Topics

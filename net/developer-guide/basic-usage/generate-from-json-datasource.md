@@ -160,6 +160,40 @@ Employees:
 <</foreach>>
 ```
 
+### References between objects ($id and $ref)
+
+JSON written by Json.NET with preserved references holds an object once, marked with `$id`, and refers to it from other places with `$ref`. Since version 26.11, JsonDataSource resolves such references: `$ref` gives a copy of the object it names, so a template reads it like any nested object.
+
+```json
+{ "Orders": [ { "Customer": { "$id": "1", "Name": "A" } }, { "Customer": { "$ref": "1" } } ] }
+```
+
+With this data, `<<[o.Customer.Name]>>` gives `A` for both orders. An object may also refer to an object holding it, such as an order that refers to the customer holding the order: the simple values of that object are available, and its member that would repeat the path (`Order.Customer.Order`) gives the parent object. A `$ref` without a matching `$id` is ignored. See [References between objects]({{< ref "assembly/net/developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources.md#references-between-objects-id-and-ref" >}}) for details.
+
+{{< alert style="info" >}}
+Nested objects of JSON data are compared by value in `GroupBy` and `Distinct`: `GroupBy(o => o.Customer)` puts orders of equal customer objects into one group.
+{{< /alert >}}
+
+## Validate Templates with a JSON Schema
+
+When a member referenced by a template is `null`, an empty array or missing in the data, the template fails even if the reference is in a branch of `<<if>>` that is not rendered. Pass a JSON Schema describing the data to JsonDataSource, and the template is checked against the schema instead:
+
+```csharp
+using GroupDocs.Assembly;
+using GroupDocs.Assembly.Data;
+
+public static void GenerateWithJsonSchema()
+{
+    JsonDataSource jsonDataSource = new JsonDataSource("Customer.json", "Customer.schema.json");
+
+    DocumentAssembler assembler = new DocumentAssembler();
+    assembler.AssembleDocument("Template.docx", "Output.docx",
+        new DataSourceInfo(jsonDataSource, "customer"));
+}
+```
+
+Members declared in the schema can be referenced even if they are absent in the data, members not declared in the schema still fail, and value types come from the schema: a `string` holding digits, such as `"00042"`, stays a string. See [Using a JSON Schema]({{< ref "assembly/net/developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources.md#using-a-json-schema" >}}) for a complete example and the supported schema keywords.
+
 ## Configure JSON Data Load Options
 
 You can configure how JsonDataSource parses JSON:

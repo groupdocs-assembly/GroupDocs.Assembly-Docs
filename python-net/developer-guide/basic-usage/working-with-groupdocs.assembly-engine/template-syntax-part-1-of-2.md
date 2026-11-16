@@ -311,7 +311,7 @@ Syntax of a doc tag is defined as follows.
 <<doc [document_expression]>>
 ```
 
-{{< alert style="warning" >}}A doc tag can be used almost anywhere in a template document except textboxes and charts. Spreadsheet and presentation templates cannot hold one: for an XLSX or PPTX template the engine raises "Tag 'doc' is not well-formed".{{< /alert >}}
+{{< alert style="warning" >}}Documents can be inserted into Word Processing templates and email templates with HTML or RTF bodies only. There, a doc tag can be used almost anywhere in a template document except textboxes and charts. In spreadsheet, presentation, HTML, Markdown and plain text templates, a doc tag fails with "Tag 'doc' is not supported for this template format".{{< /alert >}}
 
 An expression declared within a doc tag is used by the assembler to load a document to be inserted during runtime. For Python data, the expression must return a value of one of the following types:
 

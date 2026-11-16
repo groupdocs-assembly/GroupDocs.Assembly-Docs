@@ -49,6 +49,8 @@ Average age: 36
 
 {{< alert style="warning" >}}Using of the custom date-time format and the extension method involving arithmetic in the template document becomes possible, because text values of Column3 and Column2 are automatically converted to DateTime? and Int32? respectively.{{< /alert >}}
 
+{{< alert style="info" >}}Since version 26.11, nullable values of CSV data are used in a template the same way as values of typed objects, without `.Value` or `== true`: `<<[o.Date.Month]>>`, `<<[o.Total.ToString("F2")]>>`, `<<if [o.Paid]>>`, `<<[o.Paid ? "paid" : "due"]>>` and predicates such as `orders.Where(x => x.Paid)` work directly. For a missing value, a member gives an empty value and a condition is false. A date-only value, such as "2020-01-01", keeps its date regardless of the time zone of the server. See [Using nullable values like values of typed objects]({{< ref "assembly/net/developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources.md#using-nullable-values-like-values-of-typed-objects" >}}) for an example.{{< /alert >}}
+
 ### Configure data source to read column names
 
 By default, [CsvDataSource ](https://reference.groupdocs.com/net/assembly/groupdocs.assembly.data/csvdatasource)uses column names such as "*Column1*", "*Column2*", and so on, as you can see from the previous example. However, *CsvDataSource* can be configured to read column names from the first line of CSV data as shown in the following example.

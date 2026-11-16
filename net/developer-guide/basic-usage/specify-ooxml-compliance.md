@@ -22,12 +22,12 @@ The main classes involved are:
 Here are the steps to specify OOXML compliance:
 
 * Create LoadSaveOptions for your output format
-* Set the OoxmlCompliance property to the desired compliance level (or leave null for automatic preservation)
+* Set the OoxmlCompliance property to the desired compliance level (or leave it null to keep the template's level)
 * Use DocumentAssembler with the LoadSaveOptions to assemble the document
 * The output document will be saved with the specified compliance level
 
 {{< alert style="info" >}}
-The OoxmlCompliance property only applies to OOXML formats (DOCX, DOCM, DOTX, DOTM, FlatOpc, etc.) and is ignored for other file formats. When set to null (default), the system automatically preserves the original document's compliance level if it was Transitional, otherwise uses Strict compliance.
+The OoxmlCompliance property only applies to OOXML formats (DOCX, DOCM, DOTX, DOTM, FlatOpc, etc.) and is ignored for other file formats. When it is not set (null by default), the report keeps the compliance level of the template, whatever it is: an Ecma-376 template gives an Ecma-376 report, a Transitional template a Transitional report, and a Strict template a Strict report.
 {{< /alert >}}
 
 ## Available OOXML Compliance Levels
@@ -104,7 +104,7 @@ public static void UseEcmaCompliance()
 
 ## Automatic Preservation of Original Compliance
 
-When `OoxmlCompliance` is not explicitly set (default `null`), the system automatically preserves the original document's compliance level if it was Transitional:
+When `OoxmlCompliance` is not explicitly set (default `null`), the report keeps the compliance level of the template (Ecma, Transitional or Strict):
 
 ```csharp
 using GroupDocs.Assembly;
@@ -113,13 +113,13 @@ public static void PreserveOriginalCompliance()
 {
     DocumentAssembler assembler = new DocumentAssembler();
 
-    // OoxmlCompliance is null by default - original compliance will be preserved
+    // OoxmlCompliance is null by default - the template's compliance level is kept
     var options = new LoadSaveOptions(FileFormat.Docx);
     // options.OoxmlCompliance is null - automatic preservation
 
     var data = new { Title = "Document Title", Content = "Document content" };
     
-    // Output document will maintain Transitional compliance from template if it was Transitional
+    // The output document keeps the compliance level of the template
     assembler.AssembleDocument("Template_Transitional.docx", "Output.docx", options,
         new DataSourceInfo(data, "document"));
 }
@@ -188,9 +188,7 @@ public static void UseComplianceWithStreams()
 Understanding how compliance levels work:
 
 - **When explicitly set**: The specified compliance level is used when saving to OOXML formats
-- **When null (default)**: 
-  - If the original document had Transitional compliance, it is preserved
-  - Otherwise, Strict compliance is used
+- **When null (default)**: The report keeps the template's compliance level (Ecma, Transitional or Strict)
 - **For non-OOXML formats**: The property is ignored (e.g., PDF, HTML, RTF)
 
 ```csharp
@@ -209,7 +207,7 @@ public static void DemonstrateComplianceBehavior()
     
     // Automatic preservation (null)
     var autoOptions = new LoadSaveOptions(FileFormat.Docx);
-    // autoOptions.OoxmlCompliance is null - will preserve if Transitional
+    // autoOptions.OoxmlCompliance is null - the template's compliance level is kept
     assembler.AssembleDocument("Template.docx", "Output_Auto.docx", autoOptions,
         new DataSourceInfo(data, "doc"));
     

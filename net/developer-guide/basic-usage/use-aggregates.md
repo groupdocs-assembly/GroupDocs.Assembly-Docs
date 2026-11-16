@@ -107,12 +107,12 @@ Template:
 
 ```
 Products:
-<<foreach [in products]>>
-- <<[products_Text]>>
+<<foreach [p in products]>>- <<[p]>>
 <</foreach>>
-
 Total Products: <<[products.Count()]>>
 ```
+
+The products are strings, so the data band names its iteration variable (`p`) and outputs it with `<<[p]>>`.
 
 ## Calculate Average
 

@@ -86,6 +86,45 @@ Average age: 36
 
 {{< alert style="warning" >}}Using of the custom date-time format becomes possible, because text values of Birth properties are automatically converted to DateTime?.{{< /alert >}}
 
+### Using nullable values like values of typed objects
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+A JSON value may be `null` or missing, so simple values reach a template as `Nullable<T>`: `Int32?`, `Int64?`, `Double?`, `Boolean?` and `DateTime?`. A template uses them the same way as values of typed objects, without `.Value` or `== true`:
+
+*   members of dates and numbers: `<<[o.Date.Month]>>`, `<<[o.Total.ToString("F2")]>>`;
+*   Booleans as conditions: `<<if [o.Paid]>>`, `<<[o.Paid ? "paid" : "due"]>>`, `o.Paid && o.Date.Year == 2026`;
+*   Booleans in predicates of extension methods: `orders.Where(x => x.Paid)`, `orders.Count(x => x.Paid)`, `orders.Any(x => x.Paid)`.
+
+For a missing value, a member gives an empty value and a condition is false. `Value`, `HasValue` and other members of `Nullable<T>` keep their meaning, so existing templates give the same result.
+
+Suppose we have JSON data like:
+```json
+[
+  { "Number": 1, "Paid": true,  "Date": "2026-03-05", "Total": 12.5 },
+  { "Number": 2, "Paid": false, "Date": "2026-04-10", "Total": 7 },
+  { "Number": 3, "Paid": null,  "Date": null,         "Total": null }
+]
+```
+
+If we use the template like following:
+```
+<<foreach [o in orders]>>#<<[o.Number]>>: <<[o.Date.Month]>>/<<[o.Date.Year]>>, <<[o.Total.ToString("F2")]>>, <<[o.Paid ? "paid" : "due"]>>
+<</foreach>>Paid orders: <<[orders.Count(x => x.Paid)]>>
+<<if [orders.Any(x => x.Paid && x.Date.Year == 2026)]>>Payments received in 2026.<</if>>
+```
+
+The result will be like:
+```
+#1: 3/2026, 12.50, paid
+#2: 4/2026, 7.00, due
+#3: /, , due
+Paid orders: 1
+Payments received in 2026.
+```
+
+The same template works with the same data loaded from XML or CSV. Example: [UseFileDataLikeTypedObjects.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/UseFileDataLikeTypedObjects.cs).
+
 ### Treating the objects at top level
 
 If a top-level JSON element represents an object, a *JsonDataSource* instance should be treated in template documents in the same way as if it was a *DataRow* instance (see "[Working with *DataRow* and *DataRowView* Objects](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-data-sources)" for more information). If a top-level JSON object has a single property that is also an object, then this nested object is accessed by the assembler instead.
@@ -248,6 +287,134 @@ Contracts:
 - J Ent. ($100000)
 ```
 
+### Comparing nested objects in GroupBy and Distinct
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+Nested JSON objects are compared by value, including their own nested objects. For example, `GroupBy(o => o.Customer)` puts orders whose `Customer` objects hold equal values into one group, and `Select(o => o.Customer).Distinct()` returns each such customer once. See [Enumeration Extension Methods]({{< ref "assembly/net/developer-guide/advanced-usage/enumeration-extension-methods.md" >}}) for an example.
+
+### References between objects ($id and $ref)
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+JSON written by Json.NET with preserved references holds an object once, marked with `$id`, and refers to it from other places with `$ref`:
+
+```json
+{ "Orders": [ { "Customer": { "$id": "1", "Name": "A" } }, { "Customer": { "$ref": "1" } } ] }
+```
+
+*JsonDataSource* resolves such references: `$ref` gives a copy of the object it names, so `<<[o.Customer.Name]>>`, `OrderBy` and `GroupBy` work on it.
+
+*   Objects with different `$id` values are different objects, even if their values are equal.
+*   An object may refer to an object holding it, such as an order that refers to the customer holding the order. The simple values of that object are available, and its member that would repeat the path (`Order.Customer.Order`) gives the parent object.
+*   A `$ref` without a matching `$id` is ignored.
+*   Data that would grow over one million nodes because of references fails with an exception.
+
+In [Customers.json](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/DataSources/Customers.json), every order refers to its customer with `$ref`. If we use the template like following:
+```
+<<foreach [c in customers]>>Customer: <<[c.CustomerName.Trim()]>>
+<<foreach [o in c.Order.OrderBy(x => x.OrderDate)]>><<[o.OrderDate.Month]>>/<<[o.OrderDate.Year]>>: <<[o.Product.ProductName]>> for <<[o.Customer.CustomerName.Trim()]>>, <<[o.Customer.ShippingAddress]>>
+<</foreach>><</foreach>>
+```
+
+```csharp
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument("Customer orders.docx", "output.docx",
+    new DataSourceInfo(new JsonDataSource("Customers.json"), "customers"));
+```
+
+The result will be like (excerpt):
+```
+Customer: Ali Ahmed
+2/2015: Lenovo G50 for Ali Ahmed, Quette House, Park Road, ISB
+6/2015: Nexus 5 for Ali Ahmed, Quette House, Park Road, ISB
+10/2015: Pavilion G6 for Ali Ahmed, Quette House, Park Road, ISB
+```
+
+Example: [UseFileDataLikeTypedObjects.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/UseFileDataLikeTypedObjects.cs).
+
+### Using a JSON Schema
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+A template is checked against the structure of its data before any `<<if>>` is evaluated. Without a schema, that structure is taken from the JSON data itself, so a reference inside a branch that is never rendered fails when the data behind it is `null`, an empty array or missing. For example, with `"Cards": []` or `"Cards": null`, the following template fails with "Can not get the value of member 'Type'" even though the condition is false:
+
+```
+<<if [customer.Cards.Count() > 0]>>Payment card: <<[customer.Cards.First().Type]>><</if>>
+```
+
+*JsonDataSource* accepts a JSON Schema, the same way *XmlDataSource* accepts an XML Schema. The template is then checked against the schema rather than the data:
+
+*   members declared in the schema can be referenced even if they are `null`, empty or absent in the data;
+*   members not declared in the schema still fail, so misspelled names are detected as before;
+*   value types come from the schema, so a `boolean` is a Boolean and a `string` holding digits stays a string.
+
+The schema is passed with one of these constructors:
+
+*   `JsonDataSource(string jsonPath, string jsonSchemaPath)`
+*   `JsonDataSource(string jsonPath, string jsonSchemaPath, JsonDataLoadOptions options)`
+*   `JsonDataSource(Stream jsonStream, Stream jsonSchemaStream)`
+*   `JsonDataSource(Stream jsonStream, Stream jsonSchemaStream, JsonDataLoadOptions options)`
+
+The customer below has no payment cards and no loyalty data, and its account number is a string of digits.
+
+#### JSON (Customer.json)
+```json
+{ "Name": "Quayside Bistro", "Account": "00042", "Cards": [], "Loyalty": null }
+```
+
+#### JSON Schema (Customer.schema.json)
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "Name": { "type": "string" },
+    "Account": { "type": "string" },
+    "Cards": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "Type": { "type": "string" }, "Last4": { "type": "string" } } }
+    },
+    "Loyalty": { "type": ["object", "null"], "properties": { "Level": { "type": "string" } } }
+  }
+}
+```
+
+#### Template document
+```
+Customer: <<[customer.Name]>>
+Account number: <<[customer.Account]>>
+<<if [customer.Cards.Count() > 0]>>Payment card: <<[customer.Cards.First().Type]>> ending in <<[customer.Cards.First().Last4]>><<else>>No payment card on file.<</if>>
+Loyalty program: <<[customer.Loyalty?.Level]>>
+```
+
+#### Source code
+```csharp
+using GroupDocs.Assembly;
+using GroupDocs.Assembly.Data;
+
+JsonDataSource dataSource = new JsonDataSource("Customer.json", "Customer.schema.json");
+
+DocumentAssembler assembler = new DocumentAssembler();
+assembler.AssembleDocument("Json schema.docx", "output.docx", new DataSourceInfo(dataSource, "customer"));
+```
+
+#### Result document
+```
+Customer: Quayside Bistro
+Account number: 00042
+No payment card on file.
+Loyalty program:
+```
+
+Without the schema, the same template fails on `customer.Cards.First().Type`, and the account number is read as the number `42`. Example: [AssembleFromJsonWithSchema.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/AssembleFromJsonWithSchema.cs).
+
+Supported JSON Schema keywords: `type` (including nullable types such as `["string", "null"]`), `properties`, `items`, `format` (`date-time` and `date` give date values), `enum`, `const`, `allOf`, and local `$ref` pointers (`#/$defs/...`, `#/definitions/...`).
+
+{{< alert style="warning" >}}`oneOf`, `anyOf`, `not`, remote or recursive `$ref`, tuple-form `items` and arrays of arrays are not supported and cause an exception. With a schema, `JsonDataLoadOptions.SimpleValueParseMode` and `ExactDateTimeParseFormats` are not applied (date values must follow ISO 8601), and data members not declared in the schema are ignored.{{< /alert >}}
+
+{{< alert style="info" >}}A call such as `new JsonDataSource(path, null)` with a literal `null` second argument is ambiguous at compile time since version 26.11. Cast the argument: `new JsonDataSource(path, (JsonDataLoadOptions)null)`.{{< /alert >}}
+
 ### Recognition of JSON simple values
 
 For recognition of JSON simple values (null, boolean, number, integer, and string), the engine provides two modes: *loose* and *strict*. In the loose mode, types of JSON simple values are determined upon parsing of their string representations. In the strict mode, types of JSON simple values are determined from JSON notation itself. To see the main difference between the modes, consider the following JSON snippet.
@@ -275,6 +442,8 @@ Recognition of date-time values is a special case, because [JSON specification](
 3. All date-time formats supported for the current culture
 4. All date-time formats supported for the English USA culture
 5. All date-time formats supported for the English New Zealand culture
+
+A date-only value, such as "2020-01-01", keeps its date regardless of the time zone of the server: `<<[date]:"dd.MM.yyyy">>` prints `01.01.2020` on any server. A value with `Z` or a UTC offset, such as "2024-11-03T23:00:00Z" or "2024-11-03T23:00:00+02:00", keeps its exact instant, and the result does not depend on the server time zone either. Date-only values are handled this way since version 26.11.
 
 Although this approach is quite flexible, in some scenarios, you may need to restrict strings to be recognized as date-time values. You can achieve this by specifying an exact format in the context of the current culture to be used while parsing date-time values from strings as shown in the following example.
 

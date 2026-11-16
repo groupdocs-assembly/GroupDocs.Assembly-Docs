@@ -31,6 +31,12 @@ The expression declared within an image tag is used by the assembler to build an
 *   An [Image](http://msdn.microsoft.com/en-us/library/system.drawing.image(v=vs.110).aspx) object
 *   A string containing an image URI, path, or Base64-encoded image data
 
+A relative path is resolved against the folder of the template first, and then against the current directory of the application. For a template loaded from a stream, set the folder with `LoadSaveOptions.ResourceLoadBaseUri`. See [Insert Image from a Relative Path]({{< ref "assembly/net/developer-guide/basic-usage/insert-images-dynamically.md#insert-image-from-a-relative-path" >}}).
+
+{{< alert style="warning" >}}Since version 26.11, an image URI reaching the network (`http`, `https`, `ftp`, a UNC path) that comes from data is skipped by default, and the image is left empty. Allow trusted hosts with `LoadSaveOptions.WhitelistedResources`, or set `LoadSaveOptions.SkipExternalResources` to `false`. See [Controlling External Resources]({{< ref "assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}).{{< /alert >}}
+
+In a presentation template, an image tag can also be placed in a table cell: the image becomes the picture fill of the cell, including cells of rows repeated by `<<foreach>>`. Tags in shapes of group shapes, including nested groups, are processed like tags in other shapes. See [Insert Images into Table Cells of Presentations]({{< ref "assembly/net/developer-guide/basic-usage/insert-images-dynamically.md#insert-images-into-table-cells-of-presentations" >}}).
+
 While building a report, the following procedure is applied to an image tag:
 
 1.  The expression declared within the tag is evaluated and its result is used to form an image.

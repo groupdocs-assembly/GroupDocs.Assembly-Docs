@@ -15,7 +15,7 @@ With its powerful and straightforward API, you can execute the following actions
 
 *   Multiple data formats support
 *   Use formulae & perform sequential data operations
-*   Apply upper, lower, capital, firstcap formatting to strings in template syntax
+*   Apply upper, lower, caps, firstCap formatting to strings in template syntax
 *   Template syntax support formatting of ordinal, cardinal, alphabetic numeric nature
 *   Support template documents with custom variables & text comments within template syntax tags
 *   Dynamically insert out document content in report

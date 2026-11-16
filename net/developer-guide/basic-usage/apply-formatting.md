@@ -16,7 +16,7 @@ GroupDocs.Assembly for .NET provides comprehensive formatting capabilities for n
 
 The main syntax elements are:
 - Format strings: `<<[expression]:"format">>` - apply .NET format strings
-- Text functions: `upper`, `lower`, `capital`, `firstcap` - transform text case
+- Text functions: `upper`, `lower`, `caps`, `firstCap` - transform text case
 
 Here are the steps to apply formatting:
 
@@ -76,6 +76,8 @@ Common numeric format strings:
 - `"F"` or `"F2"` - Fixed-point (e.g., 1500.75)
 - `"P"` - Percentage (e.g., 15.00%)
 - `"D"` - Decimal (for integers)
+
+The currency symbol and the separators come from the culture of the current thread: the examples above are what en-US writes. With de-DE, the same template gives `1.500,75 €` and `15,000 %`.
 
 ## Format Dates and Times
 
@@ -155,14 +157,17 @@ public static void FormatText()
 ```
 Name: <<[product.Name]:upper>>
 Description: <<[product.Description]:lower>>
-Title: <<[product.Name]:capital>>
+Title: <<[product.Name]:caps>>
+Sentence: <<[product.Name]:firstCap>>
 ```
 
 Text transformation functions:
 - `:upper` - Convert to UPPERCASE
 - `:lower` - Convert to lowercase
-- `:capital` - Capitalize Each Word
-- `:firstcap` - Capitalize First Letter Only
+- `:caps` - Capitalize Each Word (`Laptop Computer`)
+- `:firstCap` - Capitalize first letter only (`Laptop computer`)
+
+The function names are case-sensitive: `:capital`, `:Caps` or `:firstcap` makes the tag fail.
 
 ## Combine Formatting with Calculations
 

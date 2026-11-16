@@ -115,10 +115,11 @@ Template with NumberOf():
 
 ```
 Items:
-<<foreach [in items]>>
-<<[NumberOf()]>>. <<[items_Text]>>
+<<foreach [item in items]>><<[NumberOf()]>>. <<[item]>>
 <</foreach>>
 ```
+
+The items are strings, so the data band names its iteration variable (`item`) and outputs the item itself with `<<[item]>>`.
 
 ## Generate Numbered List from DataTable
 

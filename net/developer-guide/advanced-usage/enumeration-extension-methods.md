@@ -48,7 +48,7 @@ persons.Count(){{< /highlight >}}|
 |Count(Predicate)|{{< highlight csharp >}}
 persons.Count(p => p.Age > 30){{< /highlight >}}|
 |Distinct()|{{< highlight csharp >}}
-persons.Distinct(){{< /highlight >}}|
+persons.Distinct(){{< /highlight >}}Items are compared as described in [Comparing Keys of GroupBy and Distinct](#comparing-keys-of-groupby-and-distinct). |
 |First()|{{< highlight csharp >}}
 persons.First(){{< /highlight >}}|
 |First(Predicate)|{{< highlight csharp >}}
@@ -59,7 +59,7 @@ persons.FirstOrDefault(){{< /highlight >}}|
 persons.FirstOrDefault(p => p.Age > 30){{< /highlight >}}|
 |GroupBy(Selector)|{{< highlight csharp >}}
 persons.GroupBy(p => p.Age){{< /highlight >}}Or {{< highlight csharp >}}
-persons.GroupBy(    p => new { Age = p.Age, Count = p.Children.Count() }){{< /highlight >}}This method returns an enumeration of group objects. Each group has a unique key defined by the input selector and contains items of the source enumeration associated with this key. You can access the key of a group instance using the Key property. You can treat a group itself as an enumeration of items that the group contains. |
+persons.GroupBy(    p => new { Age = p.Age, Count = p.Children.Count() }){{< /highlight >}}This method returns an enumeration of group objects. Each group has a unique key defined by the input selector and contains items of the source enumeration associated with this key. You can access the key of a group instance using the Key property. You can treat a group itself as an enumeration of items that the group contains. Keys are compared as described in [Comparing Keys of GroupBy and Distinct](#comparing-keys-of-groupby-and-distinct). |
 |Last()|{{< highlight csharp >}}
 persons.Last(){{< /highlight >}}|
 |Last(Predicate)|{{< highlight csharp >}}
@@ -106,3 +106,86 @@ persons.TakeWhile(p => p.Age < 50){{< /highlight >}}|
 persons.Union(otherPersons){{< /highlight >}}An implicit reference conversion must exist between types of items of united enumerations. |
 |Where(Predicate)|{{< highlight csharp >}}
 persons.Where(p => p.Age > 18){{< /highlight >}}|
+
+## Predicates over Nullable Boolean Values
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+Boolean values of JSON, XML and CSV data, and `bool?` members of your own classes, are nullable because the value may be missing. Such values can be returned by a `Predicate` directly, without `== true`. A missing value counts as false.
+
+Suppose we have JSON data like:
+
+```json
+[
+  { "Title": "Order beans", "Done": true },
+  { "Title": "Clean grinder", "Done": false },
+  { "Title": "Call supplier", "Done": null }
+]
+```
+
+If we use the template like following:
+
+```
+Done: <<[tasks.Count(t => t.Done)]>> of <<[tasks.Count()]>>
+Not done: <<foreach [t in tasks.Where(t => t.Done != true)]>><<[t.Title]>>; <</foreach>>
+All done: <<[tasks.All(t => t.Done)]>>
+```
+
+The result will be like:
+
+```
+Done: 1 of 3
+Not done: Clean grinder; Call supplier; 
+All done: False
+```
+
+{{< alert style="warning" >}}A negation of a missing value is missing as well, so `tasks.Where(t => !t.Done)` returns the tasks with `false` only. To include missing values, compare with `true`: `t.Done != true`.{{< /alert >}}
+
+## Comparing Keys of GroupBy and Distinct
+
+{{< alert style="info" >}}This feature is supported by version 26.11 or greater.{{< /alert >}}
+
+`GroupBy` and `Distinct` compare keys and items depending on where they come from:
+
+- **Nested objects of JSON and XML data** are compared by value, including their own nested objects: `{"Name":"A"}` and `{"Name":"A"}` make one group. Objects of JSON data with different `$id` values are different objects, even if their values are equal.
+- **Rows of a `DataSet` of your own** are compared by identity: orders of the same customer row make one group, while two customer rows with equal values stay two groups.
+- **Objects of your own classes** are compared as .NET does it, using their `Equals` and `GetHashCode` methods.
+
+To group by a value rather than by an object, use a simple key, such as `GroupBy(o => o.Customer.Name)`.
+
+For example, orders 1 and 3 below hold equal customer objects:
+
+```json
+{ "Orders": [
+  { "Number": 1, "Paid": true,  "Customer": { "Name": "Quayside Bistro" } },
+  { "Number": 2, "Paid": false, "Customer": { "Name": "Harbor Lane Provisions" } },
+  { "Number": 3, "Paid": null,  "Customer": { "Name": "Quayside Bistro" } } ] }
+```
+
+The following template:
+
+```
+<<foreach [g in ds.Orders.GroupBy(o => o.Customer)]>><<[g.Key.Name]>>: <<[g.Count()]>> order(s), paid: <<[g.Count(o => o.Paid)]>>
+<<foreach [o in g]>>  #<<[o.Number]>> <<[o.Paid ? "paid" : "due"]>>
+<</foreach>><</foreach>>
+```
+
+```csharp
+JsonDataLoadOptions options = new JsonDataLoadOptions();
+options.AlwaysGenerateRootObject = true;
+
+new DocumentAssembler().AssembleDocument("orders.txt", "report.txt",
+    new DataSourceInfo(new JsonDataSource("orders.json", options), "ds"));
+```
+
+gives one group per customer:
+
+```
+Quayside Bistro: 2 order(s), paid: 1
+  #1 paid
+  #3 due
+Harbor Lane Provisions: 1 order(s), paid: 0
+  #2 due
+```
+
+Example: [UseFileDataLikeTypedObjects.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/UseFileDataLikeTypedObjects.cs).

@@ -18,7 +18,7 @@ The main syntax elements are:
 - `<<if [condition]>>` - display content if condition is true
 - `<<elseif [condition]>>` - display content if previous conditions are false and this condition is true
 - `<<else>>` - display content if all conditions are false
-- `<<if>>` - closing tag
+- `<</if>>` - closing tag
 
 Here are the steps to use conditional content:
 
@@ -29,6 +29,10 @@ Here are the steps to use conditional content:
 
 {{< alert style="info" >}}
 Conditional expressions must return boolean values. You can use comparison operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), and method calls that return bool.
+{{< /alert >}}
+
+{{< alert style="info" >}}
+Boolean values of JSON, XML and CSV data, and `bool?` members of your own classes, are nullable because the value may be missing. They can be used directly as conditions: in `<<if [o.Paid]>>`, in the `?:`, `&&` and `||` operators, and in predicates of `Where`, `Count`, `Any` and other extension methods, such as `<<foreach [o in orders.Where(x => x.Paid)]>>`. A missing value counts as false, so `o.Paid == true` is not needed.
 {{< /alert >}}
 
 ## Simple If/Else Block
@@ -73,7 +77,7 @@ You have a high balance and qualify for special benefits.
 <<else>>
 Status: Standard Customer
 Thank you for your business.
-<<if>>
+<</if>>
 ```
 
 ## If/Elseif/Else Block
@@ -114,7 +118,7 @@ Discount: 10% (Large order discount)
 Discount: 5% (Medium order discount)
 <<else>>
 Discount: No discount available
-<<if>>
+<</if>>
 ```
 
 ## Conditional Content with Collections
@@ -150,13 +154,13 @@ Template:
 ```
 <<if [report.Items.Any()]>>
 Items:
-<<foreach [in report.Items]>>
-- <<[report.Items_Text]>>
-<</foreach>>
-<<else>>
+<<foreach [item in report.Items]>>- <<[item]>>
+<</foreach>><<else>>
 No items available.
-<<if>>
+<</if>>
 ```
+
+The items are strings, so the data band names its iteration variable (`item`) and outputs it with `<<[item]>>`. The band opens in the item's paragraph and closes at the start of the next one, so it repeats one paragraph per item; a `<<foreach>>` tag on a line of its own would repeat an empty paragraph too.
 
 ## Conditional Content in Data Bands
 
@@ -193,16 +197,13 @@ public static void ConditionalInDataBand()
 Template:
 
 ```
-<<foreach [in products]>>
-<<[Name]>> - <<[Price]:"C">>
-<<if [InStock]>>
-✓ In Stock
-<<else>>
-✗ Out of Stock
-<<if>>
+<<foreach [in products]>><<[Name]>> - <<[Price]:"C">>
+<<if [InStock]>>✓ In Stock<<else>>✗ Out of Stock<</if>>
 
 <</foreach>>
 ```
+
+Each product gives three paragraphs: its name and price, its stock status, and an empty line.
 
 ## Complex Conditions
 
@@ -244,7 +245,7 @@ Eligible for promotion
 Consider for technical leadership
 <<else>>
 Standard review process
-<<if>>
+<</if>>
 ```
 
 ## Conditional Formatting
@@ -285,7 +286,7 @@ Amount: <<[invoice.Amount]:"C">>
 Status: PAID
 <<else>>
 Status: UNPAID - Payment Required
-<<if>>
+<</if>>
 ```
 
 ## Using Methods in Conditions
@@ -333,11 +334,11 @@ Template:
 Order contains items.
 <<else>>
 Order is empty.
-<<if>>
+<</if>>
 ```
 
 {{< alert style="warning" >}}
-Conditional blocks must be properly closed with `<<if>>`. Nested conditional blocks are supported, but ensure proper nesting and closing of all blocks.
+Conditional blocks must be properly closed with `<</if>>`. Nested conditional blocks are supported, but ensure proper nesting and closing of all blocks. A block closed with `<<if>>` instead fails with "Tag 'if' is not well-formed. Tag end is unexpected."
 {{< /alert >}}
 
 ### Advanced Usage Topics

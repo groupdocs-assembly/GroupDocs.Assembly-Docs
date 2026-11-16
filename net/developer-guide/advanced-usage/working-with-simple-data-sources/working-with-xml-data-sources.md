@@ -63,6 +63,8 @@ Average age: 36
 
 {{< alert style="warning" >}}Using of the custom date-time format and the extension method involving arithmetic in the template document becomes possible, because text values of Birth and Age XML elements are automatically converted to DateTime? and Int32? respectively even in the absence of XML schema.{{< /alert >}}
 
+{{< alert style="info" >}}Since version 26.11, nullable values of XML data are used in a template the same way as values of typed objects, without `.Value` or `== true`: `<<[o.Date.Month]>>`, `<<[o.Total.ToString("F2")]>>`, `<<if [o.Paid]>>`, `<<[o.Paid ? "paid" : "due"]>>` and predicates such as `orders.Where(x => x.Paid)` work directly. For a missing value, a member gives an empty value and a condition is false. See [Using nullable values like values of typed objects]({{< ref "assembly/net/developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources.md#using-nullable-values-like-values-of-typed-objects" >}}) for an example.{{< /alert >}}
+
 ## Treating the top-level XML element contains attributes or nested elements of different types
 
 If a top-level XML element contains attributes or nested elements of different types, an *XmlDataSource* instance should be treated in template documents in the same way as if it was a *DataRow* instance (see "[Working with *DataRow* and *DataRowView* Objects](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/#using-data-sources)" for more information) as shown in the following example.

@@ -253,6 +253,10 @@ While building a report, the following procedure is applied to an image tag:
 
 **Note:** If the expression declared within an image tag returns a stream object, then it is closed by the engine as soon as the corresponding image is built.
 
+**Note:** A relative path is resolved against the folder of the template first, and then against the current directory of the application (for a template loaded from a stream, set the folder with `LoadSaveOptions.ResourceLoadBaseUri`). A URI reaching the network that comes from data is skipped by default, see [Controlling External Resources]({{< ref "assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}).
+
+**Note:** In presentation templates, an image tag can also be placed in a table cell instead of a textbox: the image becomes the picture fill of the cell.
+
 By default, the assembler stretches an image filling a textbox to the size of the textbox. However, you can change this behavior in the following ways:
 
 *   To keep the size of the textbox and stretch the image within bounds of the textbox preserving the ratio of the image, use the *keepRatio* switch as follows:
@@ -298,7 +302,7 @@ Syntax of a doc tag is defined as follows.
 <<doc [document_expression]>>
 ```
 
-{{< alert style="warning" >}}A doc tag can be used almost anywhere in a template document except textboxes and charts.{{< /alert >}}
+{{< alert style="warning" >}}Documents can be inserted into Word Processing templates and email templates with HTML or RTF bodies only. There, a doc tag can be used almost anywhere in a template document except textboxes and charts. In spreadsheet, presentation, HTML, Markdown and plain text templates, a doc tag fails with "Tag 'doc' is not supported for this template format".{{< /alert >}}
 
 An expression declared within a doc tag is used by the assembler to load a document to be inserted during runtime. The expression must return a value of one of the following types:
 

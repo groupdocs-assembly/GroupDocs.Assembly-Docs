@@ -181,7 +181,7 @@ Percentage: <<[invoice.Percentage]:"P">>
 ```
 
 {{< alert style="warning" >}}
-Format strings follow .NET formatting conventions. Use "C" for currency, "P" for percentage, and standard date/time format strings for dates.
+Format strings follow .NET formatting conventions. Use "C" for currency, "P" for percentage, and standard date/time format strings for dates. "C" and "P" follow the culture of the current thread: under en-US the template above gives `$1,500.50` and `15.00%`, under de-DE `1.500,50 €` and `15,000 %`.
 {{< /alert >}}
 
 ### Advanced Usage Topics

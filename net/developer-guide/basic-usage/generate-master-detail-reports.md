@@ -175,11 +175,10 @@ Template table structure:
 
 | Order ID | Customer | Product | Quantity | Price |
 |----------|----------|---------|----------|-------|
-| `<<foreach [in orders]>>` | | | | |
-| `<<[OrderId]>>` | `<<[CustomerName]>>` | `<<foreach [in Items]>>` | | |
-| | | `<<[ProductName]>>` | `<<[Quantity]>>` | `<<[Price]:"C">>` |
-| | | `<<foreach>>` | | |
-| `<<foreach>>` | | | | |
+| `<<foreach [in orders]>><<[OrderId]>>` | `<<[CustomerName]>>` | | | |
+| `<<foreach [in Items]>>` | | `<<[ProductName]>>` | `<<[Quantity]>>` | `<<[Price]:"C">><</foreach>><</foreach>>` |
+
+The outer band spans both rows: it opens in the first cell of the order row and closes in the last cell of the item row. The inner band is the item row alone, so the table gets one order row followed by one row per item.
 
 ## Using Aggregates in Master-Detail
 
@@ -230,7 +229,7 @@ Item Count: <<[Items.Count()]>>
 ```
 
 {{< alert style="warning" >}}
-When using nested foreach data bands, ensure proper closing tags. Each opening `<<foreach>>` must have a corresponding closing `<<foreach>>`.
+When using nested foreach data bands, ensure proper closing tags. Each opening `<<foreach>>` must have a corresponding closing `<</foreach>>`, and an inner band must close before the band around it.
 {{< /alert >}}
 
 ### Advanced Usage Topics

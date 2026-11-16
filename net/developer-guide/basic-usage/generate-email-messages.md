@@ -88,6 +88,10 @@ Amount: <<[email.InvoiceAmount]:"C">>
 Thank you for your business.
 ```
 
+{{< alert style="info" >}}
+In MSG templates, tags in the subject are also processed in the conversation topic of the message (`PR_CONVERSATION_TOPIC`), which Outlook uses to thread messages, so the report shows the same subject everywhere.
+{{< /alert >}}
+
 ## Generate Email with Multiple Recipients
 
 Set multiple recipients using foreach:

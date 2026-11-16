@@ -146,6 +146,8 @@ The font used to render barcode text of a dynamically inserted barcode image der
 *   Style (bold and italic)
 *   Color
 
+{{< alert style="info" >}}If the font of the barcode tag is not installed, a fallback font is used to render the barcode text of a QR code and other barcode types whose text is drawn by the engine (DataMatrix, Aztec and others), so the barcode is still generated, for example when a template using Calibri runs on Linux. If the system has no fonts at all, the barcode is generated without its text. To keep the look of the barcode text, install the fonts used by your templates.{{< /alert >}}
+
 The placement of barcode text of a dynamically inserted barcode image – leftward, rightward, or centered – is defined by text alignment of the corresponding barcode tag.
 
 ### Using Barcode Text Auto-Correction

@@ -13,7 +13,7 @@ GroupDocs.Assembly for .NET is an API that allows you to generate documents in p
 
 *   Multiple data formats support
 *   Use formulae & perform sequential data operations
-*   Apply upper, lower, capital, firstcap formatting to strings in template syntax
+*   Apply upper, lower, caps, firstCap formatting to strings in template syntax
 *   Template syntax support formatting of ordinal, cardinal, alphabetic numeric nature
 *   Support template documents with custom variables & text comments within template syntax tags
 *   Dynamically insert out document content in report
@@ -122,7 +122,7 @@ In-lining of syntax error messages into templates instead of exception throwing
 
 #### Specifying String Formats
 
-API provides a useful feature to format strings in template syntax. String formatting such as upper, lower, capital, etc.
+API provides a useful feature to format strings in template syntax. String formatting such as upper, lower, caps, etc.
 
 | String Format | Description |
 | --- | --- |

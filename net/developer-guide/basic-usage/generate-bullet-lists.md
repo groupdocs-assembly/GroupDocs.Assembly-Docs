@@ -142,10 +142,11 @@ Template for simple list:
 
 ```
 Items:
-<<foreach [in items]>>
-• <<[items_Text]>>
+<<foreach [item in items]>>• <<[item]>>
 <</foreach>>
 ```
+
+A string has no members to name, so the data band names its iteration variable (`item`) and outputs the item itself with `<<[item]>>`. The `_Text` suffix applies only to arrays of simple values in JSON and XML data.
 
 ## Bullet List in Spreadsheet
 

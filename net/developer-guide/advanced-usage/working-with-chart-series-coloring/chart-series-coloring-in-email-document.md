@@ -73,6 +73,7 @@ For a chart with dynamic data, you can set colors of chart series dynamically 
 A color expression must return a value of one of the following types:
 
 *   A string containing the name of a known color, that is, the case-insensitive name of a member of the [KnownColor](https://msdn.microsoft.com/en-us/library/system.drawing.knowncolor(v=vs.110).aspx) enumeration such as "red"
+*   A string containing a hex value: "#RRGGBB", "#RGB" or "#AARRGGBB", such as "#FF0000" (red). Hex strings are supported by version 26.11 or greater.
 *   An integer value defining RGB (red, green, blue) components of the color such as 0xFFFF00 (yellow)
 *   A value of the [Color](http://msdn.microsoft.com/en-us/library/system.drawing.color(v=vs.110).aspx) type
 

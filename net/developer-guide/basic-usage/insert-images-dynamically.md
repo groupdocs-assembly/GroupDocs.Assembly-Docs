@@ -80,6 +80,10 @@ Product: <<[product.Name]>>
 
 Insert an image from a URL:
 
+{{< alert style="warning" >}}
+Since version 26.11, external resources whose references come from data, such as an `http` or `https` URI returned by an image expression, are skipped by default and give an empty image. Allow the hosts you trust with `LoadSaveOptions.WhitelistedResources`, as shown below, or set `LoadSaveOptions.SkipExternalResources` to `false`. See [Controlling External Resources]({{< ref "assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}).
+{{< /alert >}}
+
 ```csharp
 using GroupDocs.Assembly;
 
@@ -97,8 +101,12 @@ public static void InsertImageFromUrl()
         ImageUrl = "https://example.com/images/laptop.jpg"
     };
     
+    // The URL comes from data, so its host must be allowed
+    LoadSaveOptions options = new LoadSaveOptions();
+    options.WhitelistedResources.Add("example.com");
+
     DocumentAssembler assembler = new DocumentAssembler();
-    assembler.AssembleDocument("ImageTemplate.docx", "ImageOutput.docx", 
+    assembler.AssembleDocument("ImageTemplate.docx", "ImageOutput.docx", options,
         new DataSourceInfo(product, "product"));
     
     Console.WriteLine("Image inserted from URL successfully.");
@@ -113,6 +121,39 @@ Product: <<[product.Name]>>
 [Textbox:]
 <<image [product.ImageUrl]>>
 ```
+
+## Insert Image from a Relative Path
+
+A relative file path returned by an image expression, such as `"../Images/no-photo.jpg"`, is resolved against the folder of the template first, by analogy with linked resources of Microsoft Office documents. If no file exists there, the current directory of the application is used. A template loaded from a stream has no folder: set it with `LoadSaveOptions.ResourceLoadBaseUri`.
+
+In the example, templates are in `C:\Reports\Templates`, images are in `C:\Reports\Images`, and the template inserts `<<image [expression]>>`:
+
+```csharp
+using GroupDocs.Assembly;
+using System.IO;
+
+public static void InsertImageFromRelativePath()
+{
+    const string relativePath = "../Images/no-photo.jpg";
+    DocumentAssembler assembler = new DocumentAssembler();
+
+    // A template loaded from a file: the path is resolved against the folder of the template.
+    assembler.AssembleDocument(@"C:\Reports\Templates\Inserting image.docx", "output.docx",
+        new DataSourceInfo(relativePath, "expression"));
+
+    // A template loaded from a stream has no folder: set it with ResourceLoadBaseUri.
+    LoadSaveOptions options = new LoadSaveOptions();
+    options.ResourceLoadBaseUri = @"C:\Reports\Templates";
+
+    using (FileStream template = File.OpenRead(@"C:\Reports\Templates\Inserting image.docx"))
+    using (FileStream report = File.Create("output-from-stream.docx"))
+    {
+        assembler.AssembleDocument(template, report, options, new DataSourceInfo(relativePath, "expression"));
+    }
+}
+```
+
+Relative paths are resolved this way since version 26.11. Example: [InsertImageFromRelativePath.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/InsertImageFromRelativePath.cs).
 
 ## Insert Image from Byte Array
 
@@ -256,6 +297,38 @@ Product: <<[Name]>>
 
 <</foreach>>
 ```
+
+## Insert Images into Table Cells of Presentations
+
+In a presentation template, a table cell is an image container as well: the image becomes the picture fill of the cell, including cells of rows repeated by `<<foreach>>`. A template table listing products with their pictures looks like this:
+
+| Name | Photo |
+| --- | --- |
+| `<<foreach [p in products]>><<[p.Name]>>` | `<<image [p.Photo] -fitHeight>><</foreach>>` |
+
+```csharp
+using GroupDocs.Assembly;
+
+public class Product
+{
+    public string Name { get; set; }
+    public string Photo { get; set; }
+}
+
+public static void InsertImagesIntoTableCells()
+{
+    Product[] products =
+    {
+        new Product { Name = "Logo", Photo = "Images/Logo.jpg" },
+        new Product { Name = "No photo", Photo = "Images/no-photo.jpg" },
+    };
+
+    new DocumentAssembler().AssembleDocument("Image in table cell.pptx", "output.pptx",
+        new DataSourceInfo(products, "products"));
+}
+```
+
+With `-fitHeight`, the row grows to show the image with its aspect ratio. The other fit switches keep the aspect ratio of the image within the cell, because the width of a cell is the width of its whole column. Tags in shapes of group shapes, including nested groups, are processed like tags in other shapes. Table cells and group shapes of presentations are supported since version 26.11. Example: [InsertImageIntoTableCell.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/InsertImageIntoTableCell.cs).
 
 {{< alert style="warning" >}}
 If an image expression returns a stream, the stream is automatically closed by the assembler after the image is loaded. Do not dispose the stream manually.
