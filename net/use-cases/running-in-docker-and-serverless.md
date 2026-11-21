@@ -1,11 +1,11 @@
 ---
 id: running-in-docker-and-serverless
 url: assembly/net/running-in-docker-and-serverless
-title: Running in Docker and Serverless
+title: Document Generation in Docker and Serverless
 linkTitle: Docker and serverless
 weight: 7
 description: "Run document generation on Linux: the fonts a container needs, how to prove they are there with GeneratePreview, and what changes in Azure Functions, AWS Lambda and Cloud Run."
-keywords: GroupDocs.Assembly Docker, document generation Linux, fonts in container, Azure Functions document generation, AWS Lambda report, serverless
+keywords: document generation Docker .NET, GroupDocs.Assembly Docker, document generation Linux, fonts in container, fontconfig fonts-liberation, Azure Functions document generation, AWS Lambda report, self-hosted document generation
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -121,6 +121,27 @@ if (!string.IsNullOrWhiteSpace(path) && File.Exists(path))
 ```
 
 See [Evaluation limitations and licensing]({{< ref "/assembly/net/getting-started/evaluation-limitations-and-licensing.md" >}}).
+
+## Frequently asked questions
+
+**Why does a document generated in a container look different?**
+The .NET runtime images ship with no fonts. Text is laid out with a substitute, so line breaks,
+column widths and page counts move. Nothing throws.
+
+**Which packages have to be installed in the image?**
+`fontconfig`, which makes fonts discoverable at all, and a font package such as
+`fonts-liberation`, which is metric-compatible with Arial, Times New Roman and Courier New.
+
+**How do you add a corporate font?**
+Copy it into `/usr/share/fonts` and run `fc-cache -f`.
+
+**How do you prove the fonts are present?**
+Render a page with `DocumentAssembler.GeneratePreview` during the image build and compare it with a
+reference image. A DOCX hides the problem because layout is decided by whatever opens it.
+
+**Does this run in Azure Functions or AWS Lambda?**
+Yes, on the same base image. Assemble to streams, apply the licence once per process rather than
+per invocation, and keep an instance warm if the first request is user-facing.
 
 ## What to read next
 

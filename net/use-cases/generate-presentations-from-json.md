@@ -1,11 +1,11 @@
 ---
 id: generate-presentations-from-json
 url: assembly/net/generate-presentations-from-json
-title: Generate Presentations from JSON
-linkTitle: Presentations from JSON
+title: Generate PowerPoint Presentations from JSON
+linkTitle: PowerPoint from JSON
 weight: 5
 description: "Build a PowerPoint deck from a JSON file: a table that grows with the data, an image in every row and relative image paths resolved against the template."
-keywords: generate PowerPoint from JSON C#, PPTX template engine, image in table cell presentation, deck from data, presentation report .NET
+keywords: generate PowerPoint from JSON C#, create PPTX from JSON, PPTX template engine .NET, image in table cell presentation, deck from data, presentation report .NET, PowerPoint without Office
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -92,9 +92,29 @@ using (FileStream report = File.Create(Path.Combine(OutputPath, "catalogue.pdf")
 ODP, POTX, PPT and POT templates work the same way as PPTX; the full list is on
 [Supported document formats]({{< ref "/assembly/net/getting-started/supported-document-formats.md" >}}).
 
+## Frequently asked questions
+
+**How do you generate a PowerPoint presentation from JSON in C#?**
+Put `<<foreach>>` tags in one row of a table in a `.pptx`, point `JsonDataSource` at the JSON array
+and call `DocumentAssembler.AssembleDocument`. The row repeats once per record.
+
+**Can an image be placed inside a table cell of a slide?**
+Yes, since version 26.11. The picture becomes the fill of the cell and repeats with the row,
+including rows produced by `foreach`.
+
+**Can image paths in the data be relative?**
+Yes, resolved against the folder of the template. A template read from a stream has no folder, so
+set `LoadSaveOptions.ResourceLoadBaseUri`.
+
+**Is Microsoft PowerPoint required on the server?**
+No. The formats are read and written by the library itself.
+
+**Which presentation formats can be used as templates?**
+PPTX, PPT, POTX, POT and ODP.
+
 ## What to read next
 
 *   [Generate Excel reports from a template]({{< ref "/assembly/net/use-cases/generate-excel-reports-from-template.md" >}}) — the same engine, a workbook
 *   [Running in Docker and serverless]({{< ref "/assembly/net/use-cases/running-in-docker-and-serverless.md" >}}) — rendering a deck to images, and the fonts it needs
-*   Blog: [Build PowerPoint decks from JSON in C#](https://blog.groupdocs.com/assembly/generate-powerpoint-decks-from-json-csharp/)
+*   Blog: [Generate PowerPoint presentations from JSON in C#](https://blog.groupdocs.com/assembly/generate-powerpoint-decks-from-json-csharp/)
 *   GitHub: [powerpoint-decks-from-json-net](https://github.com/groupdocs-assembly/powerpoint-decks-from-json-net)

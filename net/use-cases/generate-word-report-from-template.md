@@ -1,11 +1,11 @@
 ---
 id: generate-word-report-from-template
 url: assembly/net/generate-word-report-from-template
-title: Generate a Word Report from a Template
-linkTitle: Word report from a template
+title: Generate a Word Document from a Template
+linkTitle: Word document from a template
 weight: 2
-description: "Fill a Word template from a .NET object or a JSON file and save the result as DOCX or PDF, without Microsoft Office on the server."
-keywords: generate Word document from template C#, DOCX template engine .NET, mail merge without Word, Word report from JSON, document generation API
+description: "Generate a Word document from a template in C#: fill a DOCX from a .NET object or a JSON file and save as DOCX or PDF, with no Microsoft Office on the server - mail merge without Word."
+keywords: generate Word document from template C#, best library to generate Word documents from templates C#, DOCX template engine .NET, mail merge in C# without Microsoft Word, fill Word template with data C#, Word document from JSON C#, document generation API
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -116,6 +116,33 @@ plain text come out of the same call; the list is on
 | A deck | [Presentations from JSON]({{< ref "/assembly/net/use-cases/generate-presentations-from-json.md" >}}) |
 | To serve this from a web application | [Reports in ASP.NET Core]({{< ref "/assembly/net/use-cases/generate-reports-in-aspnet-core.md" >}}) |
 | To run it on Linux | [Docker and serverless]({{< ref "/assembly/net/use-cases/running-in-docker-and-serverless.md" >}}) |
+
+## Is this mail merge?
+
+It replaces it. Classic mail merge fills `MERGEFIELD` placeholders from one flat row of data: one
+record, a fixed set of fields, no logic. A GroupDocs.Assembly template adds `<<foreach>>` for
+repeating sections, `<<if>>` for conditions, expressions such as `Sum`, `GroupBy` and `OrderBy`,
+and nested objects — so an invoice with a variable number of lines and a conditional block is a
+single template rather than a template plus code.
+
+## Frequently asked questions
+
+**How do you generate a Word document from a template in C#?**
+Put `<<[...]>>` tags in a `.docx` and call `DocumentAssembler.AssembleDocument` with the template,
+an output path and a `DataSourceInfo` holding your data.
+
+**Is Microsoft Word or Office needed on the server?**
+No. GroupDocs.Assembly reads and writes the formats itself, on Windows and on Linux.
+
+**Can the data be JSON instead of a .NET object?**
+Yes. `JsonDataSource` takes a file, a stream or a string, and the template does not change.
+
+**Can the same template produce a PDF?**
+Yes — add `new LoadSaveOptions(FileFormat.Pdf)` to the call.
+
+**Which template formats are supported?**
+DOCX, DOC, DOCM, DOTX, RTF, ODT and plain text, plus spreadsheet, presentation and e-mail
+templates with the same tag syntax.
 
 ## What to read next
 

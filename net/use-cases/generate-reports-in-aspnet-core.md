@@ -1,11 +1,11 @@
 ---
 id: generate-reports-in-aspnet-core
 url: assembly/net/generate-reports-in-aspnet-core
-title: Generate Reports in ASP.NET Core
+title: Generate and Download Reports in ASP.NET Core
 linkTitle: Reports in ASP.NET Core
 weight: 6
 description: "Take JSON in a request, fill a Word template and stream back a DOCX or a PDF, plus a PNG preview of the first page - all in memory, with no files on disk."
-keywords: ASP.NET Core document generation, download DOCX from web API, generate PDF ASP.NET Core, minimal API report, document preview web
+keywords: ASP.NET Core document generation, generate and download Word document ASP.NET Core, download DOCX from web API, generate PDF ASP.NET Core, minimal API report, document preview in browser, Blazor report download
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -132,6 +132,26 @@ stream you intend to read afterwards must not be disposed there.
     [Running in Docker and serverless]({{< ref "/assembly/net/use-cases/running-in-docker-and-serverless.md" >}}).
 *   **Cache nothing by accident.** `DocumentAssembler` is cheap to create; share the template file,
     not the assembler.
+
+## Frequently asked questions
+
+**How do you return a generated Word document from an ASP.NET Core endpoint?**
+Assemble into a `MemoryStream` and return `Results.File(bytes, contentType, fileName)`. The file
+name sets `Content-Disposition`, which is what makes the browser download the file.
+
+**Is there an overload taking a template path and an output stream?**
+No. When the result goes to a stream, open the template as a stream as well.
+
+**How do you preview a report without a viewer component?**
+`DocumentAssembler.GeneratePreview` renders a page to PNG with the same engine that produced the
+document, so the preview matches the file exactly.
+
+**Should a template or data error return 500?**
+No. A tag the data cannot satisfy is caller input: return `400`.
+
+**What has to change before production?**
+Apply the licence once in a singleton rather than per request, limit the request body, decide what
+a broken template does, and install fonts in the container image.
 
 ## What to read next
 

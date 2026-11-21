@@ -1,11 +1,11 @@
 ---
 id: generate-documents-from-llm-output
 url: assembly/net/generate-documents-from-llm-output
-title: Generate Documents from Model Output
-linkTitle: Documents from model output
+title: Generate Word Documents from LLM Output
+linkTitle: Documents from LLM output
 weight: 1
-description: "Turn the JSON a language model returns into a branded Word or PDF document: a JSON Schema as the contract between the model and the template, and control over the external resources the data may reference."
-keywords: LLM document generation, structured output to Word, JSON Schema template, AI report generation C#, model output to PDF, document automation
+description: "Generate a Word or PDF document from LLM output in C#: a JSON Schema as the contract between the model and the template, and control over the external resources the data may reference."
+keywords: generate Word document from LLM output, LLM document generation C#, structured output to Word, JSON Schema template, AI report generation C#, model JSON to PDF, document automation, OpenAI to Word document
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -172,10 +172,33 @@ against the classes of the system that already prints the document.
 *   **Leave the external-resource default alone** unless a reviewer agreed otherwise, and whitelist
     hosts rather than switching the check off.
 
+## Frequently asked questions
+
+**How do you generate a Word document from LLM output in C#?**
+Ask the model for JSON that validates against a JSON Schema, build a `JsonDataSource` from that
+JSON and the same schema, and call `DocumentAssembler.AssembleDocument` with a Word template. The
+model supplies data only; the document comes from the template.
+
+**Why does a value such as `"00042"` arrive as 42?**
+Without a schema the engine infers types from the data, and a string of digits reads as a number.
+Declaring `"type": "string"` in the schema preserves it.
+
+**What happens when the model omits an optional field?**
+With a schema the member is known and renders empty. Without one, use
+`DocumentAssemblyOptions.AllowMissingMembers` — see
+[Templates for incomplete data]({{< ref "/assembly/net/use-cases/templates-for-incomplete-data.md" >}}).
+
+**Can the model's JSON make the engine fetch a URL?**
+Yes, if the data carries one and the template renders it. Control that with
+[external resource loading]({{< ref "/assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}).
+
+**Can the output be a PDF?**
+Yes — add `new LoadSaveOptions(FileFormat.Pdf)` to the same call.
+
 ## What to read next
 
 *   [Templates for incomplete data]({{< ref "/assembly/net/use-cases/templates-for-incomplete-data.md" >}}) — the schema and the two assembly options, in detail
 *   [Working with JSON data sources]({{< ref "/assembly/net/developer-guide/advanced-usage/working-with-simple-data-sources/working-with-json-data-sources.md" >}}) — load options, types and references
 *   [Controlling external resources]({{< ref "/assembly/net/developer-guide/advanced-usage/loading-and-saving-with-external-resource-files/controlling-external-resources.md" >}}) — the whole policy surface
-*   Blog: [From model output to a branded document](https://blog.groupdocs.com/assembly/llm-json-to-branded-documents-csharp/)
+*   Blog: [Generate Word and PDF documents from LLM output in C#](https://blog.groupdocs.com/assembly/llm-json-to-branded-documents-csharp/)
 *   GitHub: [llm-json-to-branded-documents-net](https://github.com/groupdocs-assembly/llm-json-to-branded-documents-net)

@@ -1,11 +1,11 @@
 ---
 id: templates-for-incomplete-data
 url: assembly/net/templates-for-incomplete-data
-title: Templates for Incomplete Data
+title: Handle Missing and Null Data in Templates
 linkTitle: Templates for incomplete data
 weight: 3
-description: "Keep a report assembling when the data has holes: a JSON Schema as the contract, AllowMissingMembers for sparse data and InlineErrorMessages for templates you do not own."
-keywords: JSON Schema template, AllowMissingMembers, InlineErrorMessages, null safe template, missing member, document assembly options
+description: "Handle missing members, empty arrays and nulls in a document template: a JSON Schema as the contract, AllowMissingMembers for sparse data and InlineErrorMessages for templates you do not own."
+keywords: handle missing data in document template C#, JSON Schema template, AllowMissingMembers, InlineErrorMessages, null safe template, Can not get the value of member, empty array template, document assembly options
 productName: GroupDocs.Assembly for .NET
 hideChildren: False
 toc: True
@@ -137,6 +137,28 @@ whoever owns the template — see
 
 The options combine. A schema plus `InlineErrorMessages` is a reasonable default for a service that
 assembles documents from data it does not own.
+
+## Frequently asked questions
+
+**How do you handle missing data in a document template in C#?**
+With a JSON Schema when the shape is known in advance, `DocumentAssemblyOptions.AllowMissingMembers`
+when the data is genuinely sparse, and `DocumentAssemblyOptions.InlineErrorMessages` when the
+template is edited outside your team.
+
+**Why does an empty array break a template that already guards it with `<<if>>`?**
+The expression is resolved whether or not the branch renders, and an empty array carries no element
+type to resolve a member against. A schema supplies that type.
+
+**Why is a string of digits such as `"00042"` turned into a number?**
+Type inference from the data. Declare the member as `"type": "string"` in the schema.
+
+**Does `AllowMissingMembers` hide genuine problems?**
+It can. If a member disappears because a field was renamed upstream, the option renders blanks in
+every document and nothing reports it. Prefer a schema when the shape is known.
+
+**How do you know a document assembled with errors?**
+`AssembleDocument` returns `false` when `InlineErrorMessages` is set, and the error text is placed
+in the document where the tag was.
 
 ## What to read next
 
