@@ -41,3 +41,5 @@ When **DocumentAssemblyOptions.InlineErrorMessages** is applied, a Boolean valu
 Please download the sample demo document files:
 
 *   [Inline error demo.docx](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Source/Word%20Templates/Inline%20Error%20Demo.docx?raw=true)
+
+Inline error messages next to the other options for data that is not there: [Handle missing and null data in templates]({{< ref "/assembly/net/use-cases/templates-for-incomplete-data.md" >}}).

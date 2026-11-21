@@ -78,3 +78,4 @@ The same template text in a cell of a spreadsheet gives the same result within t
 
 *   [Empty paragraph.xlsx](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Templates/Empty%20paragraph.xlsx)
 *   [Empty paragraph.txt](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Templates/Empty%20paragraph.txt)
+The option in a worked spreadsheet scenario: [Generate Excel reports from a template]({{< ref "/assembly/net/use-cases/generate-excel-reports-from-template.md" >}}).

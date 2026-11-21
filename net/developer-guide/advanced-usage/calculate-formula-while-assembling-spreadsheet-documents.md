@@ -29,3 +29,5 @@ Get the template from here.
 {{< gist GroupDocsGists 8b52aa31a79fa631c3b75efb29d11507 >}}
 
 
+
+Why an aggregate over a repeating row belongs in the template rather than in a worksheet formula: [Generate Excel reports from a template]({{< ref "/assembly/net/use-cases/generate-excel-reports-from-template.md" >}}).

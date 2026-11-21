@@ -468,3 +468,5 @@ In some scenarios, you may need to disable recognition of date-time values at al
 #### Template
 
 *   [Demo Template.docx](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/Data/Source/Word%20Templates/Using%20Spreadsheet%20as%20Table%20of%20Data.docx?raw=true)
+
+A complete scenario built on a JSON data source and a JSON Schema: [Generate Word documents from LLM output]({{< ref "/assembly/net/use-cases/generate-documents-from-llm-output.md" >}}).

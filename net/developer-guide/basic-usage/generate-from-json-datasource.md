@@ -240,3 +240,5 @@ Along with the full-featured .NET library, we provide simple but powerful free o
 
 To assemble documents from templates and data sources, you can use the online apps from the **[GroupDocs.Assembly App Product Family](https://products.groupdocs.app/assembly/family)**.
 
+
+The same data source in a finished scenario, from the template to a DOCX and a PDF: [Generate a Word document from a template]({{< ref "/assembly/net/use-cases/generate-word-report-from-template.md" >}}).

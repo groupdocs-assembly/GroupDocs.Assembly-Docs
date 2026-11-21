@@ -87,3 +87,5 @@ GroupDocs.Assembly for .NET can be used to develop applications in any developm
 *   Xamarin.IOS
 *   Xamarin.Mac
 *   MonoDevelop 2.4 and later
+
+For a container or a serverless function the list is shorter and the fonts matter more: [Document generation in Docker and serverless]({{< ref "/assembly/net/use-cases/running-in-docker-and-serverless.md" >}}).

@@ -81,3 +81,5 @@ By default, the assembler stretches an image filling a textbox to the size of th
     
 
 {{< alert style="warning" >}}Dynamic insertion of images from Base64-encoded bytes is available for file formats where dynamic image insertion is available for almost all supported file formats.{{< /alert >}}
+
+An image in every row of a table, including a presentation table: [Generate PowerPoint presentations from JSON]({{< ref "/assembly/net/use-cases/generate-presentations-from-json.md" >}}).

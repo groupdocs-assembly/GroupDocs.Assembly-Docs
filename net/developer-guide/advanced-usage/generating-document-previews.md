@@ -76,3 +76,5 @@ new DocumentAssembler().GeneratePreview("Customer orders.docx", options);
 {{< alert style="info" >}}Previews are generated without loading any external resources.{{< /alert >}}
 
 Example: [GenerateDocumentPreview.cs](https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET/blob/master/Examples/GroupDocs.Assembly.Examples.CSharp/AdvancedUsage/GenerateDocumentPreview.cs).
+
+A preview served from a web request: [Generate and download reports in ASP.NET Core]({{< ref "/assembly/net/use-cases/generate-reports-in-aspnet-core.md" >}}). Previews are also the quickest way to prove a Linux image has the fonts it needs: [Document generation in Docker and serverless]({{< ref "/assembly/net/use-cases/running-in-docker-and-serverless.md" >}}).

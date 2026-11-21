@@ -109,3 +109,5 @@ options.WhitelistedResources.Add("https://cdn.example.com/assets/");
 DocumentAssembler assembler = new DocumentAssembler();
 assembler.AssembleDocument("Untrusted template.docx", "output.docx", options, new DataSourceInfo(photoUri, "expression"));
 ```
+
+A scenario where the data comes from outside and the policy earns its keep: [Generate Word documents from LLM output]({{< ref "/assembly/net/use-cases/generate-documents-from-llm-output.md" >}}).
