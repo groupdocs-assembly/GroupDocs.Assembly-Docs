@@ -3,8 +3,8 @@ id: home
 url: assembly/java
 title: GroupDocs.Assembly for Java
 weight: 1
-description: ""
-keywords:
+description: "Generate Word, Excel, PowerPoint, email, PDF and HTML reports from templates in Java, filled with Java objects, JSON, XML, CSV or database data. No Microsoft Office required."
+keywords: GroupDocs.Assembly, Java, report generation, document automation, document assembly, template engine, mail merge, JSON, XML, CSV, DOCX, XLSX, PPTX, PDF, email, on-premise, Windows, Linux, macOS
 productName: GroupDocs.Assembly for Java
 hideChildren: True
 ---
@@ -12,7 +12,7 @@ hideChildren: True
 <img src="/logo/128x128/groupdocs-assembly-java.png" alt="groupdocs-assembly-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 {{< button style="primary" link="https://releases.groupdocs.com/assembly/java/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
-{{< button style="primary" link="https://pypi.org/project/groupdocs-assembly" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
+{{< button style="primary" link="https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-assembly/" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
 
 GroupDocs.Assembly for Java - A assembly is a document automation and reports generation API designed to create custom documents from templates. This Java reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format.
 

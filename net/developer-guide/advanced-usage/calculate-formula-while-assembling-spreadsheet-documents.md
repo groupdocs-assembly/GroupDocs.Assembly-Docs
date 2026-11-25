@@ -3,7 +3,7 @@ id: calculate-formula-while-assembling-spreadsheet-documents
 url: assembly/net/calculate-formula-while-assembling-spreadsheet-documents
 title: Calculate Formula while Assembling Spreadsheet Documents
 weight: 31
-description: ""
+description: "Recalculate worksheet formulas and fields while a spreadsheet report is assembled: the UpdateFieldsAndFormulas option in GroupDocs.Assembly for .NET, with C# code."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

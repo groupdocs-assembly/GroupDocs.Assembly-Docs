@@ -3,7 +3,7 @@ id: system-requirements
 url: assembly/net/system-requirements
 title: System Requirements
 weight: 4
-description: ""
+description: "GroupDocs.Assembly for .NET system requirements: supported Windows, Linux and macOS releases, the .NET and Mono frameworks, and the development environments it runs in."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

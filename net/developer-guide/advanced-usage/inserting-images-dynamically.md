@@ -3,7 +3,7 @@ id: inserting-images-dynamically
 url: assembly/net/inserting-images-dynamically
 title: Inserting Images Dynamically
 weight: 44
-description: ""
+description: "Insert images into a report at run time with the image tag in GroupDocs.Assembly for .NET: textbox placeholders, image expressions and the C# call that assembles it."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

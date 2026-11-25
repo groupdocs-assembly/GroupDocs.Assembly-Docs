@@ -3,7 +3,7 @@ id: removing-empty-paragraphs
 url: assembly/net/removing-empty-paragraphs
 title: Removing Empty Paragraphs
 weight: 39
-description: ""
+description: "Drop paragraphs left empty after template tags resolve to nothing: the RemoveEmptyParagraphs option in GroupDocs.Assembly for .NET, in Word, Excel, PowerPoint and email."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

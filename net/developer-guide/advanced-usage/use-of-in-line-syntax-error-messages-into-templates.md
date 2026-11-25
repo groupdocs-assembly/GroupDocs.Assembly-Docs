@@ -3,7 +3,7 @@ id: use-of-in-line-syntax-error-messages-into-templates
 url: assembly/net/use-of-in-line-syntax-error-messages-into-templates
 title: Use of In-line Syntax Error Messages into Templates
 weight: 40
-description: ""
+description: "Write template syntax errors into the generated document instead of throwing an exception: the InlineErrorMessages option in GroupDocs.Assembly for .NET, with C# code."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

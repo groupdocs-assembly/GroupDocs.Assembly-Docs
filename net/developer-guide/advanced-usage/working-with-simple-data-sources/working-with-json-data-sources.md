@@ -3,7 +3,7 @@ id: working-with-json-data-sources
 url: assembly/net/working-with-json-data-sources
 title: Working with JSON Data Sources
 weight: 2
-description: ""
+description: "Use JSON as a data source in GroupDocs.Assembly for .NET: the JsonDataSource class, typed JSON values in templates, and top-level arrays treated as a DataTable."
 keywords: 
 productName: GroupDocs.Assembly for .NET
 hideChildren: False

@@ -3,8 +3,8 @@ id: home
 url: assembly/net
 title: GroupDocs.Assembly for .NET
 weight: 1
-description: ""
-keywords:
+description: "Generate Word, Excel, PowerPoint, email, PDF and HTML reports from templates in C#, filled with .NET objects, JSON, XML, CSV or database data. No Microsoft Office required."
+keywords: GroupDocs.Assembly, .NET, C#, report generation, document automation, document assembly, template engine, mail merge, LINQ reporting, JSON, XML, CSV, DOCX, XLSX, PPTX, PDF, email, on-premise, Windows, Linux, macOS
 productName: GroupDocs.Assembly for .NET
 hideChildren: True
 ---
@@ -14,7 +14,7 @@ hideChildren: True
 <img src="https://img.shields.io/nuget/dt/GroupDocs.Assembly?label=nuget%20downloads" alt="Nuget downloads">
 
 {{< button style="primary" link="https://releases.groupdocs.com/assembly/net/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
-{{< button style="primary" link="https://pypi.org/project/groupdocs-assembly" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
+{{< button style="primary" link="https://www.nuget.org/packages/GroupDocs.Assembly" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
 
 GroupDocs.Assembly for Net - A assembly is a document automation and reports generation API designed to create custom documents from templates. This Net reporting API intelligently assembles the given data with the defined template document and generates an output document based on the data source, in the template's format as well as in the specified output format.
 
